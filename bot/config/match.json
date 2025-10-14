@@ -1,0 +1,13 @@
+{
+  "defaults": {
+    "method": "TM_CCOEFF_NORMED",
+    "threshold": 0.9,
+    "nms": {"enabled": true, "overlap": 0.3}
+  },
+  "groups": {
+    "dealer": {"threshold": 0.86},
+    "digits": {"threshold": 0.92},
+    "cards": {"threshold": 0.9},
+    "glow": {"threshold": 0.9}
+  }
+}
