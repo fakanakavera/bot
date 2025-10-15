@@ -1,0 +1,5607 @@
+﻿PokerStars Zoom Hand #257879890977:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:16:02 JST [2025/09/25 6:16:02 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5 in chips) 
+Seat 2: huyjokezy ($5.02 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: lebifflemaster ($7.43 in chips) 
+Seat 5: KRSofM ($5.45 in chips) 
+Seat 6: gm__701 ($5.37 in chips) 
+huyjokezy: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c 6c]
+lebifflemaster: raises $0.07 to $0.12
+KRSofM: folds 
+gm__701: folds 
+intentii: folds 
+huyjokezy: folds 
+FakaN4Kavera: calls $0.07
+*** FLOP *** [Jd 4h 3d]
+FakaN4Kavera: checks 
+lebifflemaster: bets $0.08
+FakaN4Kavera: calls $0.08
+*** TURN *** [Jd 4h 3d] [6d]
+FakaN4Kavera: checks 
+lebifflemaster: checks 
+*** RIVER *** [Jd 4h 3d 6d] [9s]
+FakaN4Kavera: checks 
+lebifflemaster: bets $0.30
+FakaN4Kavera: folds 
+Uncalled bet ($0.30) returned to lebifflemaster
+lebifflemaster collected $0.40 from pot
+lebifflemaster: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.42 | Rake $0.02 
+Board [Jd 4h 3d 6d 9s]
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded on the River
+Seat 4: lebifflemaster collected ($0.40)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: gm__701 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879899347:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:32 JST [2025/09/25 6:17:32 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Kenzo2211 ($5 in chips) 
+Seat 2: snake oil 12 ($4.43 in chips) 
+Seat 3: huyjokezy ($5 in chips) 
+Seat 4: lebifflemaster ($6.36 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: kalopara ($18.55 in chips) 
+snake oil 12: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7h Ks]
+lebifflemaster: folds 
+FakaN4Kavera: folds 
+kalopara: folds 
+Kenzo2211: folds 
+snake oil 12: folds 
+Uncalled bet ($0.03) returned to huyjokezy
+huyjokezy collected $0.04 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Kenzo2211 (button) folded before Flop (didn't bet)
+Seat 2: snake oil 12 (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) collected ($0.04)
+Seat 4: lebifflemaster folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: kalopara folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879897613:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:13 JST [2025/09/25 6:17:13 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: intentii ($5 in chips) 
+Seat 3: gm__701 ($5.23 in chips) 
+Seat 4: Woidprophet ($6.73 in chips) 
+Seat 5: faithfulness ($5 in chips) 
+Seat 6: kmc4444 ($6.04 in chips) 
+intentii: posts small blind $0.02
+gm__701: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4d Ks]
+Woidprophet: folds 
+faithfulness: folds 
+kmc4444: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+intentii: folds 
+gm__701: calls $0.07
+*** FLOP *** [7h Ts Jd]
+gm__701: checks 
+kmc4444: bets $0.13
+gm__701: calls $0.13
+*** TURN *** [7h Ts Jd] [8c]
+gm__701: checks 
+kmc4444: bets $0.17
+gm__701: folds 
+Uncalled bet ($0.17) returned to kmc4444
+kmc4444 collected $0.50 from pot
+kmc4444: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.52 | Rake $0.02 
+Board [7h Ts Jd 8c]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: intentii (small blind) folded before Flop
+Seat 3: gm__701 (big blind) folded on the Turn
+Seat 4: Woidprophet folded before Flop (didn't bet)
+Seat 5: faithfulness folded before Flop (didn't bet)
+Seat 6: kmc4444 collected ($0.50)
+
+
+
+PokerStars Zoom Hand #257879901393:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:53 JST [2025/09/25 6:17:53 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Ingyeoking ($5.08 in chips) 
+Seat 2: bigdaveys ($11.43 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: faithfulness ($5 in chips) 
+Seat 5: KRSofM ($5.01 in chips) 
+Seat 6: zodapoker ($5 in chips) 
+bigdaveys: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jc 4h]
+faithfulness: folds 
+KRSofM: folds 
+zodapoker: folds 
+Ingyeoking: folds 
+bigdaveys: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Ingyeoking (button) folded before Flop (didn't bet)
+Seat 2: bigdaveys (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: faithfulness folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: zodapoker folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879898750:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:25 JST [2025/09/25 6:17:25 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gena60 ($9.27 in chips) 
+Seat 2: BrickByBrick68 ($17.60 in chips) 
+Seat 3: intentii ($5 in chips) 
+Seat 4: KRSofM ($6.27 in chips) 
+Seat 5: Woidprophet ($5.17 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+BrickByBrick68: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d 3s]
+KRSofM: folds 
+Woidprophet has timed out
+Woidprophet: folds 
+FakaN4Kavera: folds 
+gena60: raises $0.10 to $0.15
+BrickByBrick68: folds 
+intentii: calls $0.10
+*** FLOP *** [Ks 5d Kh]
+intentii: checks 
+gena60: checks 
+*** TURN *** [Ks 5d Kh] [8d]
+intentii: bets $0.23
+gena60: folds 
+Uncalled bet ($0.23) returned to intentii
+intentii collected $0.31 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.32 | Rake $0.01 
+Board [Ks 5d Kh 8d]
+Seat 1: gena60 (button) folded on the Turn
+Seat 2: BrickByBrick68 (small blind) folded before Flop
+Seat 3: intentii (big blind) collected ($0.31)
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: Woidprophet folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879897264:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:09 JST [2025/09/25 6:17:09 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($6.76 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: Choi Moneky ($5.07 in chips) 
+Seat 4: gio119 ($5.35 in chips) 
+Seat 5: gm__701 ($5.23 in chips) 
+Seat 6: hatater ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Choi Moneky: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kd 5s]
+gio119: folds 
+gm__701: folds 
+hatater: folds 
+1Kronos: raises $0.05 to $0.10
+FakaN4Kavera: folds 
+Choi Moneky: calls $0.05
+*** FLOP *** [As Tc Js]
+Choi Moneky: checks 
+1Kronos: bets $0.07
+Choi Moneky: calls $0.07
+*** TURN *** [As Tc Js] [Ac]
+Choi Moneky: checks 
+1Kronos: bets $0.18
+Choi Moneky: calls $0.18
+*** RIVER *** [As Tc Js Ac] [3s]
+Choi Moneky: checks 
+1Kronos: checks 
+*** SHOW DOWN ***
+Choi Moneky: shows [Ah 2h] (three of a kind, Aces)
+1Kronos: shows [Ad 7d] (three of a kind, Aces)
+Choi Moneky collected $0.35 from pot
+1Kronos collected $0.34 from pot
+*** SUMMARY ***
+Total pot $0.72 | Rake $0.03 
+Board [As Tc Js Ac 3s]
+Seat 1: 1Kronos (button) showed [Ad 7d] and won ($0.34) with three of a kind, Aces
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Choi Moneky (big blind) showed [Ah 2h] and won ($0.35) with three of a kind, Aces
+Seat 4: gio119 folded before Flop (didn't bet)
+Seat 5: gm__701 folded before Flop (didn't bet)
+Seat 6: hatater folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879899822:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:37 JST [2025/09/25 6:17:37 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($29.03 in chips) 
+Seat 2: Kenzo2211 ($8.07 in chips) 
+Seat 3: Ingyeoking ($7.99 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: huyjokezy ($5 in chips) 
+Seat 6: sepik200 ($4.93 in chips) 
+Kenzo2211: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jc 3s]
+FakaN4Kavera: folds 
+huyjokezy: raises $0.10 to $0.15
+sepik200: folds 
+kalopara: calls $0.15
+Kenzo2211: folds 
+Ingyeoking: folds 
+*** FLOP *** [5d 6c 7s]
+huyjokezy: bets $0.18
+kalopara: calls $0.18
+*** TURN *** [5d 6c 7s] [5s]
+huyjokezy: checks 
+kalopara: bets $0.15
+huyjokezy: folds 
+Uncalled bet ($0.15) returned to kalopara
+kalopara collected $0.70 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.73 | Rake $0.03 
+Board [5d 6c 7s 5s]
+Seat 1: kalopara (button) collected ($0.70)
+Seat 2: Kenzo2211 (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: huyjokezy folded on the Turn
+Seat 6: sepik200 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879902539:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:18:05 JST [2025/09/25 6:18:05 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($9.94 in chips) 
+Seat 2: FakaN4Kavera ($5.02 in chips) 
+Seat 3: zodapoker ($5.07 in chips) 
+Seat 4: BrickByBrick68 ($17.53 in chips) 
+Seat 5: VXNX$157 ($4.49 in chips) 
+Seat 6: Ingyeoking ($8.01 in chips) 
+FakaN4Kavera: posts small blind $0.02
+zodapoker: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2h 7h]
+BrickByBrick68: raises $0.07 to $0.12
+VXNX$157: folds 
+Ingyeoking: folds 
+1Kronos: folds 
+FakaN4Kavera: folds 
+zodapoker: folds 
+Uncalled bet ($0.07) returned to BrickByBrick68
+BrickByBrick68 collected $0.12 from pot
+BrickByBrick68: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: zodapoker (big blind) folded before Flop
+Seat 4: BrickByBrick68 collected ($0.12)
+Seat 5: VXNX$157 folded before Flop (didn't bet)
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879902875:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:18:09 JST [2025/09/25 6:18:09 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: Kenzo2211 ($5 in chips) 
+Seat 3: faithfulness ($5 in chips) 
+Seat 4: franks270 ($7.89 in chips) 
+Seat 5: intentii ($5.16 in chips) 
+Seat 6: gm__701 ($5 in chips) 
+Kenzo2211: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6c 9c]
+franks270: folds 
+intentii: raises $0.08 to $0.13
+gm__701: folds 
+FakaN4Kavera: folds 
+Kenzo2211: folds 
+faithfulness: folds 
+Uncalled bet ($0.08) returned to intentii
+intentii collected $0.12 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: Kenzo2211 (small blind) folded before Flop
+Seat 3: faithfulness (big blind) folded before Flop
+Seat 4: franks270 folded before Flop (didn't bet)
+Seat 5: intentii collected ($0.12)
+Seat 6: gm__701 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879900485:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:17:44 JST [2025/09/25 6:17:44 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($5.01 in chips) 
+Seat 2: huyjokezy ($5.02 in chips) 
+Seat 3: YAG5292 ($8.87 in chips) 
+Seat 4: intentii ($5.02 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: bigdaveys ($11.48 in chips) 
+huyjokezy: posts small blind $0.02
+YAG5292: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Tc 9h]
+intentii: raises $0.08 to $0.13
+FakaN4Kavera: folds 
+bigdaveys: folds 
+KRSofM: folds 
+huyjokezy: folds 
+YAG5292: calls $0.08
+*** FLOP *** [5s Ts Kh]
+YAG5292: checks 
+intentii: bets $0.09
+YAG5292: calls $0.09
+*** TURN *** [5s Ts Kh] [7d]
+YAG5292: checks 
+intentii: bets $0.33
+YAG5292: folds 
+Uncalled bet ($0.33) returned to intentii
+intentii collected $0.44 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.46 | Rake $0.02 
+Board [5s Ts Kh 7d]
+Seat 1: KRSofM (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: YAG5292 (big blind) folded on the Turn
+Seat 4: intentii collected ($0.44)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: bigdaveys folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879904034:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:18:21 JST [2025/09/25 6:18:21 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: lebifflemaster ($6.36 in chips) 
+Seat 2: alexnffc1 ($4.95 in chips) 
+Seat 3: leakleakA ($9.16 in chips) 
+Seat 4: faithfulness ($5 in chips) 
+Seat 5: gio119 ($5 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+alexnffc1: posts small blind $0.02
+leakleakA: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9h 5s]
+faithfulness: raises $0.07 to $0.12
+gio119: folds 
+FakaN4Kavera: folds 
+lebifflemaster: folds 
+alexnffc1: folds 
+leakleakA: calls $0.07
+*** FLOP *** [Kh 8c 7h]
+leakleakA: checks 
+faithfulness: checks 
+*** TURN *** [Kh 8c 7h] [7c]
+leakleakA: checks 
+faithfulness: bets $0.19
+leakleakA: folds 
+Uncalled bet ($0.19) returned to faithfulness
+faithfulness collected $0.25 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0.01 
+Board [Kh 8c 7h 7c]
+Seat 1: lebifflemaster (button) folded before Flop (didn't bet)
+Seat 2: alexnffc1 (small blind) folded before Flop
+Seat 3: leakleakA (big blind) folded on the Turn
+Seat 4: faithfulness collected ($0.25)
+Seat 5: gio119 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879904807:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:18:29 JST [2025/09/25 6:18:29 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($5 in chips) 
+Seat 2: huyjokezy ($5.18 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: kalopara ($18.48 in chips) 
+Seat 5: YAG5292 ($8.65 in chips) 
+Seat 6: serg430606 ($3.74 in chips) 
+huyjokezy: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ad As]
+kalopara: folds 
+YAG5292: folds 
+serg430606: folds 
+zodapoker: raises $0.07 to $0.12
+huyjokezy: folds 
+FakaN4Kavera: raises $0.26 to $0.38
+zodapoker: calls $0.26
+*** FLOP *** [5s Qc 8c]
+FakaN4Kavera: bets $0.38
+zodapoker: calls $0.38
+*** TURN *** [5s Qc 8c] [3c]
+FakaN4Kavera: checks 
+zodapoker: bets $0.65
+FakaN4Kavera: calls $0.65
+*** RIVER *** [5s Qc 8c 3c] [Jd]
+FakaN4Kavera: checks 
+zodapoker: bets $2.09
+FakaN4Kavera: folds 
+Uncalled bet ($2.09) returned to zodapoker
+zodapoker collected $2.72 from pot
+zodapoker: doesn't show hand 
+*** SUMMARY ***
+Total pot $2.84 | Rake $0.12 
+Board [5s Qc 8c 3c Jd]
+Seat 1: zodapoker (button) collected ($2.72)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded on the River
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: YAG5292 folded before Flop (didn't bet)
+Seat 6: serg430606 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879913150:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:19:57 JST [2025/09/25 6:19:57 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: lebifflemaster ($6.25 in chips) 
+Seat 2: KRSofM ($5.08 in chips) 
+Seat 3: gio119 ($5.44 in chips) 
+Seat 4: kalopara ($29.63 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: _jay_44_jas ($5.50 in chips) 
+KRSofM: posts small blind $0.02
+gio119: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s 7d]
+kalopara: folds 
+FakaN4Kavera: folds 
+_jay_44_jas: raises $0.07 to $0.12
+lebifflemaster: folds 
+KRSofM: folds 
+gio119: folds 
+Uncalled bet ($0.07) returned to _jay_44_jas
+_jay_44_jas collected $0.12 from pot
+_jay_44_jas: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: lebifflemaster (button) folded before Flop (didn't bet)
+Seat 2: KRSofM (small blind) folded before Flop
+Seat 3: gio119 (big blind) folded before Flop
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: _jay_44_jas collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257879913614:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:20:02 JST [2025/09/25 6:20:02 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: elmex886 ($5.02 in chips) 
+Seat 3: hatater ($6.45 in chips) 
+Seat 4: kalopara ($29.63 in chips) 
+Seat 5: huyjokezy ($5.29 in chips) 
+Seat 6: kmc4444 ($5 in chips) 
+elmex886: posts small blind $0.02
+hatater: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4d 7s]
+kalopara: folds 
+huyjokezy: folds 
+kmc4444: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+elmex886: folds 
+hatater: raises $0.36 to $0.48
+kmc4444: folds 
+Uncalled bet ($0.36) returned to hatater
+hatater collected $0.26 from pot
+hatater: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: elmex886 (small blind) folded before Flop
+Seat 3: hatater (big blind) collected ($0.26)
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: huyjokezy folded before Flop (didn't bet)
+Seat 6: kmc4444 folded before Flop
+
+
+
+PokerStars Zoom Hand #257879911831:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:19:43 JST [2025/09/25 6:19:43 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($7.91 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: gio119 ($9.79 in chips) 
+Seat 4: sepik200 ($5.67 in chips) 
+Seat 5: Ingyeoking ($5.33 in chips) 
+Seat 6: faithfulness ($5.05 in chips) 
+FakaN4Kavera: posts small blind $0.02
+gio119: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5s 2s]
+sepik200: folds 
+Ingyeoking: raises $0.05 to $0.10
+faithfulness: folds 
+kalopara: raises $0.20 to $0.30
+FakaN4Kavera: folds 
+gio119: folds 
+Ingyeoking: calls $0.20
+*** FLOP *** [2c 4d 5h]
+Ingyeoking: checks 
+kalopara: bets $0.25
+Ingyeoking: raises $0.45 to $0.70
+kalopara: calls $0.45
+*** TURN *** [2c 4d 5h] [4h]
+Ingyeoking: bets $0.65
+kalopara: calls $0.65
+*** RIVER *** [2c 4d 5h 4h] [Ac]
+Ingyeoking: checks 
+kalopara: bets $1.05
+Ingyeoking: folds 
+Uncalled bet ($1.05) returned to kalopara
+kalopara collected $3.23 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $3.37 | Rake $0.14 
+Board [2c 4d 5h 4h Ac]
+Seat 1: kalopara (button) collected ($3.23)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: gio119 (big blind) folded before Flop
+Seat 4: sepik200 folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded on the River
+Seat 6: faithfulness folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879913872:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:20:06 JST [2025/09/25 6:20:06 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5.16 in chips) 
+Seat 2: Woidprophet ($5 in chips) 
+Seat 3: faithfulness ($5.03 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: KRSofM ($7.27 in chips) 
+Seat 6: huyjokezy ($5 in chips) 
+Woidprophet: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6c 6d]
+FakaN4Kavera: raises $0.07 to $0.12
+KRSofM: folds 
+huyjokezy: folds 
+intentii: folds 
+Woidprophet: calls $0.10
+faithfulness: folds 
+*** FLOP *** [Jd Ks 2s]
+Woidprophet: checks 
+FakaN4Kavera: checks 
+*** TURN *** [Jd Ks 2s] [Tc]
+Woidprophet: bets $0.19
+FakaN4Kavera: folds 
+Uncalled bet ($0.19) returned to Woidprophet
+Woidprophet collected $0.28 from pot
+Woidprophet: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.29 | Rake $0.01 
+Board [Jd Ks 2s Tc]
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: Woidprophet (small blind) collected ($0.28)
+Seat 3: faithfulness (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded on the Turn
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: huyjokezy folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879917120:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:20:41 JST [2025/09/25 6:20:41 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($7.27 in chips) 
+Seat 2: goaßmaß-fips ($9.78 in chips) 
+Seat 3: yuri.pohr ($5 in chips) 
+Seat 4: gio119 ($5.41 in chips) 
+Seat 5: scottie4barnes ($4.95 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+goaßmaß-fips: posts small blind $0.02
+yuri.pohr: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3h Ad]
+gio119: folds 
+scottie4barnes: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+KRSofM: folds 
+goaßmaß-fips: folds 
+yuri.pohr: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: KRSofM (button) folded before Flop (didn't bet)
+Seat 2: goaßmaß-fips (small blind) folded before Flop
+Seat 3: yuri.pohr (big blind) folded before Flop
+Seat 4: gio119 folded before Flop (didn't bet)
+Seat 5: scottie4barnes folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257879918975:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:01 JST [2025/09/25 6:21:01 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($9.28 in chips) 
+Seat 2: elmex886 ($5 in chips) 
+Seat 3: FakaN4Kavera ($5.05 in chips) 
+Seat 4: gm__701 ($5.43 in chips) 
+Seat 5: kmc4444 ($6.29 in chips) 
+Seat 6: gio119 ($5.39 in chips) 
+elmex886: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qs 2s]
+gm__701: folds 
+kmc4444: folds 
+gio119: folds 
+YAG5292: folds 
+elmex886: raises $0.10 to $0.15
+FakaN4Kavera: folds 
+Uncalled bet ($0.10) returned to elmex886
+elmex886 collected $0.10 from pot
+elmex886: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: YAG5292 (button) folded before Flop (didn't bet)
+Seat 2: elmex886 (small blind) collected ($0.10)
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: gio119 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879920204:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:14 JST [2025/09/25 6:21:14 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: TTPP92 ($5 in chips) 
+Seat 3: faithfulness ($5 in chips) 
+Seat 4: gio119 ($5.37 in chips) 
+Seat 5: delfinato200 ($14.44 in chips) 
+Seat 6: huyjokezy ($5.15 in chips) 
+TTPP92: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6c 2c]
+gio119: calls $0.05
+delfinato200: folds 
+huyjokezy: folds 
+FakaN4Kavera: folds 
+TTPP92: folds 
+faithfulness: checks 
+*** FLOP *** [8h 8c 8d]
+faithfulness: checks 
+gio119: bets $0.12
+faithfulness: folds 
+Uncalled bet ($0.12) returned to gio119
+gio119 collected $0.12 from pot
+gio119: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Board [8h 8c 8d]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: TTPP92 (small blind) folded before Flop
+Seat 3: faithfulness (big blind) folded on the Flop
+Seat 4: gio119 collected ($0.12)
+Seat 5: delfinato200 folded before Flop (didn't bet)
+Seat 6: huyjokezy folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879922146:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:35 JST [2025/09/25 6:21:35 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gio119 ($5 in chips) 
+Seat 2: huyjokezy ($5.09 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: gm__701 ($5 in chips) 
+Seat 5: YAG5292 ($9.40 in chips) 
+Seat 6: elmex886 ($5 in chips) 
+huyjokezy: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jh 5c]
+gm__701: folds 
+YAG5292: raises $0.09 to $0.14
+elmex886: folds 
+gio119: folds 
+huyjokezy: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.09) returned to YAG5292
+YAG5292 collected $0.12 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: gio119 (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: YAG5292 collected ($0.12)
+Seat 6: elmex886 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879921118:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:24 JST [2025/09/25 6:21:24 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($4.90 in chips) 
+Seat 2: Lorin22 ($5.02 in chips) 
+Seat 3: gm__701 ($5 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: intentii ($5 in chips) 
+Seat 6: Woidprophet ($7.38 in chips) 
+Lorin22: posts small blind $0.02
+gm__701: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s 4s]
+FakaN4Kavera: folds 
+intentii: folds 
+Woidprophet: raises $0.10 to $0.15
+KRSofM: raises $0.30 to $0.45
+Lorin22: raises $1.10 to $1.55
+gm__701: folds 
+Woidprophet: folds 
+KRSofM: folds 
+Uncalled bet ($1.10) returned to Lorin22
+Lorin22 collected $1.10 from pot
+Lorin22: doesn't show hand 
+*** SUMMARY ***
+Total pot $1.10 | Rake $0 
+Seat 1: KRSofM (button) folded before Flop
+Seat 2: Lorin22 (small blind) collected ($1.10)
+Seat 3: gm__701 (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: intentii folded before Flop (didn't bet)
+Seat 6: Woidprophet folded before Flop
+
+
+
+PokerStars Zoom Hand #257879923018:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:44 JST [2025/09/25 6:21:44 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: BretticusX ($6.23 in chips) 
+Seat 2: Kenzo2211 ($5.05 in chips) 
+Seat 3: Ingyeoking ($4.30 in chips) 
+Seat 4: gm__701 ($5 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: Woidprophet ($5.18 in chips) 
+Kenzo2211: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4h 4d]
+gm__701: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+Woidprophet: folds 
+BretticusX: folds 
+Kenzo2211: folds 
+Ingyeoking: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: BretticusX (button) folded before Flop (didn't bet)
+Seat 2: Kenzo2211 (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera collected ($0.12)
+Seat 6: Woidprophet folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879921780:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:21:31 JST [2025/09/25 6:21:31 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($10.09 in chips) 
+Seat 2: Ingyeoking ($3.63 in chips) 
+Seat 3: pink bull 78 ($1.69 in chips) 
+Seat 4: Kenzo2211 ($5.05 in chips) 
+Seat 5: KRSofM ($7.55 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+Ingyeoking: posts small blind $0.02
+pink bull 78: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9s 6s]
+Kenzo2211: folds 
+KRSofM: folds 
+FakaN4Kavera: folds 
+kalopara: raises $0.07 to $0.12
+Ingyeoking: folds 
+pink bull 78: calls $0.07
+*** FLOP *** [5h Js Ts]
+pink bull 78: bets $0.13
+kalopara: folds 
+Uncalled bet ($0.13) returned to pink bull 78
+pink bull 78 collected $0.25 from pot
+pink bull 78: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0.01 
+Board [5h Js Ts]
+Seat 1: kalopara (button) folded on the Flop
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: pink bull 78 (big blind) collected ($0.25)
+Seat 4: Kenzo2211 folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879918627:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:20:57 JST [2025/09/25 6:20:57 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: alexnffc1 ($2.80 in chips) 
+Seat 2: FakaN4Kavera ($5.07 in chips) 
+Seat 3: Woidprophet ($6.10 in chips) 
+Seat 4: kmc4444 ($6.29 in chips) 
+Seat 5: gm__701 ($5.43 in chips) 
+Seat 6: Choi Moneky ($5.05 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Woidprophet: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd 8s]
+kmc4444: folds 
+gm__701: folds 
+Choi Moneky: raises $0.05 to $0.10
+alexnffc1: calls $0.10
+FakaN4Kavera: folds 
+Woidprophet: calls $0.05
+*** FLOP *** [Qh 4h Jc]
+Woidprophet: checks 
+Choi Moneky: checks 
+alexnffc1: bets $0.10
+Woidprophet: folds 
+Choi Moneky: calls $0.10
+*** TURN *** [Qh 4h Jc] [Qs]
+Choi Moneky: checks 
+alexnffc1: bets $0.40
+Choi Moneky: calls $0.40
+*** RIVER *** [Qh 4h Jc Qs] [Ks]
+Choi Moneky: checks 
+alexnffc1: checks 
+*** SHOW DOWN ***
+Choi Moneky: shows [Th Jh] (two pair, Queens and Jacks)
+alexnffc1: mucks hand 
+Choi Moneky collected $1.27 from pot
+*** SUMMARY ***
+Total pot $1.32 | Rake $0.05 
+Board [Qh 4h Jc Qs Ks]
+Seat 1: alexnffc1 (button) mucked [8h 5h]
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Woidprophet (big blind) folded on the Flop
+Seat 4: kmc4444 folded before Flop (didn't bet)
+Seat 5: gm__701 folded before Flop (didn't bet)
+Seat 6: Choi Moneky showed [Th Jh] and won ($1.27) with two pair, Queens and Jacks
+
+
+
+PokerStars Zoom Hand #257879924831:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:04 JST [2025/09/25 6:22:04 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: BrickByBrick68 ($18.36 in chips) 
+Seat 2: kmc4444 ($6.62 in chips) 
+Seat 3: Woidprophet ($5.16 in chips) 
+Seat 4: FakaN4Kavera ($5.07 in chips) 
+Seat 5: faithfulness ($5 in chips) 
+Seat 6: goaßmaß-fips ($9.53 in chips) 
+kmc4444: posts small blind $0.02
+Woidprophet: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kh Tc]
+FakaN4Kavera: folds 
+faithfulness: folds 
+goaßmaß-fips: folds 
+BrickByBrick68: folds 
+kmc4444: folds 
+Uncalled bet ($0.03) returned to Woidprophet
+Woidprophet collected $0.04 from pot
+Woidprophet: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: BrickByBrick68 (button) folded before Flop (didn't bet)
+Seat 2: kmc4444 (small blind) folded before Flop
+Seat 3: Woidprophet (big blind) collected ($0.04)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: faithfulness folded before Flop (didn't bet)
+Seat 6: goaßmaß-fips folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879925210:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:08 JST [2025/09/25 6:22:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.07 in chips) 
+Seat 2: Woidprophet ($5.87 in chips) 
+Seat 3: Ingyeoking ($3.68 in chips) 
+Seat 4: bigdaveys ($10.88 in chips) 
+Seat 5: Epist461 ($5 in chips) 
+Seat 6: gm__701 ($5.07 in chips) 
+Woidprophet: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5d 8d]
+bigdaveys: folds 
+Epist461: folds 
+gm__701: folds 
+FakaN4Kavera: folds 
+Woidprophet: folds 
+Uncalled bet ($0.03) returned to Ingyeoking
+Ingyeoking collected $0.04 from pot
+Ingyeoking: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: Woidprophet (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) collected ($0.04)
+Seat 4: bigdaveys folded before Flop (didn't bet)
+Seat 5: Epist461 folded before Flop (didn't bet)
+Seat 6: gm__701 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879927152:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:29 JST [2025/09/25 6:22:29 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($28.96 in chips) 
+Seat 2: yuri.pohr ($5.21 in chips) 
+Seat 3: FakaN4Kavera ($5.05 in chips) 
+Seat 4: intentii ($5.23 in chips) 
+Seat 5: huyjokezy ($5.55 in chips) 
+Seat 6: bigdaveys ($10.81 in chips) 
+yuri.pohr: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jc 8c]
+intentii: raises $0.08 to $0.13
+huyjokezy: folds 
+bigdaveys: folds 
+kalopara: folds 
+yuri.pohr: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.08) returned to intentii
+intentii collected $0.12 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: kalopara (button) folded before Flop (didn't bet)
+Seat 2: yuri.pohr (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: intentii collected ($0.12)
+Seat 5: huyjokezy folded before Flop (didn't bet)
+Seat 6: bigdaveys folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879926486:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:22 JST [2025/09/25 6:22:22 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Epist461 ($5.05 in chips) 
+Seat 2: Junney Jade ($3.10 in chips) 
+Seat 3: huyjokezy ($5.07 in chips) 
+Seat 4: KRSofM ($5 in chips) 
+Seat 5: FakaN4Kavera ($5.05 in chips) 
+Seat 6: gio119 ($5 in chips) 
+Junney Jade: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7s 2c]
+KRSofM: folds 
+FakaN4Kavera: folds 
+gio119: folds 
+Epist461: folds 
+Junney Jade: calls $0.03
+huyjokezy: raises $0.15 to $0.20
+Junney Jade: calls $0.15
+*** FLOP *** [9h 9c Qd]
+Junney Jade: checks 
+huyjokezy: checks 
+*** TURN *** [9h 9c Qd] [Kc]
+Junney Jade: bets $0.38
+huyjokezy: folds 
+Uncalled bet ($0.38) returned to Junney Jade
+Junney Jade collected $0.38 from pot
+Junney Jade: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.40 | Rake $0.02 
+Board [9h 9c Qd Kc]
+Seat 1: Epist461 (button) folded before Flop (didn't bet)
+Seat 2: Junney Jade (small blind) collected ($0.38)
+Seat 3: huyjokezy (big blind) folded on the Turn
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: gio119 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879925848:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:15 JST [2025/09/25 6:22:15 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5.23 in chips) 
+Seat 2: FakaN4Kavera ($5.07 in chips) 
+Seat 3: kmc4444 ($6.60 in chips) 
+Seat 4: huyjokezy ($5.09 in chips) 
+Seat 5: leakleakA ($9.08 in chips) 
+Seat 6: pink bull 78 ($1.80 in chips) 
+FakaN4Kavera: posts small blind $0.02
+kmc4444: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3c 2s]
+huyjokezy: folds 
+leakleakA: raises $0.05 to $0.10
+pink bull 78: raises $0.27 to $0.37
+intentii: folds 
+FakaN4Kavera: folds 
+kmc4444: raises $0.88 to $1.25
+leakleakA: folds 
+pink bull 78: raises $0.55 to $1.80 and is all-in
+kmc4444: calls $0.55
+*** FLOP *** [5d Jc Tc]
+*** TURN *** [5d Jc Tc] [7h]
+*** RIVER *** [5d Jc Tc 7h] [4c]
+*** SHOW DOWN ***
+kmc4444: shows [Qc Qs] (a pair of Queens)
+pink bull 78: shows [Kc Kh] (a pair of Kings)
+pink bull 78 cashed out the hand for $2.86 | Cash Out Fee $0.06
+*** SUMMARY ***
+Total pot $3.72 | Rake $0.15 
+Board [5d Jc Tc 7h 4c]
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: kmc4444 (big blind) showed [Qc Qs] and lost with a pair of Queens
+Seat 4: huyjokezy folded before Flop (didn't bet)
+Seat 5: leakleakA folded before Flop
+Seat 6: pink bull 78 showed [Kc Kh] and won ($3.57) with a pair of Kings (pot not awarded as player cashed out)
+
+
+
+PokerStars Zoom Hand #257879930542:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:23:06 JST [2025/09/25 6:23:06 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: kalopara ($8.24 in chips) 
+Seat 4: pink bull 78 ($2.86 in chips) 
+Seat 5: huyjokezy ($5 in chips) 
+Seat 6: Kenzo2211 ($5.05 in chips) 
+FakaN4Kavera: posts small blind $0.02
+kalopara: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2d As]
+pink bull 78: folds 
+huyjokezy: folds 
+Kenzo2211: folds 
+kmc4444: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+kalopara: folds 
+Uncalled bet ($0.07) returned to kmc4444
+kmc4444 collected $0.12 from pot
+kmc4444: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: kmc4444 (button) collected ($0.12)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: kalopara (big blind) folded before Flop
+Seat 4: pink bull 78 folded before Flop (didn't bet)
+Seat 5: huyjokezy folded before Flop (didn't bet)
+Seat 6: Kenzo2211 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879932439:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:23:26 JST [2025/09/25 6:23:26 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: intentii ($6.39 in chips) 
+Seat 3: lebifflemaster ($8.88 in chips) 
+Seat 4: gm__701 ($5.37 in chips) 
+Seat 5: Choi Moneky ($5.25 in chips) 
+Seat 6: YAG5292 ($4.99 in chips) 
+intentii: posts small blind $0.02
+lebifflemaster: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4c 6s]
+gm__701: folds 
+Choi Moneky: folds 
+YAG5292: folds 
+FakaN4Kavera: folds 
+intentii: folds 
+Uncalled bet ($0.03) returned to lebifflemaster
+lebifflemaster collected $0.04 from pot
+lebifflemaster: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: intentii (small blind) folded before Flop
+Seat 3: lebifflemaster (big blind) collected ($0.04)
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: Choi Moneky folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879933189:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:23:34 JST [2025/09/25 6:23:34 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Choi Moneky ($5.25 in chips) 
+Seat 2: _jay_44_jas ($7.17 in chips) 
+Seat 3: Junney Jade ($3.35 in chips) 
+Seat 4: faithfulness ($5 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: Baikasas ($5 in chips) 
+_jay_44_jas: posts small blind $0.02
+Junney Jade: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ac Ks]
+faithfulness: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+Baikasas: raises $0.28 to $0.40
+Choi Moneky: folds 
+_jay_44_jas: folds 
+Junney Jade: folds 
+FakaN4Kavera: calls $0.28
+*** FLOP *** [7s Qc 9c]
+FakaN4Kavera: checks 
+Baikasas: bets $0.40
+FakaN4Kavera: folds 
+Uncalled bet ($0.40) returned to Baikasas
+Baikasas collected $0.83 from pot
+Baikasas: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.87 | Rake $0.04 
+Board [7s Qc 9c]
+Seat 1: Choi Moneky (button) folded before Flop (didn't bet)
+Seat 2: _jay_44_jas (small blind) folded before Flop
+Seat 3: Junney Jade (big blind) folded before Flop
+Seat 4: faithfulness folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded on the Flop
+Seat 6: Baikasas collected ($0.83)
+
+
+
+PokerStars Zoom Hand #257879931847:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:23:20 JST [2025/09/25 6:23:20 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Ingyeoking ($9.72 in chips) 
+Seat 2: Lorin22 ($5.62 in chips) 
+Seat 3: huyjokezy ($5 in chips) 
+Seat 4: gio119 ($9.99 in chips) 
+Seat 5: lebifflemaster ($8.88 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+Lorin22: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3s Qc]
+gio119: calls $0.05
+lebifflemaster: folds 
+FakaN4Kavera: folds 
+Ingyeoking: raises $0.17 to $0.22
+Lorin22: folds 
+huyjokezy: folds 
+gio119: raises $9.77 to $9.99 and is all-in
+Ingyeoking: folds 
+Uncalled bet ($9.77) returned to gio119
+gio119 collected $0.51 from pot
+gio119: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.51 | Rake $0 
+Seat 1: Ingyeoking (button) folded before Flop
+Seat 2: Lorin22 (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) folded before Flop
+Seat 4: gio119 collected ($0.51)
+Seat 5: lebifflemaster folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879937077:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:24:15 JST [2025/09/25 6:24:15 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Baikasas ($5.41 in chips) 
+Seat 2: Woidprophet ($9.67 in chips) 
+Seat 3: lebifflemaster ($5 in chips) 
+Seat 4: intentii ($5 in chips) 
+Seat 5: Epist461 ($5.12 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+Woidprophet: posts small blind $0.02
+lebifflemaster: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9d 2c]
+intentii: folds 
+Epist461: folds 
+FakaN4Kavera: folds 
+Baikasas: folds 
+Woidprophet: folds 
+Uncalled bet ($0.03) returned to lebifflemaster
+lebifflemaster collected $0.04 from pot
+lebifflemaster: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Baikasas (button) folded before Flop (didn't bet)
+Seat 2: Woidprophet (small blind) folded before Flop
+Seat 3: lebifflemaster (big blind) collected ($0.04)
+Seat 4: intentii folded before Flop (didn't bet)
+Seat 5: Epist461 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879937463:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:24:19 JST [2025/09/25 6:24:19 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5.40 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: Baikasas ($5.41 in chips) 
+Seat 4: Choi Moneky ($5.18 in chips) 
+Seat 5: VXNX$157 ($4.36 in chips) 
+Seat 6: sepik200 ($5.22 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Baikasas: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d 3s]
+Choi Moneky: folds 
+VXNX$157: folds 
+sepik200: raises $0.05 to $0.10
+intentii: folds 
+FakaN4Kavera: folds 
+Baikasas: folds 
+Uncalled bet ($0.05) returned to sepik200
+sepik200 collected $0.12 from pot
+sepik200: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Baikasas (big blind) folded before Flop
+Seat 4: Choi Moneky folded before Flop (didn't bet)
+Seat 5: VXNX$157 folded before Flop (didn't bet)
+Seat 6: sepik200 collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257879936381:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:24:08 JST [2025/09/25 6:24:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gm__701 ($6.07 in chips) 
+Seat 2: kmc4444 ($5 in chips) 
+Seat 3: zodapoker ($7.07 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: intentii ($5.40 in chips) 
+Seat 6: Ingyeoking ($4.19 in chips) 
+kmc4444: posts small blind $0.02
+zodapoker: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qc 3c]
+FakaN4Kavera: folds 
+intentii: folds 
+Ingyeoking: raises $0.07 to $0.12
+gm__701: folds 
+kmc4444: folds 
+zodapoker: calls $0.07
+*** FLOP *** [9d 2h 3s]
+zodapoker: checks 
+Ingyeoking: checks 
+*** TURN *** [9d 2h 3s] [Kh]
+zodapoker: checks 
+Ingyeoking: bets $0.13
+zodapoker: calls $0.13
+*** RIVER *** [9d 2h 3s Kh] [Jh]
+zodapoker: checks 
+Ingyeoking: bets $0.25
+zodapoker: folds 
+Uncalled bet ($0.25) returned to Ingyeoking
+Ingyeoking collected $0.50 from pot
+Ingyeoking: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.52 | Rake $0.02 
+Board [9d 2h 3s Kh Jh]
+Seat 1: gm__701 (button) folded before Flop (didn't bet)
+Seat 2: kmc4444 (small blind) folded before Flop
+Seat 3: zodapoker (big blind) folded on the River
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: intentii folded before Flop (didn't bet)
+Seat 6: Ingyeoking collected ($0.50)
+
+
+
+PokerStars Zoom Hand #257879938115:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:24:26 JST [2025/09/25 6:24:26 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Woidprophet ($9.65 in chips) 
+Seat 2: gio119 ($5.43 in chips) 
+Seat 3: alpaz01 ($5 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: kmc4444 ($5 in chips) 
+Seat 6: snake oil 12 ($5.08 in chips) 
+gio119: posts small blind $0.02
+alpaz01: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jh Jd]
+FakaN4Kavera: raises $0.07 to $0.12
+kmc4444: folds 
+snake oil 12: folds 
+Woidprophet: calls $0.12
+gio119: folds 
+alpaz01: folds 
+*** FLOP *** [9s 5s Ts]
+FakaN4Kavera: checks 
+Woidprophet: bets $0.20
+FakaN4Kavera: calls $0.20
+*** TURN *** [9s 5s Ts] [Js]
+FakaN4Kavera: checks 
+Woidprophet: bets $0.44
+FakaN4Kavera: calls $0.44
+*** RIVER *** [9s 5s Ts Js] [6d]
+FakaN4Kavera: checks 
+Woidprophet: bets $0.76
+FakaN4Kavera: calls $0.76
+*** SHOW DOWN ***
+Woidprophet: shows [9c As] (a flush, Ace high)
+FakaN4Kavera: mucks hand 
+Woidprophet collected $2.95 from pot
+*** SUMMARY ***
+Total pot $3.11 | Rake $0.16 
+Board [9s 5s Ts Js 6d]
+Seat 1: Woidprophet (button) showed [9c As] and won ($2.95) with a flush, Ace high
+Seat 2: gio119 (small blind) folded before Flop
+Seat 3: alpaz01 (big blind) folded before Flop
+Seat 4: FakaN4Kavera mucked [Jh Jd]
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: snake oil 12 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879929307:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:22:52 JST [2025/09/25 6:22:52 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($6.30 in chips) 
+Seat 2: Vasco4430 ($7.58 in chips) 
+Seat 3: koshchey_a ($9.82 in chips) 
+Seat 4: delfinato200 ($14.35 in chips) 
+Seat 5: Irrubikajs ($2.50 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+Vasco4430: posts small blind $0.02
+koshchey_a: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9c 8d]
+delfinato200: folds 
+Irrubikajs: folds 
+FakaN4Kavera: folds 
+YAG5292: raises $0.09 to $0.14
+Vasco4430: folds 
+koshchey_a: raises $0.40 to $0.54
+YAG5292: calls $0.40
+*** FLOP *** [5c 7h 3h]
+koshchey_a: checks 
+YAG5292: bets $0.35
+koshchey_a: calls $0.35
+*** TURN *** [5c 7h 3h] [5h]
+koshchey_a: checks 
+YAG5292: bets $0.57
+koshchey_a: calls $0.57
+*** RIVER *** [5c 7h 3h 5h] [7d]
+koshchey_a: checks 
+YAG5292: bets $1.41
+koshchey_a: calls $1.41
+*** SHOW DOWN ***
+YAG5292: shows [7c 7s] (four of a kind, Sevens)
+koshchey_a: mucks hand 
+YAG5292 collected $5.52 from pot
+*** SUMMARY ***
+Total pot $5.76 | Rake $0.24 
+Board [5c 7h 3h 5h 7d]
+Seat 1: YAG5292 (button) showed [7c 7s] and won ($5.52) with four of a kind, Sevens
+Seat 2: Vasco4430 (small blind) folded before Flop
+Seat 3: koshchey_a (big blind) mucked [Tc Th]
+Seat 4: delfinato200 folded before Flop (didn't bet)
+Seat 5: Irrubikajs folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879942173:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:10 JST [2025/09/25 6:25:10 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($4.57 in chips) 
+Seat 2: Woidprophet ($5.08 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: kmc4444 ($5 in chips) 
+Seat 5: intentii ($5 in chips) 
+Seat 6: Baikasas ($5 in chips) 
+Woidprophet: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5s 9h]
+kmc4444: folds 
+intentii: folds 
+Baikasas: folds 
+zodapoker: raises $0.05 to $0.10
+Woidprophet: raises $0.20 to $0.30
+FakaN4Kavera: folds 
+zodapoker: folds 
+Uncalled bet ($0.20) returned to Woidprophet
+Woidprophet collected $0.25 from pot
+Woidprophet: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.25 | Rake $0 
+Seat 1: zodapoker (button) folded before Flop
+Seat 2: Woidprophet (small blind) collected ($0.25)
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: kmc4444 folded before Flop (didn't bet)
+Seat 5: intentii folded before Flop (didn't bet)
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879943813:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:27 JST [2025/09/25 6:25:27 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: leakleakA ($8.33 in chips) 
+Seat 2: kmc4444 ($5 in chips) 
+Seat 3: Ingyeoking ($3.75 in chips) 
+Seat 4: gm__701 ($5.77 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: lebifflemaster ($8.85 in chips) 
+kmc4444: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3c 8h]
+gm__701: folds 
+FakaN4Kavera: folds 
+lebifflemaster: folds 
+leakleakA: raises $0.07 to $0.12
+kmc4444: folds 
+Ingyeoking: folds 
+Uncalled bet ($0.07) returned to leakleakA
+leakleakA collected $0.12 from pot
+leakleakA: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: leakleakA (button) collected ($0.12)
+Seat 2: kmc4444 (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: lebifflemaster folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879944196:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:31 JST [2025/09/25 6:25:31 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($5.60 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: bigdaveys ($11.71 in chips) 
+Seat 4: gm__701 ($5.77 in chips) 
+Seat 5: Woidprophet ($11.03 in chips) 
+Seat 6: YAG5292 ($8.93 in chips) 
+FakaN4Kavera: posts small blind $0.02
+bigdaveys: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s 4c]
+gm__701: folds 
+Woidprophet: folds 
+YAG5292: folds 
+zodapoker: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.03) returned to bigdaveys
+bigdaveys collected $0.04 from pot
+bigdaveys: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: zodapoker (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: bigdaveys (big blind) collected ($0.04)
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: Woidprophet folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879943320:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:22 JST [2025/09/25 6:25:22 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: leakleakA ($8.35 in chips) 
+Seat 3: BretticusX ($5.85 in chips) 
+Seat 4: alexnffc1 ($1.97 in chips) 
+Seat 5: huyjokezy ($5 in chips) 
+Seat 6: YAG5292 ($5.01 in chips) 
+leakleakA: posts small blind $0.02
+BretticusX: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6h 8s]
+alexnffc1: folds 
+huyjokezy: folds 
+YAG5292: folds 
+FakaN4Kavera: folds 
+leakleakA: folds 
+Uncalled bet ($0.03) returned to BretticusX
+BretticusX collected $0.04 from pot
+BretticusX: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: leakleakA (small blind) folded before Flop
+Seat 3: BretticusX (big blind) collected ($0.04)
+Seat 4: alexnffc1 folded before Flop (didn't bet)
+Seat 5: huyjokezy folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879945266:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:43 JST [2025/09/25 6:25:43 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($15.51 in chips) 
+Seat 2: gio119 ($10.21 in chips) 
+Seat 3: Woidprophet ($6.31 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: scottie4barnes ($8.83 in chips) 
+Seat 6: Gogart87 ($5.44 in chips) 
+gio119: posts small blind $0.02
+Woidprophet: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Th 9c]
+FakaN4Kavera: folds 
+scottie4barnes: folds 
+Gogart87: folds 
+1Kronos: folds 
+gio119: calls $0.03
+Woidprophet: raises $0.10 to $0.15
+gio119: folds 
+Uncalled bet ($0.10) returned to Woidprophet
+Woidprophet collected $0.10 from pot
+Woidprophet: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: gio119 (small blind) folded before Flop
+Seat 3: Woidprophet (big blind) collected ($0.10)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: scottie4barnes folded before Flop (didn't bet)
+Seat 6: Gogart87 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879945837:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:25:49 JST [2025/09/25 6:25:49 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Kenzo2211 ($8.52 in chips) 
+Seat 2: sepik200 ($5.14 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: Gogart87 ($5.44 in chips) 
+Seat 5: leakleakA ($8.40 in chips) 
+Seat 6: _jay_44_jas ($6.81 in chips) 
+sepik200: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8c Ac]
+Gogart87: folds 
+leakleakA: folds 
+_jay_44_jas: raises $0.07 to $0.12
+Kenzo2211: folds 
+sepik200: raises $0.07 to $0.19
+FakaN4Kavera: folds 
+_jay_44_jas: calls $0.07
+*** FLOP *** [Td 8s 9c]
+sepik200: bets $0.21
+_jay_44_jas: folds 
+Uncalled bet ($0.21) returned to sepik200
+sepik200 collected $0.41 from pot
+sepik200: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.43 | Rake $0.02 
+Board [Td 8s 9c]
+Seat 1: Kenzo2211 (button) folded before Flop (didn't bet)
+Seat 2: sepik200 (small blind) collected ($0.41)
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: Gogart87 folded before Flop (didn't bet)
+Seat 5: leakleakA folded before Flop (didn't bet)
+Seat 6: _jay_44_jas folded on the Flop
+
+
+
+PokerStars Zoom Hand #257879948473:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:26:18 JST [2025/09/25 6:26:18 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: faithfulness ($5 in chips) 
+Seat 3: Schöngeist71 ($7.76 in chips) 
+Seat 4: sepik200 ($5.36 in chips) 
+Seat 5: zodapoker ($5.62 in chips) 
+Seat 6: Epist461 ($5 in chips) 
+faithfulness: posts small blind $0.02
+Schöngeist71: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ac Tc]
+sepik200: folds 
+zodapoker: folds 
+Epist461: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+faithfulness: folds 
+Schöngeist71: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) collected ($0.12)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: Schöngeist71 (big blind) folded before Flop
+Seat 4: sepik200 folded before Flop (didn't bet)
+Seat 5: zodapoker folded before Flop (didn't bet)
+Seat 6: Epist461 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879947927:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:26:12 JST [2025/09/25 6:26:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5 in chips) 
+Seat 2: VXNX$157 ($3.85 in chips) 
+Seat 3: Gogart87 ($5.49 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: Irrubikajs ($2.58 in chips) 
+Seat 6: kmc4444 ($5.14 in chips) 
+VXNX$157: posts small blind $0.02
+Gogart87: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4s 9d]
+FakaN4Kavera: folds 
+Irrubikajs: folds 
+kmc4444: raises $0.07 to $0.12
+intentii: folds 
+VXNX$157: folds 
+Gogart87: folds 
+Uncalled bet ($0.07) returned to kmc4444
+kmc4444 collected $0.12 from pot
+kmc4444: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: VXNX$157 (small blind) folded before Flop
+Seat 3: Gogart87 (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: Irrubikajs folded before Flop (didn't bet)
+Seat 6: kmc4444 collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257879949933:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:26:34 JST [2025/09/25 6:26:34 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5.21 in chips) 
+Seat 2: leakleakA ($8.57 in chips) 
+Seat 3: TTPP92 ($4.42 in chips) 
+Seat 4: Ingyeoking ($5.53 in chips) 
+Seat 5: YAG5292 ($5.09 in chips) 
+Seat 6: FakaN4Kavera ($5.07 in chips) 
+leakleakA: posts small blind $0.02
+TTPP92: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5d 2s]
+Ingyeoking: folds 
+YAG5292: folds 
+FakaN4Kavera: folds 
+kmc4444: folds 
+leakleakA: raises $0.10 to $0.15
+TTPP92: folds 
+Uncalled bet ($0.10) returned to leakleakA
+leakleakA collected $0.10 from pot
+leakleakA: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: kmc4444 (button) folded before Flop (didn't bet)
+Seat 2: leakleakA (small blind) collected ($0.10)
+Seat 3: TTPP92 (big blind) folded before Flop
+Seat 4: Ingyeoking folded before Flop (didn't bet)
+Seat 5: YAG5292 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879951234:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:26:48 JST [2025/09/25 6:26:48 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($15.32 in chips) 
+Seat 2: huyjokezy ($5.82 in chips) 
+Seat 3: Ingyeoking ($9.52 in chips) 
+Seat 4: YAG5292 ($5.09 in chips) 
+Seat 5: FakaN4Kavera ($5.07 in chips) 
+Seat 6: serg430606 ($5.09 in chips) 
+huyjokezy: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2d 2h]
+YAG5292: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+serg430606: folds 
+1Kronos: folds 
+huyjokezy: calls $0.10
+Ingyeoking: folds 
+*** FLOP *** [Qs Ah 6s]
+huyjokezy: checks 
+FakaN4Kavera: checks 
+*** TURN *** [Qs Ah 6s] [3h]
+huyjokezy: bets $0.21
+FakaN4Kavera: folds 
+Uncalled bet ($0.21) returned to huyjokezy
+huyjokezy collected $0.28 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.29 | Rake $0.01 
+Board [Qs Ah 6s 3h]
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) collected ($0.28)
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded on the Turn
+Seat 6: serg430606 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879956180:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:27:43 JST [2025/09/25 6:27:43 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($7.11 in chips) 
+Seat 2: koshchey_a ($6.03 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: coolDadJimbo ($5 in chips) 
+Seat 5: alexnffc1 ($1.79 in chips) 
+Seat 6: Baikasas ($5 in chips) 
+koshchey_a: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd Qh]
+coolDadJimbo: folds 
+alexnffc1: raises $0.10 to $0.15
+Baikasas: folds 
+YAG5292: folds 
+koshchey_a: folds 
+FakaN4Kavera: raises $0.32 to $0.47
+alexnffc1: folds 
+Uncalled bet ($0.32) returned to FakaN4Kavera
+FakaN4Kavera collected $0.32 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.32 | Rake $0 
+Seat 1: YAG5292 (button) folded before Flop (didn't bet)
+Seat 2: koshchey_a (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.32)
+Seat 4: coolDadJimbo folded before Flop (didn't bet)
+Seat 5: alexnffc1 folded before Flop
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879961253:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:28:38 JST [2025/09/25 6:28:38 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($4.42 in chips) 
+Seat 2: FakaN4Kavera ($5.17 in chips) 
+Seat 3: gio119 ($5 in chips) 
+Seat 4: kmc4444 ($5 in chips) 
+Seat 5: Baikasas ($5 in chips) 
+Seat 6: alpaz01 ($4.94 in chips) 
+FakaN4Kavera: posts small blind $0.02
+gio119: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2h 9d]
+kmc4444: folds 
+Baikasas: folds 
+alpaz01: folds 
+zodapoker: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+gio119: folds 
+Uncalled bet ($0.07) returned to zodapoker
+zodapoker collected $0.12 from pot
+zodapoker: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: zodapoker (button) collected ($0.12)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: gio119 (big blind) folded before Flop
+Seat 4: kmc4444 folded before Flop (didn't bet)
+Seat 5: Baikasas folded before Flop (didn't bet)
+Seat 6: alpaz01 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879962279:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:28:49 JST [2025/09/25 6:28:49 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5 in chips) 
+Seat 2: gio119 ($5.09 in chips) 
+Seat 3: gm__701 ($5.36 in chips) 
+Seat 4: gena60 ($11.95 in chips) 
+Seat 5: VXNX$157 ($4.33 in chips) 
+Seat 6: FakaN4Kavera ($5.15 in chips) 
+gio119: posts small blind $0.02
+gm__701: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4s Ac]
+gena60: folds 
+VXNX$157: folds 
+FakaN4Kavera: folds 
+kmc4444: folds 
+gio119: folds 
+Uncalled bet ($0.03) returned to gm__701
+gm__701 collected $0.04 from pot
+gm__701: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: kmc4444 (button) folded before Flop (didn't bet)
+Seat 2: gio119 (small blind) folded before Flop
+Seat 3: gm__701 (big blind) collected ($0.04)
+Seat 4: gena60 folded before Flop (didn't bet)
+Seat 5: VXNX$157 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879961990:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:28:46 JST [2025/09/25 6:28:46 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.15 in chips) 
+Seat 2: YAG5292 ($9.32 in chips) 
+Seat 3: Choi Moneky ($5.63 in chips) 
+Seat 4: serg430606 ($5.58 in chips) 
+Seat 5: Kenzo2211 ($6.69 in chips) 
+Seat 6: alexnffc1 ($1.57 in chips) 
+YAG5292: posts small blind $0.02
+Choi Moneky: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4h 5d]
+serg430606: folds 
+Kenzo2211: folds 
+alexnffc1: raises $0.10 to $0.15
+FakaN4Kavera: folds 
+YAG5292: folds 
+Choi Moneky: calls $0.10
+*** FLOP *** [7h 9c Qc]
+Choi Moneky: checks 
+alexnffc1: bets $0.12
+Choi Moneky: folds 
+Uncalled bet ($0.12) returned to alexnffc1
+alexnffc1 collected $0.31 from pot
+alexnffc1: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.32 | Rake $0.01 
+Board [7h 9c Qc]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: YAG5292 (small blind) folded before Flop
+Seat 3: Choi Moneky (big blind) folded on the Flop
+Seat 4: serg430606 folded before Flop (didn't bet)
+Seat 5: Kenzo2211 folded before Flop (didn't bet)
+Seat 6: alexnffc1 collected ($0.31)
+
+
+
+PokerStars Zoom Hand #257879960349:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:28:28 JST [2025/09/25 6:28:28 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: coolDadJimbo ($5.87 in chips) 
+Seat 2: Woidprophet ($5.93 in chips) 
+Seat 3: Epist461 ($5 in chips) 
+Seat 4: BretticusX ($6.14 in chips) 
+Seat 5: FakaN4Kavera ($5.17 in chips) 
+Seat 6: BrickByBrick68 ($18.78 in chips) 
+Woidprophet: posts small blind $0.02
+Epist461: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ts 3h]
+BretticusX: folds 
+FakaN4Kavera: folds 
+BrickByBrick68: folds 
+coolDadJimbo: raises $0.07 to $0.12
+Woidprophet: folds 
+Epist461: calls $0.07
+*** FLOP *** [Qc Kh As]
+Epist461: checks 
+coolDadJimbo: checks 
+*** TURN *** [Qc Kh As] [Kd]
+Epist461: checks 
+coolDadJimbo: checks 
+*** RIVER *** [Qc Kh As Kd] [2s]
+Epist461: bets $0.08
+coolDadJimbo: calls $0.08
+*** SHOW DOWN ***
+Epist461: shows [Kc Th] (three of a kind, Kings)
+coolDadJimbo: mucks hand 
+Epist461 collected $0.40 from pot
+*** SUMMARY ***
+Total pot $0.42 | Rake $0.02 
+Board [Qc Kh As Kd 2s]
+Seat 1: coolDadJimbo (button) mucked [Qh Jc]
+Seat 2: Woidprophet (small blind) folded before Flop
+Seat 3: Epist461 (big blind) showed [Kc Th] and won ($0.40) with three of a kind, Kings
+Seat 4: BretticusX folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: BrickByBrick68 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879964022:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:29:07 JST [2025/09/25 6:29:07 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gio119 ($5 in chips) 
+Seat 2: koshchey_a ($7.13 in chips) 
+Seat 3: FakaN4Kavera ($5.15 in chips) 
+Seat 4: gm__701 ($5.38 in chips) 
+Seat 5: YAG5292 ($9.03 in chips) 
+Seat 6: kmc4444 ($5.26 in chips) 
+koshchey_a: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kc Th]
+gm__701: folds 
+YAG5292: folds 
+kmc4444: folds 
+gio119: folds 
+koshchey_a: raises $0.10 to $0.15
+FakaN4Kavera: raises $0.30 to $0.45
+koshchey_a: folds 
+Uncalled bet ($0.30) returned to FakaN4Kavera
+FakaN4Kavera collected $0.30 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.30 | Rake $0 
+Seat 1: gio119 (button) folded before Flop (didn't bet)
+Seat 2: koshchey_a (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.30)
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: YAG5292 folded before Flop (didn't bet)
+Seat 6: kmc4444 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879966189:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:29:30 JST [2025/09/25 6:29:30 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.30 in chips) 
+Seat 3: Kenzo2211 ($6.49 in chips) 
+Seat 4: Woidprophet ($13.16 in chips) 
+Seat 5: 1Kronos ($10.55 in chips) 
+Seat 6: scottie4barnes ($8.83 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Kenzo2211: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [As 2c]
+Woidprophet: folds 
+1Kronos: folds 
+scottie4barnes: folds 
+kmc4444: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+Kenzo2211: raises $0.37 to $0.49
+kmc4444: folds 
+Uncalled bet ($0.37) returned to Kenzo2211
+Kenzo2211 collected $0.26 from pot
+Kenzo2211: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0 
+Seat 1: kmc4444 (button) folded before Flop
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Kenzo2211 (big blind) collected ($0.26)
+Seat 4: Woidprophet folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: scottie4barnes folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879967027:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:29:39 JST [2025/09/25 6:29:39 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.28 in chips) 
+Seat 2: 1Kronos ($15.75 in chips) 
+Seat 3: tomis1312 ($5 in chips) 
+Seat 4: gm__701 ($5.30 in chips) 
+Seat 5: elmex886 ($5.29 in chips) 
+Seat 6: bigdaveys ($12.02 in chips) 
+1Kronos: posts small blind $0.02
+tomis1312: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3h 5h]
+gm__701: folds 
+elmex886: folds 
+bigdaveys: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+1Kronos: folds 
+tomis1312: calls $0.07
+*** FLOP *** [Kd 2s 2d]
+tomis1312: checks 
+FakaN4Kavera: bets $0.13
+tomis1312: folds 
+Uncalled bet ($0.13) returned to FakaN4Kavera
+FakaN4Kavera collected $0.25 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0.01 
+Board [Kd 2s 2d]
+Seat 1: FakaN4Kavera (button) collected ($0.25)
+Seat 2: 1Kronos (small blind) folded before Flop
+Seat 3: tomis1312 (big blind) folded on the Flop
+Seat 4: gm__701 folded before Flop (didn't bet)
+Seat 5: elmex886 folded before Flop (didn't bet)
+Seat 6: bigdaveys folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879963247:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:28:59 JST [2025/09/25 6:28:59 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Ingyeoking ($10.57 in chips) 
+Seat 2: DurandalMIA ($5.62 in chips) 
+Seat 3: Baikasas ($5.32 in chips) 
+Seat 4: FakaN4Kavera ($5.15 in chips) 
+Seat 5: bigdaveys ($11.97 in chips) 
+Seat 6: gio119 ($9.85 in chips) 
+DurandalMIA: posts small blind $0.02
+Baikasas: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4d 3s]
+FakaN4Kavera: folds 
+bigdaveys: folds 
+gio119 has timed out
+gio119: folds 
+Ingyeoking: folds 
+DurandalMIA: calls $0.03
+Baikasas: raises $0.10 to $0.15
+DurandalMIA: calls $0.10
+*** FLOP *** [7c 4c 6d]
+DurandalMIA: checks 
+Baikasas: bets $0.15
+DurandalMIA: folds 
+Uncalled bet ($0.15) returned to Baikasas
+Baikasas collected $0.29 from pot
+Baikasas: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.30 | Rake $0.01 
+Board [7c 4c 6d]
+Seat 1: Ingyeoking (button) folded before Flop (didn't bet)
+Seat 2: DurandalMIA (small blind) folded on the Flop
+Seat 3: Baikasas (big blind) collected ($0.29)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: bigdaveys folded before Flop (didn't bet)
+Seat 6: gio119 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879969351:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:30:03 JST [2025/09/25 6:30:03 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: BrickByBrick68 ($22.92 in chips) 
+Seat 2: BretticusX ($5 in chips) 
+Seat 3: 1Kronos ($10.12 in chips) 
+Seat 4: Gogart87 ($6.19 in chips) 
+Seat 5: TTPP92 ($5.18 in chips) 
+Seat 6: FakaN4Kavera ($5.41 in chips) 
+BretticusX: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ts Td]
+Gogart87: folds 
+TTPP92: raises $0.05 to $0.10
+FakaN4Kavera: raises $0.27 to $0.37
+BrickByBrick68: folds 
+BretticusX: folds 
+1Kronos: folds 
+TTPP92: folds 
+Uncalled bet ($0.27) returned to FakaN4Kavera
+FakaN4Kavera collected $0.27 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.27 | Rake $0 
+Seat 1: BrickByBrick68 (button) folded before Flop (didn't bet)
+Seat 2: BretticusX (small blind) folded before Flop
+Seat 3: 1Kronos (big blind) folded before Flop
+Seat 4: Gogart87 folded before Flop (didn't bet)
+Seat 5: TTPP92 folded before Flop
+Seat 6: FakaN4Kavera collected ($0.27)
+
+
+
+PokerStars Zoom Hand #257879972462:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:30:36 JST [2025/09/25 6:30:36 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Epist461 ($6.05 in chips) 
+Seat 2: YAG5292 ($5.99 in chips) 
+Seat 3: FakaN4Kavera ($5.58 in chips) 
+Seat 4: tomis1312 ($5 in chips) 
+Seat 5: Irrubikajs ($2.81 in chips) 
+Seat 6: koshchey_a ($7 in chips) 
+YAG5292: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4c Qs]
+tomis1312: folds 
+Irrubikajs: folds 
+koshchey_a: raises $0.07 to $0.12
+Epist461: raises $0.28 to $0.40
+YAG5292: folds 
+FakaN4Kavera: folds 
+koshchey_a: folds 
+Uncalled bet ($0.28) returned to Epist461
+Epist461 collected $0.31 from pot
+Epist461: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.31 | Rake $0 
+Seat 1: Epist461 (button) collected ($0.31)
+Seat 2: YAG5292 (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: tomis1312 folded before Flop (didn't bet)
+Seat 5: Irrubikajs folded before Flop (didn't bet)
+Seat 6: koshchey_a folded before Flop
+
+
+
+PokerStars Zoom Hand #257879974836:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:31:02 JST [2025/09/25 6:31:02 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.51 in chips) 
+Seat 2: semmely ($5.36 in chips) 
+Seat 3: gena60 ($11.61 in chips) 
+Seat 4: elmex886 ($5.24 in chips) 
+Seat 5: tomis1312 ($5 in chips) 
+Seat 6: gm__701 ($5 in chips) 
+semmely: posts small blind $0.02
+gena60: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2s 5s]
+elmex886: folds 
+tomis1312: folds 
+gm__701: folds 
+FakaN4Kavera: folds 
+semmely: folds 
+Uncalled bet ($0.03) returned to gena60
+gena60 collected $0.04 from pot
+gena60: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: semmely (small blind) folded before Flop
+Seat 3: gena60 (big blind) collected ($0.04)
+Seat 4: elmex886 folded before Flop (didn't bet)
+Seat 5: tomis1312 folded before Flop (didn't bet)
+Seat 6: gm__701 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879974070:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:30:54 JST [2025/09/25 6:30:54 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gm__701 ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.53 in chips) 
+Seat 3: 1Kronos ($11.33 in chips) 
+Seat 4: Gogart87 ($5.63 in chips) 
+Seat 5: Fercoronas ($2.21 in chips) 
+Seat 6: kmc4444 ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2h 6s]
+Gogart87: folds 
+Fercoronas: folds 
+kmc4444: raises $0.07 to $0.12
+gm__701: folds 
+FakaN4Kavera: folds 
+1Kronos: calls $0.07
+*** FLOP *** [Jd 6c 4s]
+1Kronos: checks 
+kmc4444: bets $0.08
+1Kronos: folds 
+Uncalled bet ($0.08) returned to kmc4444
+kmc4444 collected $0.25 from pot
+kmc4444: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0.01 
+Board [Jd 6c 4s]
+Seat 1: gm__701 (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: 1Kronos (big blind) folded on the Flop
+Seat 4: Gogart87 folded before Flop (didn't bet)
+Seat 5: Fercoronas folded before Flop (didn't bet)
+Seat 6: kmc4444 collected ($0.25)
+
+
+
+PokerStars Zoom Hand #257879975480:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:31:09 JST [2025/09/25 6:31:09 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gio119 ($5.28 in chips) 
+Seat 2: koshchey_a ($6.16 in chips) 
+Seat 3: intentii ($5 in chips) 
+Seat 4: Schöngeist71 ($7.74 in chips) 
+Seat 5: FakaN4Kavera ($5.51 in chips) 
+Seat 6: elmex886 ($5.24 in chips) 
+koshchey_a: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6h Kh]
+Schöngeist71: folds 
+FakaN4Kavera: folds 
+elmex886: folds 
+gio119: folds 
+koshchey_a: folds 
+Uncalled bet ($0.03) returned to intentii
+intentii collected $0.04 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: gio119 (button) folded before Flop (didn't bet)
+Seat 2: koshchey_a (small blind) folded before Flop
+Seat 3: intentii (big blind) collected ($0.04)
+Seat 4: Schöngeist71 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: elmex886 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879973606:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:30:49 JST [2025/09/25 6:30:49 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($5.83 in chips) 
+Seat 2: Gogart87 ($5.65 in chips) 
+Seat 3: semmely ($5.41 in chips) 
+Seat 4: Ingyeoking ($5.66 in chips) 
+Seat 5: FakaN4Kavera ($5.53 in chips) 
+Seat 6: Kenzo2211 ($6.61 in chips) 
+Gogart87: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Js Qh]
+Ingyeoking: raises $0.05 to $0.10
+FakaN4Kavera: folds 
+Kenzo2211: raises $0.05 to $0.15
+zodapoker: folds 
+Gogart87: folds 
+semmely: folds 
+Ingyeoking: calls $0.05
+*** FLOP *** [Ah 6s 7d]
+Ingyeoking: checks 
+Kenzo2211: bets $0.10
+Ingyeoking: calls $0.10
+*** TURN *** [Ah 6s 7d] [6h]
+Ingyeoking: checks 
+Kenzo2211: bets $0.41
+Ingyeoking: calls $0.41
+*** RIVER *** [Ah 6s 7d 6h] [9c]
+Ingyeoking: checks 
+Kenzo2211: checks 
+*** SHOW DOWN ***
+Ingyeoking: shows [As Jd] (two pair, Aces and Sixes)
+Kenzo2211: mucks hand 
+Ingyeoking collected $1.33 from pot
+*** SUMMARY ***
+Total pot $1.39 | Rake $0.06 
+Board [Ah 6s 7d 6h 9c]
+Seat 1: zodapoker (button) folded before Flop (didn't bet)
+Seat 2: Gogart87 (small blind) folded before Flop
+Seat 3: semmely (big blind) folded before Flop
+Seat 4: Ingyeoking showed [As Jd] and won ($1.33) with two pair, Aces and Sixes
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: Kenzo2211 mucked [Jh 8h]
+
+
+
+PokerStars Zoom Hand #257879976443:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:31:19 JST [2025/09/25 6:31:19 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: tomis1312 ($5 in chips) 
+Seat 2: Geeuzpeace;) ($5.52 in chips) 
+Seat 3: leakleakA ($13.05 in chips) 
+Seat 4: 1Kronos ($11.21 in chips) 
+Seat 5: Gogart87 ($5 in chips) 
+Seat 6: FakaN4Kavera ($5.51 in chips) 
+Geeuzpeace;): posts small blind $0.02
+leakleakA: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d 7s]
+1Kronos: folds 
+Gogart87: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+tomis1312: folds 
+Geeuzpeace;): calls $0.10
+leakleakA: folds 
+*** FLOP *** [9c 4c Jd]
+Geeuzpeace;): checks 
+FakaN4Kavera: checks 
+*** TURN *** [9c 4c Jd] [3h]
+Geeuzpeace;): bets $0.05
+FakaN4Kavera: calls $0.05
+*** RIVER *** [9c 4c Jd 3h] [Qh]
+Geeuzpeace;): checks 
+FakaN4Kavera: checks 
+*** SHOW DOWN ***
+Geeuzpeace;): shows [As 2c] (high card Ace)
+FakaN4Kavera: shows [7d 7s] (a pair of Sevens)
+FakaN4Kavera collected $0.37 from pot
+*** SUMMARY ***
+Total pot $0.39 | Rake $0.02 
+Board [9c 4c Jd 3h Qh]
+Seat 1: tomis1312 (button) folded before Flop (didn't bet)
+Seat 2: Geeuzpeace;) (small blind) showed [As 2c] and lost with high card Ace
+Seat 3: leakleakA (big blind) folded before Flop
+Seat 4: 1Kronos folded before Flop (didn't bet)
+Seat 5: Gogart87 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera showed [7d 7s] and won ($0.37) with a pair of Sevens
+
+
+
+PokerStars Zoom Hand #257879980040:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:31:58 JST [2025/09/25 6:31:58 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: egoor199 ($6.57 in chips) 
+Seat 2: Kenzo2211 ($5.95 in chips) 
+Seat 3: Ingyeoking ($6.33 in chips) 
+Seat 4: FakaN4Kavera ($5.71 in chips) 
+Seat 5: DurandalMIA ($5.62 in chips) 
+Seat 6: VXNX$157 ($4.24 in chips) 
+Kenzo2211: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6c 5d]
+FakaN4Kavera: folds 
+DurandalMIA: folds 
+VXNX$157: folds 
+egoor199: folds 
+Kenzo2211: folds 
+Uncalled bet ($0.03) returned to Ingyeoking
+Ingyeoking collected $0.04 from pot
+Ingyeoking: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: egoor199 (button) folded before Flop (didn't bet)
+Seat 2: Kenzo2211 (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) collected ($0.04)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: DurandalMIA folded before Flop (didn't bet)
+Seat 6: VXNX$157 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879980625:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:32:04 JST [2025/09/25 6:32:04 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: leakleakA ($12.98 in chips) 
+Seat 2: Epist461 ($5.40 in chips) 
+Seat 3: intentii ($5.49 in chips) 
+Seat 4: DurandalMIA ($5.62 in chips) 
+Seat 5: FakaN4Kavera ($5.71 in chips) 
+Seat 6: kmc4444 ($5.19 in chips) 
+Epist461: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8s 9s]
+DurandalMIA: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+kmc4444: folds 
+leakleakA: folds 
+Epist461: folds 
+intentii: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: leakleakA (button) folded before Flop (didn't bet)
+Seat 2: Epist461 (small blind) folded before Flop
+Seat 3: intentii (big blind) folded before Flop
+Seat 4: DurandalMIA folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera collected ($0.12)
+Seat 6: kmc4444 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879983846:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:32:38 JST [2025/09/25 6:32:38 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($5.16 in chips) 
+Seat 2: elmex886 ($5.19 in chips) 
+Seat 3: FakaN4Kavera ($5.78 in chips) 
+Seat 4: Southpaw1331 ($2.83 in chips) 
+Seat 5: 1Kronos ($7.98 in chips) 
+Seat 6: VXNX$157 ($4.17 in chips) 
+elmex886: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s Tc]
+Southpaw1331: calls $0.05
+1Kronos: folds 
+VXNX$157: folds 
+kalopara: raises $0.07 to $0.12
+elmex886: folds 
+FakaN4Kavera: folds 
+Southpaw1331: calls $0.07
+*** FLOP *** [Ts Qc 6c]
+Southpaw1331: checks 
+kalopara: bets $0.15
+Southpaw1331: folds 
+Uncalled bet ($0.15) returned to kalopara
+kalopara collected $0.30 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.31 | Rake $0.01 
+Board [Ts Qc 6c]
+Seat 1: kalopara (button) collected ($0.30)
+Seat 2: elmex886 (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: Southpaw1331 folded on the Flop
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: VXNX$157 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879985072:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:32:51 JST [2025/09/25 6:32:51 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gio119 ($5.30 in chips) 
+Seat 2: DurandalMIA ($5.57 in chips) 
+Seat 3: Ingyeoking ($6.33 in chips) 
+Seat 4: FakaN4Kavera ($5.73 in chips) 
+Seat 5: TTPP92 ($5.01 in chips) 
+Seat 6: delfinato200 ($14.56 in chips) 
+DurandalMIA: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6d 7d]
+FakaN4Kavera: raises $0.07 to $0.12
+TTPP92: folds 
+delfinato200: folds 
+gio119: folds 
+DurandalMIA: calls $0.10
+Ingyeoking: calls $0.07
+*** FLOP *** [Kh 9h 5c]
+DurandalMIA: checks 
+Ingyeoking: checks 
+FakaN4Kavera: checks 
+*** TURN *** [Kh 9h 5c] [5h]
+DurandalMIA: checks 
+Ingyeoking: checks 
+FakaN4Kavera: checks 
+*** RIVER *** [Kh 9h 5c 5h] [2h]
+DurandalMIA: checks 
+Ingyeoking: checks 
+FakaN4Kavera: checks 
+*** SHOW DOWN ***
+DurandalMIA: shows [Js Td] (a pair of Fives)
+Ingyeoking: mucks hand 
+FakaN4Kavera: mucks hand 
+DurandalMIA collected $0.35 from pot
+*** SUMMARY ***
+Total pot $0.36 | Rake $0.01 
+Board [Kh 9h 5c 5h 2h]
+Seat 1: gio119 (button) folded before Flop (didn't bet)
+Seat 2: DurandalMIA (small blind) showed [Js Td] and won ($0.35) with a pair of Fives
+Seat 3: Ingyeoking (big blind) mucked [8s 6s]
+Seat 4: FakaN4Kavera mucked [6d 7d]
+Seat 5: TTPP92 folded before Flop (didn't bet)
+Seat 6: delfinato200 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879992251:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:04 JST [2025/09/25 6:34:04 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Kenzo2211 ($5.71 in chips) 
+Seat 2: tomis1312 ($5 in chips) 
+Seat 3: semmely ($4.77 in chips) 
+Seat 4: gio119 ($5.03 in chips) 
+Seat 5: FakaN4Kavera ($5.59 in chips) 
+Seat 6: YAG5292 ($9.03 in chips) 
+tomis1312: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd 4d]
+gio119: folds 
+FakaN4Kavera: folds 
+YAG5292: folds 
+Kenzo2211: raises $0.05 to $0.10
+tomis1312: raises $0.35 to $0.45
+semmely: folds 
+Kenzo2211: folds 
+Uncalled bet ($0.35) returned to tomis1312
+tomis1312 collected $0.25 from pot
+tomis1312: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.25 | Rake $0 
+Seat 1: Kenzo2211 (button) folded before Flop
+Seat 2: tomis1312 (small blind) collected ($0.25)
+Seat 3: semmely (big blind) folded before Flop
+Seat 4: gio119 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879993024:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:12 JST [2025/09/25 6:34:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.59 in chips) 
+Seat 2: kalopara ($5.29 in chips) 
+Seat 3: BretticusX ($5 in chips) 
+Seat 4: 1Kronos ($10.50 in chips) 
+Seat 5: Baikasas ($6.29 in chips) 
+Seat 6: Ingyeoking ($6.19 in chips) 
+kalopara: posts small blind $0.02
+BretticusX: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qh Ks]
+1Kronos: folds 
+Baikasas: folds 
+Ingyeoking: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+kalopara: folds 
+BretticusX: raises $0.43 to $0.55
+FakaN4Kavera: folds 
+Uncalled bet ($0.43) returned to BretticusX
+BretticusX collected $0.26 from pot
+BretticusX: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop
+Seat 2: kalopara (small blind) folded before Flop
+Seat 3: BretticusX (big blind) collected ($0.26)
+Seat 4: 1Kronos folded before Flop (didn't bet)
+Seat 5: Baikasas folded before Flop (didn't bet)
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879991448:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:33:56 JST [2025/09/25 6:33:56 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: DurandalMIA ($5.80 in chips) 
+Seat 2: FakaN4Kavera ($5.61 in chips) 
+Seat 3: scottie4barnes ($8.56 in chips) 
+Seat 4: tomis1312 ($5 in chips) 
+Seat 5: Ingyeoking ($6.21 in chips) 
+Seat 6: kalopara ($5.21 in chips) 
+FakaN4Kavera: posts small blind $0.02
+scottie4barnes: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9h Ks]
+tomis1312: folds 
+Ingyeoking: folds 
+kalopara: raises $0.07 to $0.12
+DurandalMIA: calls $0.12
+FakaN4Kavera: folds 
+scottie4barnes: calls $0.07
+*** FLOP *** [Td 6c 4s]
+scottie4barnes: checks 
+kalopara: checks 
+DurandalMIA: bets $0.18
+scottie4barnes: calls $0.18
+kalopara: folds 
+*** TURN *** [Td 6c 4s] [8h]
+scottie4barnes: checks 
+DurandalMIA: checks 
+*** RIVER *** [Td 6c 4s 8h] [3s]
+scottie4barnes: checks 
+DurandalMIA: checks 
+*** SHOW DOWN ***
+scottie4barnes: shows [5h 6h] (a pair of Sixes)
+DurandalMIA: mucks hand 
+scottie4barnes collected $0.70 from pot
+*** SUMMARY ***
+Total pot $0.74 | Rake $0.04 
+Board [Td 6c 4s 8h 3s]
+Seat 1: DurandalMIA (button) mucked [Kh Qh]
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: scottie4barnes (big blind) showed [5h 6h] and won ($0.70) with a pair of Sixes
+Seat 4: tomis1312 folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded before Flop (didn't bet)
+Seat 6: kalopara folded on the Flop
+
+
+
+PokerStars Zoom Hand #257879994441:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:26 JST [2025/09/25 6:34:26 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Geeuzpeace;) ($5.25 in chips) 
+Seat 2: semmely ($4.72 in chips) 
+Seat 3: FakaN4Kavera ($5.47 in chips) 
+Seat 4: kalopara ($5.09 in chips) 
+Seat 5: gio119 ($5.04 in chips) 
+Seat 6: tomis1312 ($5.15 in chips) 
+semmely: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3s 8c]
+kalopara: folds 
+gio119: folds 
+tomis1312: folds 
+Geeuzpeace;): folds 
+semmely: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Geeuzpeace;) (button) folded before Flop (didn't bet)
+Seat 2: semmely (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: gio119 folded before Flop (didn't bet)
+Seat 6: tomis1312 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879995743:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:39 JST [2025/09/25 6:34:39 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: TTPP92 ($4.72 in chips) 
+Seat 2: FakaN4Kavera ($5.49 in chips) 
+Seat 3: VXNX$157 ($4.34 in chips) 
+Seat 4: egoor199 ($6.43 in chips) 
+Seat 5: goaßmaß-fips ($13 in chips) 
+Seat 6: Baikasas ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+VXNX$157: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ah 8s]
+egoor199: folds 
+goaßmaß-fips: raises $0.10 to $0.15
+Baikasas: folds 
+TTPP92: folds 
+FakaN4Kavera: folds 
+VXNX$157: folds 
+Uncalled bet ($0.10) returned to goaßmaß-fips
+goaßmaß-fips collected $0.12 from pot
+goaßmaß-fips: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: TTPP92 (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: VXNX$157 (big blind) folded before Flop
+Seat 4: egoor199 folded before Flop (didn't bet)
+Seat 5: goaßmaß-fips collected ($0.12)
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879997411:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:56 JST [2025/09/25 6:34:56 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: goaßmaß-fips ($13.07 in chips) 
+Seat 2: sepik200 ($5.02 in chips) 
+Seat 3: kmc4444 ($6.45 in chips) 
+Seat 4: Irrubikajs ($5.39 in chips) 
+Seat 5: Epist461 ($6.41 in chips) 
+Seat 6: FakaN4Kavera ($5.47 in chips) 
+sepik200: posts small blind $0.02
+kmc4444: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jd 5h]
+Irrubikajs: folds 
+Epist461: folds 
+FakaN4Kavera: folds 
+goaßmaß-fips: folds 
+sepik200: raises $0.05 to $0.10
+kmc4444: folds 
+Uncalled bet ($0.05) returned to sepik200
+sepik200 collected $0.10 from pot
+sepik200: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: goaßmaß-fips (button) folded before Flop (didn't bet)
+Seat 2: sepik200 (small blind) collected ($0.10)
+Seat 3: kmc4444 (big blind) folded before Flop
+Seat 4: Irrubikajs folded before Flop (didn't bet)
+Seat 5: Epist461 folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879997702:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:34:59 JST [2025/09/25 6:34:59 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.47 in chips) 
+Seat 2: dervoigt ($3.92 in chips) 
+Seat 3: delfinato200 ($14.46 in chips) 
+Seat 4: intentii ($5.76 in chips) 
+Seat 5: VXNX$157 ($4.27 in chips) 
+Seat 6: Miss Turbo G ($3.17 in chips) 
+dervoigt: posts small blind $0.02
+delfinato200: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5d 4c]
+intentii: folds 
+VXNX$157: folds 
+Miss Turbo G: folds 
+FakaN4Kavera: folds 
+dervoigt: calls $0.03
+delfinato200: checks 
+*** FLOP *** [Ah 7s 5c]
+dervoigt: bets $0.05
+delfinato200: folds 
+Uncalled bet ($0.05) returned to dervoigt
+dervoigt collected $0.10 from pot
+dervoigt: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Board [Ah 7s 5c]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: dervoigt (small blind) collected ($0.10)
+Seat 3: delfinato200 (big blind) folded on the Flop
+Seat 4: intentii folded before Flop (didn't bet)
+Seat 5: VXNX$157 folded before Flop (didn't bet)
+Seat 6: Miss Turbo G folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879998087:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:35:03 JST [2025/09/25 6:35:03 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($8.62 in chips) 
+Seat 2: intentii ($5.16 in chips) 
+Seat 3: goaßmaß-fips ($13.07 in chips) 
+Seat 4: FakaN4Kavera ($5.47 in chips) 
+Seat 5: zodapoker ($8.26 in chips) 
+Seat 6: emmachan415 ($5.10 in chips) 
+intentii: posts small blind $0.02
+goaßmaß-fips: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s Th]
+FakaN4Kavera: folds 
+zodapoker: folds 
+emmachan415: folds 
+1Kronos: raises $0.05 to $0.10
+intentii: folds 
+goaßmaß-fips: folds 
+Uncalled bet ($0.05) returned to 1Kronos
+1Kronos collected $0.12 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: 1Kronos (button) collected ($0.12)
+Seat 2: intentii (small blind) folded before Flop
+Seat 3: goaßmaß-fips (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: zodapoker folded before Flop (didn't bet)
+Seat 6: emmachan415 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879998382:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:35:07 JST [2025/09/25 6:35:07 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: emmachan415 ($5 in chips) 
+Seat 2: YAG5292 ($10.68 in chips) 
+Seat 3: intentii ($6.55 in chips) 
+Seat 4: VXNX$157 ($4.27 in chips) 
+Seat 5: FakaN4Kavera ($5.47 in chips) 
+Seat 6: Irrubikajs ($5.86 in chips) 
+YAG5292: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kh 8d]
+VXNX$157: folds 
+FakaN4Kavera: folds 
+Irrubikajs: folds 
+emmachan415: folds 
+YAG5292: folds 
+Uncalled bet ($0.03) returned to intentii
+intentii collected $0.04 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: emmachan415 (button) folded before Flop (didn't bet)
+Seat 2: YAG5292 (small blind) folded before Flop
+Seat 3: intentii (big blind) collected ($0.04)
+Seat 4: VXNX$157 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: Irrubikajs folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257879998880:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:35:12 JST [2025/09/25 6:35:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Baikasas ($5 in chips) 
+Seat 2: gio119 ($5 in chips) 
+Seat 3: FakaN4Kavera ($5.47 in chips) 
+Seat 4: emmachan415 ($5.10 in chips) 
+Seat 5: 1Kronos ($12.90 in chips) 
+Seat 6: VXNX$157 ($4.27 in chips) 
+gio119: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4h 2c]
+emmachan415: folds 
+1Kronos: folds 
+VXNX$157: folds 
+Baikasas: folds 
+gio119: calls $0.03
+FakaN4Kavera: checks 
+*** FLOP *** [Jh 4c Qs]
+gio119: checks 
+FakaN4Kavera: checks 
+*** TURN *** [Jh 4c Qs] [Tc]
+gio119: checks 
+FakaN4Kavera: checks 
+*** RIVER *** [Jh 4c Qs Tc] [3h]
+gio119: checks 
+FakaN4Kavera: checks 
+*** SHOW DOWN ***
+gio119: shows [Td 8d] (a pair of Tens)
+FakaN4Kavera: mucks hand 
+gio119 collected $0.10 from pot
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Board [Jh 4c Qs Tc 3h]
+Seat 1: Baikasas (button) folded before Flop (didn't bet)
+Seat 2: gio119 (small blind) showed [Td 8d] and won ($0.10) with a pair of Tens
+Seat 3: FakaN4Kavera (big blind) mucked [4h 2c]
+Seat 4: emmachan415 folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: VXNX$157 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880004748:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:36:12 JST [2025/09/25 6:36:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.42 in chips) 
+Seat 2: faithfulness ($5.02 in chips) 
+Seat 3: sepik200 ($5.02 in chips) 
+Seat 4: KRSofM ($4.86 in chips) 
+Seat 5: huyjokezy ($5 in chips) 
+Seat 6: Epist461 ($6.54 in chips) 
+faithfulness: posts small blind $0.02
+sepik200: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7s Tc]
+KRSofM: raises $0.05 to $0.10
+huyjokezy: raises $0.30 to $0.40
+Epist461: folds 
+FakaN4Kavera: folds 
+faithfulness: folds 
+sepik200: folds 
+KRSofM: folds 
+Uncalled bet ($0.30) returned to huyjokezy
+huyjokezy collected $0.27 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.27 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: sepik200 (big blind) folded before Flop
+Seat 4: KRSofM folded before Flop
+Seat 5: huyjokezy collected ($0.27)
+Seat 6: Epist461 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880002951:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:35:54 JST [2025/09/25 6:35:54 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($8.96 in chips) 
+Seat 2: huyjokezy ($5.86 in chips) 
+Seat 3: intentii ($5.21 in chips) 
+Seat 4: 1Kronos ($12.83 in chips) 
+Seat 5: hugoreisssss ($4.86 in chips) 
+Seat 6: FakaN4Kavera ($5.42 in chips) 
+huyjokezy: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Td 3s]
+1Kronos: raises $0.07 to $0.12
+hugoreisssss: folds 
+FakaN4Kavera: folds 
+YAG5292: folds 
+huyjokezy: folds 
+intentii: calls $0.07
+*** FLOP *** [Th 3d As]
+intentii: checks 
+1Kronos: bets $0.08
+intentii: calls $0.08
+*** TURN *** [Th 3d As] [3c]
+intentii: checks 
+1Kronos: bets $0.30
+intentii: raises $0.50 to $0.80
+1Kronos: folds 
+Uncalled bet ($0.50) returned to intentii
+intentii collected $0.98 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $1.02 | Rake $0.04 
+Board [Th 3d As 3c]
+Seat 1: YAG5292 (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: intentii (big blind) collected ($0.98)
+Seat 4: 1Kronos folded on the Turn
+Seat 5: hugoreisssss folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880003393:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:35:58 JST [2025/09/25 6:35:58 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($6.58 in chips) 
+Seat 2: Kenzo2211 ($5.37 in chips) 
+Seat 3: Baikasas ($5 in chips) 
+Seat 4: egoor199 ($6.57 in chips) 
+Seat 5: FakaN4Kavera ($5.42 in chips) 
+Seat 6: KRSofM ($4.86 in chips) 
+Kenzo2211: posts small blind $0.02
+Baikasas: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4d 5d]
+egoor199: raises $0.05 to $0.10
+FakaN4Kavera: folds 
+KRSofM: folds 
+kmc4444: folds 
+Kenzo2211: folds 
+Baikasas: calls $0.05
+*** FLOP *** [Jc 6s 9d]
+Baikasas: checks 
+egoor199: checks 
+*** TURN *** [Jc 6s 9d] [4h]
+Baikasas: bets $0.07
+egoor199: calls $0.07
+*** RIVER *** [Jc 6s 9d 4h] [3c]
+Baikasas: bets $0.20
+egoor199: folds 
+Uncalled bet ($0.20) returned to Baikasas
+Baikasas collected $0.35 from pot
+Baikasas: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.36 | Rake $0.01 
+Board [Jc 6s 9d 4h 3c]
+Seat 1: kmc4444 (button) folded before Flop (didn't bet)
+Seat 2: Kenzo2211 (small blind) folded before Flop
+Seat 3: Baikasas (big blind) collected ($0.35)
+Seat 4: egoor199 folded on the River
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: KRSofM folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880005212:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:36:17 JST [2025/09/25 6:36:17 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: gio119 ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.42 in chips) 
+Seat 3: kalopara ($3.67 in chips) 
+Seat 4: tomis1312 ($5.02 in chips) 
+Seat 5: semmely ($4.92 in chips) 
+Seat 6: 1Kronos ($15.49 in chips) 
+FakaN4Kavera: posts small blind $0.02
+kalopara: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [As Ac]
+tomis1312: folds 
+semmely: raises $0.10 to $0.15
+1Kronos: folds 
+gio119 has timed out
+gio119: folds 
+FakaN4Kavera: raises $0.35 to $0.50
+kalopara: folds 
+semmely: calls $0.35
+*** FLOP *** [Th Jh 4c]
+FakaN4Kavera: checks 
+semmely: bets $0.51
+FakaN4Kavera: calls $0.51
+*** TURN *** [Th Jh 4c] [Kh]
+FakaN4Kavera: checks 
+semmely: bets $0.99
+FakaN4Kavera: calls $0.99
+*** RIVER *** [Th Jh 4c Kh] [2d]
+FakaN4Kavera: checks 
+semmely: bets $2.92 and is all-in
+FakaN4Kavera: calls $2.92
+*** SHOW DOWN ***
+semmely: shows [Kc Kd] (three of a kind, Kings)
+FakaN4Kavera: shows [As Ac] (a pair of Aces)
+semmely collected $9.38 from pot
+*** SUMMARY ***
+Total pot $9.89 | Rake $0.51 
+Board [Th Jh 4c Kh 2d]
+Seat 1: gio119 (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) showed [As Ac] and lost with a pair of Aces
+Seat 3: kalopara (big blind) folded before Flop
+Seat 4: tomis1312 folded before Flop (didn't bet)
+Seat 5: semmely showed [Kc Kd] and won ($9.38) with three of a kind, Kings
+Seat 6: 1Kronos folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880014305:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:37:48 JST [2025/09/25 6:37:48 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: huyjokezy ($5.34 in chips) 
+Seat 2: DurandalMIA ($5.61 in chips) 
+Seat 3: dervoigt ($4.27 in chips) 
+Seat 4: kalopara ($10.53 in chips) 
+Seat 5: zodapoker ($4.37 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+DurandalMIA: posts small blind $0.02
+dervoigt: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qc 3h]
+kalopara: raises $0.07 to $0.12
+zodapoker: folds 
+FakaN4Kavera: folds 
+huyjokezy: calls $0.12
+DurandalMIA: calls $0.10
+dervoigt: folds 
+*** FLOP *** [8h Th 2h]
+DurandalMIA: bets $0.20
+kalopara: calls $0.20
+huyjokezy: calls $0.20
+*** TURN *** [8h Th 2h] [Qh]
+DurandalMIA: checks 
+kalopara: checks 
+huyjokezy: checks 
+*** RIVER *** [8h Th 2h Qh] [6h]
+DurandalMIA: checks 
+kalopara: checks 
+huyjokezy: bets $0.34
+DurandalMIA: folds 
+kalopara: folds 
+Uncalled bet ($0.34) returned to huyjokezy
+huyjokezy collected $0.97 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $1.01 | Rake $0.04 
+Board [8h Th 2h Qh 6h]
+Seat 1: huyjokezy (button) collected ($0.97)
+Seat 2: DurandalMIA (small blind) folded on the River
+Seat 3: dervoigt (big blind) folded before Flop
+Seat 4: kalopara folded on the River
+Seat 5: zodapoker folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880015428:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:37:59 JST [2025/09/25 6:37:59 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: N1CKYB0Y111 ($4.93 in chips) 
+Seat 2: zodapoker ($7.07 in chips) 
+Seat 3: alpaz01 ($5.70 in chips) 
+Seat 4: kmc4444 ($6.51 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: IBRODIAN-ACER ($5 in chips) 
+zodapoker: posts small blind $0.02
+alpaz01: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s 6d]
+kmc4444: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+IBRODIAN-ACER: folds 
+N1CKYB0Y111: calls $0.12
+zodapoker: folds 
+alpaz01: folds 
+*** FLOP *** [2c 8d 4d]
+FakaN4Kavera: checks 
+N1CKYB0Y111: checks 
+*** TURN *** [2c 8d 4d] [7h]
+FakaN4Kavera: checks 
+N1CKYB0Y111: checks 
+*** RIVER *** [2c 8d 4d 7h] [7s]
+FakaN4Kavera: checks 
+N1CKYB0Y111: bets $0.30
+FakaN4Kavera: folds 
+Uncalled bet ($0.30) returned to N1CKYB0Y111
+N1CKYB0Y111 collected $0.30 from pot
+N1CKYB0Y111: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.31 | Rake $0.01 
+Board [2c 8d 4d 7h 7s]
+Seat 1: N1CKYB0Y111 (button) collected ($0.30)
+Seat 2: zodapoker (small blind) folded before Flop
+Seat 3: alpaz01 (big blind) folded before Flop
+Seat 4: kmc4444 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded on the River
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880019289:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:38:39 JST [2025/09/25 6:38:39 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: leakleakA ($12.86 in chips) 
+Seat 2: kalopara ($3.62 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: YAG5292 ($10.99 in chips) 
+Seat 5: N1CKYB0Y111 ($5.11 in chips) 
+Seat 6: TTPP92 ($4.81 in chips) 
+kalopara: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qh 3h]
+YAG5292: folds 
+N1CKYB0Y111: folds 
+TTPP92: folds 
+leakleakA: folds 
+kalopara: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: leakleakA (button) folded before Flop (didn't bet)
+Seat 2: kalopara (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: N1CKYB0Y111 folded before Flop (didn't bet)
+Seat 6: TTPP92 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880020716:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:38:53 JST [2025/09/25 6:38:53 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($10.14 in chips) 
+Seat 2: Ingyeoking ($2.58 in chips) 
+Seat 3: egoor199 ($5.31 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: IBRODIAN-ACER ($5.14 in chips) 
+Seat 6: YAG5292 ($11.01 in chips) 
+Ingyeoking: posts small blind $0.02
+egoor199: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7c Td]
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+YAG5292: folds 
+kalopara: folds 
+Ingyeoking: raises $0.10 to $0.15
+egoor199: folds 
+Uncalled bet ($0.10) returned to Ingyeoking
+Ingyeoking collected $0.10 from pot
+Ingyeoking: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: kalopara (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) collected ($0.10)
+Seat 3: egoor199 (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880021630:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:02 JST [2025/09/25 6:39:02 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($8.67 in chips) 
+Seat 2: 1Kronos ($12.99 in chips) 
+Seat 3: kalopara ($4.20 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: egoor199 ($5.26 in chips) 
+Seat 6: huyjokezy ($5 in chips) 
+1Kronos: posts small blind $0.02
+kalopara: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7h Ac]
+FakaN4Kavera: folds 
+egoor199: folds 
+huyjokezy: folds 
+YAG5292: folds 
+1Kronos: folds 
+Uncalled bet ($0.03) returned to kalopara
+kalopara collected $0.04 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: YAG5292 (button) folded before Flop (didn't bet)
+Seat 2: 1Kronos (small blind) folded before Flop
+Seat 3: kalopara (big blind) collected ($0.04)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: egoor199 folded before Flop (didn't bet)
+Seat 6: huyjokezy folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880022049:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:06 JST [2025/09/25 6:39:06 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: TTPP92 ($4.74 in chips) 
+Seat 2: Ingyeoking ($10.06 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: Megam181 ($2.95 in chips) 
+Seat 5: scottie4barnes ($3.86 in chips) 
+Seat 6: Baikasas ($6.11 in chips) 
+Ingyeoking: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2d 6c]
+Megam181: raises $0.05 to $0.10
+scottie4barnes: folds 
+Baikasas: folds 
+TTPP92: folds 
+Ingyeoking: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.05) returned to Megam181
+Megam181 collected $0.12 from pot
+Megam181: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: TTPP92 (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: Megam181 collected ($0.12)
+Seat 5: scottie4barnes folded before Flop (didn't bet)
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880022720:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:13 JST [2025/09/25 6:39:13 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($10.99 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: Epist461 ($6.65 in chips) 
+Seat 4: huyjokezy ($5 in chips) 
+Seat 5: Coco_bear373 ($12.91 in chips) 
+Seat 6: TTPP92 ($4.74 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Epist461: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8h Td]
+huyjokezy: folds 
+Coco_bear373: folds 
+TTPP92: folds 
+YAG5292: raises $0.09 to $0.14
+FakaN4Kavera: folds 
+Epist461: folds 
+Uncalled bet ($0.09) returned to YAG5292
+YAG5292 collected $0.12 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: YAG5292 (button) collected ($0.12)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Epist461 (big blind) folded before Flop
+Seat 4: huyjokezy folded before Flop (didn't bet)
+Seat 5: Coco_bear373 folded before Flop (didn't bet)
+Seat 6: TTPP92 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880020100:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:38:47 JST [2025/09/25 6:38:47 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($4.91 in chips) 
+Seat 2: FakaN4Kavera ($5.02 in chips) 
+Seat 3: VXNX$157 ($2.50 in chips) 
+Seat 4: kalopara ($4.13 in chips) 
+Seat 5: hugoreisssss ($6.03 in chips) 
+Seat 6: huyjokezy ($5.94 in chips) 
+FakaN4Kavera: posts small blind $0.02
+VXNX$157: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9s 6d]
+kalopara: folds 
+hugoreisssss: raises $0.05 to $0.10
+huyjokezy: folds 
+KRSofM: raises $0.20 to $0.30
+FakaN4Kavera: folds 
+VXNX$157: folds 
+hugoreisssss: calls $0.20
+*** FLOP *** [Th 3d Kd]
+hugoreisssss: checks 
+KRSofM: bets $0.16
+hugoreisssss: calls $0.16
+*** TURN *** [Th 3d Kd] [6c]
+hugoreisssss: checks 
+KRSofM: bets $0.71
+hugoreisssss: calls $0.71
+*** RIVER *** [Th 3d Kd 6c] [As]
+hugoreisssss: checks 
+KRSofM: checks 
+*** SHOW DOWN ***
+hugoreisssss: shows [Kh Qh] (a pair of Kings)
+KRSofM: shows [Kc Qd] (a pair of Kings)
+hugoreisssss collected $1.16 from pot
+KRSofM collected $1.15 from pot
+*** SUMMARY ***
+Total pot $2.41 | Rake $0.10 
+Board [Th 3d Kd 6c As]
+Seat 1: KRSofM (button) showed [Kc Qd] and won ($1.15) with a pair of Kings
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: VXNX$157 (big blind) folded before Flop
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: hugoreisssss showed [Kh Qh] and won ($1.16) with a pair of Kings
+Seat 6: huyjokezy folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880023315:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:19 JST [2025/09/25 6:39:19 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: egoor199 ($5.24 in chips) 
+Seat 2: VXNX$157 ($2.52 in chips) 
+Seat 3: semmely ($9.29 in chips) 
+Seat 4: scottie4barnes ($3.86 in chips) 
+Seat 5: intentii ($5.63 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+VXNX$157: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7c 5d]
+scottie4barnes: folds 
+intentii: folds 
+FakaN4Kavera: folds 
+egoor199: folds 
+VXNX$157: folds 
+Uncalled bet ($0.03) returned to semmely
+semmely collected $0.04 from pot
+semmely: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: egoor199 (button) folded before Flop (didn't bet)
+Seat 2: VXNX$157 (small blind) folded before Flop
+Seat 3: semmely (big blind) collected ($0.04)
+Seat 4: scottie4barnes folded before Flop (didn't bet)
+Seat 5: intentii folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880018978:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:38:35 JST [2025/09/25 6:38:35 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: TTPP92 ($4.81 in chips) 
+Seat 2: zodapoker ($4.32 in chips) 
+Seat 3: huyjokezy ($5.99 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: DurandalMIA ($5.29 in chips) 
+Seat 6: tomis1312 ($5 in chips) 
+zodapoker: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6h 8s]
+FakaN4Kavera: folds 
+DurandalMIA: folds 
+tomis1312: raises $0.07 to $0.12
+TTPP92: folds 
+zodapoker: calls $0.10
+huyjokezy: folds 
+*** FLOP *** [Th 3h Kc]
+zodapoker: checks 
+tomis1312: bets $0.09
+zodapoker: raises $0.35 to $0.44
+tomis1312: calls $0.35
+*** TURN *** [Th 3h Kc] [9s]
+zodapoker: bets $0.84
+tomis1312: calls $0.84
+*** RIVER *** [Th 3h Kc 9s] [8d]
+zodapoker: bets $2.92 and is all-in
+tomis1312: calls $2.92
+*** SHOW DOWN ***
+zodapoker: shows [3d 3c] (three of a kind, Threes)
+tomis1312: shows [Jh Ks] (a pair of Kings)
+zodapoker collected $8.33 from pot
+*** SUMMARY ***
+Total pot $8.69 | Rake $0.36 
+Board [Th 3h Kc 9s 8d]
+Seat 1: TTPP92 (button) folded before Flop (didn't bet)
+Seat 2: zodapoker (small blind) showed [3d 3c] and won ($8.33) with three of a kind, Threes
+Seat 3: huyjokezy (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: DurandalMIA folded before Flop (didn't bet)
+Seat 6: tomis1312 showed [Jh Ks] and lost with a pair of Kings
+
+
+
+PokerStars Zoom Hand #257880024296:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:29 JST [2025/09/25 6:39:29 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: IBRODIAN-ACER ($5 in chips) 
+Seat 3: GabsGoty ($2.50 in chips) 
+Seat 4: coolDadJimbo ($9.83 in chips) 
+Seat 5: KRSofM ($5.18 in chips) 
+Seat 6: scottie4barnes ($3.86 in chips) 
+IBRODIAN-ACER: posts small blind $0.02
+GabsGoty: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9s 2s]
+coolDadJimbo: folds 
+KRSofM: folds 
+scottie4barnes: raises $0.10 to $0.15
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+GabsGoty: folds 
+Uncalled bet ($0.10) returned to scottie4barnes
+scottie4barnes collected $0.12 from pot
+scottie4barnes: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: IBRODIAN-ACER (small blind) folded before Flop
+Seat 3: GabsGoty (big blind) folded before Flop
+Seat 4: coolDadJimbo folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: scottie4barnes collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257880021114:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:38:57 JST [2025/09/25 6:38:57 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: serg430606 ($5.48 in chips) 
+Seat 3: Ingyeoking ($5.02 in chips) 
+Seat 4: KRSofM ($6.21 in chips) 
+Seat 5: 1Kronos ($12.99 in chips) 
+Seat 6: Miss Turbo G ($6.07 in chips) 
+serg430606: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2c Qd]
+KRSofM: folds 
+1Kronos: folds 
+Miss Turbo G: folds 
+FakaN4Kavera: folds 
+serg430606: calls $0.03
+Ingyeoking: checks 
+*** FLOP *** [7s Jh 4s]
+serg430606: checks 
+Ingyeoking: checks 
+*** TURN *** [7s Jh 4s] [9c]
+serg430606: checks 
+Ingyeoking: checks 
+*** RIVER *** [7s Jh 4s 9c] [9d]
+serg430606: checks 
+Ingyeoking: checks 
+*** SHOW DOWN ***
+serg430606: shows [2s 2h] (two pair, Nines and Deuces)
+Ingyeoking: mucks hand 
+serg430606 collected $0.10 from pot
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Board [7s Jh 4s 9c 9d]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: serg430606 (small blind) showed [2s 2h] and won ($0.10) with two pair, Nines and Deuces
+Seat 3: Ingyeoking (big blind) mucked [6s Qc]
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: Miss Turbo G folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880024617:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:32 JST [2025/09/25 6:39:32 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Miss Turbo G ($6.02 in chips) 
+Seat 2: dervoigt ($4.41 in chips) 
+Seat 3: Baikasas ($5.09 in chips) 
+Seat 4: Epist461 ($5 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: YAG5292 ($2.28 in chips) 
+dervoigt: posts small blind $0.02
+Baikasas: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8d Kh]
+Epist461: folds 
+FakaN4Kavera: folds 
+YAG5292: raises $0.09 to $0.14
+Miss Turbo G: folds 
+dervoigt: folds 
+Baikasas: folds 
+Uncalled bet ($0.09) returned to YAG5292
+YAG5292 collected $0.12 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: Miss Turbo G (button) folded before Flop (didn't bet)
+Seat 2: dervoigt (small blind) folded before Flop
+Seat 3: Baikasas (big blind) folded before Flop
+Seat 4: Epist461 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: YAG5292 collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257880025484:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:40 JST [2025/09/25 6:39:40 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5.63 in chips) 
+Seat 2: faithfulness ($5.02 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: kalopara ($10.09 in chips) 
+Seat 5: 1Kronos ($10.16 in chips) 
+Seat 6: huyjokezy ($5 in chips) 
+faithfulness: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3c Qc]
+kalopara: folds 
+1Kronos: folds 
+huyjokezy: folds 
+intentii: raises $0.08 to $0.13
+faithfulness: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.08) returned to intentii
+intentii collected $0.12 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: intentii (button) collected ($0.12)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: huyjokezy folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880027097:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:39:57 JST [2025/09/25 6:39:57 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: dervoigt ($4.39 in chips) 
+Seat 2: intentii ($5.70 in chips) 
+Seat 3: elmex886 ($6.02 in chips) 
+Seat 4: coolDadJimbo ($5.63 in chips) 
+Seat 5: faithfulness ($5.07 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+intentii: posts small blind $0.02
+elmex886: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4c 3h]
+coolDadJimbo: folds 
+faithfulness: folds 
+FakaN4Kavera: folds 
+dervoigt: folds 
+intentii: raises $0.10 to $0.15
+elmex886: folds 
+Uncalled bet ($0.10) returned to intentii
+intentii collected $0.10 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: dervoigt (button) folded before Flop (didn't bet)
+Seat 2: intentii (small blind) collected ($0.10)
+Seat 3: elmex886 (big blind) folded before Flop
+Seat 4: coolDadJimbo folded before Flop (didn't bet)
+Seat 5: faithfulness folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880027584:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:01 JST [2025/09/25 6:40:01 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5 in chips) 
+Seat 2: IBRODIAN-ACER ($5 in chips) 
+Seat 3: DurandalMIA ($3.57 in chips) 
+Seat 4: YAG5292 ($2.35 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: faithfulness ($5.07 in chips) 
+IBRODIAN-ACER: posts small blind $0.02
+DurandalMIA: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd Td]
+YAG5292: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+faithfulness: raises $0.24 to $0.36
+kmc4444: folds 
+IBRODIAN-ACER: folds 
+DurandalMIA: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.24) returned to faithfulness
+faithfulness collected $0.31 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.31 | Rake $0 
+Seat 1: kmc4444 (button) folded before Flop (didn't bet)
+Seat 2: IBRODIAN-ACER (small blind) folded before Flop
+Seat 3: DurandalMIA (big blind) folded before Flop
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop
+Seat 6: faithfulness collected ($0.31)
+
+
+
+PokerStars Zoom Hand #257880029327:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:18 JST [2025/09/25 6:40:18 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($8.33 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: faithfulness ($5 in chips) 
+Seat 4: sepik200 ($4.60 in chips) 
+Seat 5: Ingyeoking ($4.53 in chips) 
+Seat 6: IBRODIAN-ACER ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d 4h]
+sepik200: folds 
+Ingyeoking: folds 
+IBRODIAN-ACER: folds 
+zodapoker: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.03) returned to faithfulness
+faithfulness collected $0.04 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: zodapoker (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: faithfulness (big blind) collected ($0.04)
+Seat 4: sepik200 folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded before Flop (didn't bet)
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880029614:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:21 JST [2025/09/25 6:40:21 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: goaßmaß-fips ($14.30 in chips) 
+Seat 3: 1Kronos ($5.57 in chips) 
+Seat 4: IBRODIAN-ACER ($5 in chips) 
+Seat 5: Baikasas ($5 in chips) 
+Seat 6: KRSofM ($5.16 in chips) 
+goaßmaß-fips: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2c Qh]
+IBRODIAN-ACER: folds 
+Baikasas: raises $0.06 to $0.11
+KRSofM: folds 
+FakaN4Kavera: folds 
+goaßmaß-fips: folds 
+1Kronos: folds 
+Uncalled bet ($0.06) returned to Baikasas
+Baikasas collected $0.12 from pot
+Baikasas: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: goaßmaß-fips (small blind) folded before Flop
+Seat 3: 1Kronos (big blind) folded before Flop
+Seat 4: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 5: Baikasas collected ($0.12)
+Seat 6: KRSofM folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880030824:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:33 JST [2025/09/25 6:40:33 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($9.68 in chips) 
+Seat 2: faithfulness ($5.02 in chips) 
+Seat 3: goaßmaß-fips ($14.28 in chips) 
+Seat 4: zodapoker ($6.63 in chips) 
+Seat 5: alpaz01 ($7.31 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+faithfulness: posts small blind $0.02
+goaßmaß-fips: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Js 7d]
+zodapoker: folds 
+alpaz01: raises $0.07 to $0.12
+FakaN4Kavera: folds 
+kalopara: folds 
+faithfulness: folds 
+goaßmaß-fips: folds 
+Uncalled bet ($0.07) returned to alpaz01
+alpaz01 collected $0.12 from pot
+alpaz01: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: kalopara (button) folded before Flop (didn't bet)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: goaßmaß-fips (big blind) folded before Flop
+Seat 4: zodapoker folded before Flop (didn't bet)
+Seat 5: alpaz01 collected ($0.12)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880030418:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:29 JST [2025/09/25 6:40:29 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5.02 in chips) 
+Seat 2: Ingyeoking ($4.53 in chips) 
+Seat 3: Megam181 ($2.77 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: kmc4444 ($5 in chips) 
+Seat 6: YAG5292 ($2.30 in chips) 
+Ingyeoking: posts small blind $0.02
+Megam181: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8h Kc]
+FakaN4Kavera: folds 
+kmc4444: folds 
+YAG5292: folds 
+faithfulness: raises $0.07 to $0.12
+Ingyeoking: folds 
+Megam181: calls $0.07
+*** FLOP *** [5h 6c Qh]
+Megam181: checks 
+faithfulness: bets $0.07
+Megam181: calls $0.07
+*** TURN *** [5h 6c Qh] [Qs]
+Megam181: checks 
+faithfulness: bets $0.54
+Megam181: folds 
+Uncalled bet ($0.54) returned to faithfulness
+faithfulness collected $0.38 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.40 | Rake $0.02 
+Board [5h 6c Qh Qs]
+Seat 1: faithfulness (button) collected ($0.38)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: Megam181 (big blind) folded on the Turn
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880033117:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:55 JST [2025/09/25 6:40:55 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Ingyeoking ($4.51 in chips) 
+Seat 2: dervoigt ($7.36 in chips) 
+Seat 3: YAG5292 ($2.28 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: kalopara ($4.41 in chips) 
+Seat 6: intentii ($6.78 in chips) 
+dervoigt: posts small blind $0.02
+YAG5292: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jd Ah]
+FakaN4Kavera: raises $0.07 to $0.12
+kalopara: folds 
+intentii: folds 
+Ingyeoking: folds 
+dervoigt: folds 
+YAG5292: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: Ingyeoking (button) folded before Flop (didn't bet)
+Seat 2: dervoigt (small blind) folded before Flop
+Seat 3: YAG5292 (big blind) folded before Flop
+Seat 4: FakaN4Kavera collected ($0.12)
+Seat 5: kalopara folded before Flop (didn't bet)
+Seat 6: intentii folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880031651:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:40:41 JST [2025/09/25 6:40:41 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: huyjokezy ($5.07 in chips) 
+Seat 2: zodapoker ($8.28 in chips) 
+Seat 3: FakaN4Kavera ($5 in chips) 
+Seat 4: ICallForYou ($3.93 in chips) 
+Seat 5: 1Kronos ($15.43 in chips) 
+Seat 6: Epist461 ($5 in chips) 
+zodapoker: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4s 3c]
+ICallForYou: folds 
+1Kronos: folds 
+Epist461: raises $0.06 to $0.11
+huyjokezy: calls $0.11
+zodapoker: folds 
+FakaN4Kavera: folds 
+*** FLOP *** [6h Qh 2h]
+Epist461: checks 
+huyjokezy: checks 
+*** TURN *** [6h Qh 2h] [Kd]
+Epist461: bets $0.10
+huyjokezy: folds 
+Uncalled bet ($0.10) returned to Epist461
+Epist461 collected $0.28 from pot
+Epist461: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.29 | Rake $0.01 
+Board [6h Qh 2h Kd]
+Seat 1: huyjokezy (button) folded on the Turn
+Seat 2: zodapoker (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: ICallForYou folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: Epist461 collected ($0.28)
+
+
+
+PokerStars Zoom Hand #257880036944:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:32 JST [2025/09/25 6:41:32 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5.33 in chips) 
+Seat 2: titeuf3012 ($4.41 in chips) 
+Seat 3: goaßmaß-fips ($14.21 in chips) 
+Seat 4: zodapoker ($8.09 in chips) 
+Seat 5: FakaN4Kavera ($5.05 in chips) 
+Seat 6: scottie4barnes ($3.65 in chips) 
+titeuf3012: posts small blind $0.02
+goaßmaß-fips: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9h 7h]
+zodapoker: folds 
+FakaN4Kavera: folds 
+scottie4barnes: folds 
+faithfulness: folds 
+titeuf3012: folds 
+Uncalled bet ($0.03) returned to goaßmaß-fips
+goaßmaß-fips collected $0.04 from pot
+goaßmaß-fips: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: faithfulness (button) folded before Flop (didn't bet)
+Seat 2: titeuf3012 (small blind) folded before Flop
+Seat 3: goaßmaß-fips (big blind) collected ($0.04)
+Seat 4: zodapoker folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: scottie4barnes folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880034857:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:12 JST [2025/09/25 6:41:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: ICallForYou ($3.95 in chips) 
+Seat 2: kmc4444 ($5.02 in chips) 
+Seat 3: huyjokezy ($5.90 in chips) 
+Seat 4: kalopara ($4.81 in chips) 
+Seat 5: FakaN4Kavera ($5.07 in chips) 
+Seat 6: 1Kronos ($10.38 in chips) 
+kmc4444: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2d 7d]
+kalopara: folds 
+FakaN4Kavera: folds 
+1Kronos: raises $0.05 to $0.10
+ICallForYou: folds 
+kmc4444: folds 
+huyjokezy: calls $0.05
+*** FLOP *** [4d 6s 9h]
+huyjokezy: checks 
+1Kronos: checks 
+*** TURN *** [4d 6s 9h] [6h]
+huyjokezy: bets $0.11
+1Kronos: folds 
+Uncalled bet ($0.11) returned to huyjokezy
+huyjokezy collected $0.21 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.22 | Rake $0.01 
+Board [4d 6s 9h 6h]
+Seat 1: ICallForYou (button) folded before Flop (didn't bet)
+Seat 2: kmc4444 (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) collected ($0.21)
+Seat 4: kalopara folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: 1Kronos folded on the Turn
+
+
+
+PokerStars Zoom Hand #257880035485:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:18 JST [2025/09/25 6:41:18 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($12.68 in chips) 
+Seat 2: FakaN4Kavera ($5.07 in chips) 
+Seat 3: huyjokezy ($5 in chips) 
+Seat 4: cherry006 ($3.88 in chips) 
+Seat 5: sepik200 ($4.53 in chips) 
+Seat 6: Ingyeoking ($5.15 in chips) 
+FakaN4Kavera: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8h 7c]
+cherry006: raises $0.05 to $0.10
+sepik200: calls $0.10
+Ingyeoking: folds 
+1Kronos: folds 
+FakaN4Kavera: folds 
+huyjokezy: folds 
+*** FLOP *** [5h 4d 3h]
+cherry006: checks 
+sepik200: bets $0.05
+cherry006: calls $0.05
+*** TURN *** [5h 4d 3h] [Ks]
+cherry006: checks 
+sepik200: checks 
+*** RIVER *** [5h 4d 3h Ks] [Jd]
+cherry006: checks 
+sepik200: checks 
+*** SHOW DOWN ***
+cherry006: shows [9s 9c] (a pair of Nines)
+sepik200: mucks hand 
+cherry006 collected $0.35 from pot
+*** SUMMARY ***
+Total pot $0.37 | Rake $0.02 
+Board [5h 4d 3h Ks Jd]
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) folded before Flop
+Seat 4: cherry006 showed [9s 9c] and won ($0.35) with a pair of Nines
+Seat 5: sepik200 mucked [As 7s]
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880037487:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:37 JST [2025/09/25 6:41:37 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: semmely ($9.37 in chips) 
+Seat 2: DurandalMIA ($3.02 in chips) 
+Seat 3: FakaN4Kavera ($5.05 in chips) 
+Seat 4: elmex886 ($5.88 in chips) 
+Seat 5: titeuf3012 ($4.39 in chips) 
+Seat 6: Ingyeoking ($10.42 in chips) 
+DurandalMIA: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5d Td]
+elmex886: folds 
+titeuf3012: raises $0.15 to $0.20
+Ingyeoking: folds 
+semmely: folds 
+DurandalMIA: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.15) returned to titeuf3012
+titeuf3012 collected $0.12 from pot
+titeuf3012: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: semmely (button) folded before Flop (didn't bet)
+Seat 2: DurandalMIA (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: elmex886 folded before Flop (didn't bet)
+Seat 5: titeuf3012 collected ($0.12)
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880038956:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:51 JST [2025/09/25 6:41:51 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: sepik200 ($4.38 in chips) 
+Seat 4: YAG5292 ($8.68 in chips) 
+Seat 5: kalopara ($6.79 in chips) 
+Seat 6: kmc4444 ($5.07 in chips) 
+FakaN4Kavera: posts small blind $0.02
+sepik200: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d Kd]
+YAG5292: folds 
+kalopara: raises $0.07 to $0.12
+kmc4444: folds 
+IBRODIAN-ACER: folds 
+FakaN4Kavera: folds 
+sepik200: folds 
+Uncalled bet ($0.07) returned to kalopara
+kalopara collected $0.12 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: sepik200 (big blind) folded before Flop
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: kalopara collected ($0.12)
+Seat 6: kmc4444 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880041591:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:42:16 JST [2025/09/25 6:42:16 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5 in chips) 
+Seat 2: KRSofM ($5 in chips) 
+Seat 3: Ingyeoking ($6.30 in chips) 
+Seat 4: Schöngeist71 ($11.96 in chips) 
+Seat 5: goaßmaß-fips ($14.18 in chips) 
+Seat 6: IBRODIAN-ACER ($5 in chips) 
+KRSofM: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3h Qh]
+Schöngeist71: folds 
+goaßmaß-fips: raises $0.10 to $0.15
+IBRODIAN-ACER: folds 
+FakaN4Kavera: folds 
+KRSofM: folds 
+Ingyeoking: folds 
+Uncalled bet ($0.10) returned to goaßmaß-fips
+goaßmaß-fips collected $0.12 from pot
+goaßmaß-fips: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: KRSofM (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: Schöngeist71 folded before Flop (didn't bet)
+Seat 5: goaßmaß-fips collected ($0.12)
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880042216:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:42:22 JST [2025/09/25 6:42:22 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($15.41 in chips) 
+Seat 2: Ingyeoking ($4.85 in chips) 
+Seat 3: kalopara ($4.24 in chips) 
+Seat 4: Kenzo2211 ($5.05 in chips) 
+Seat 5: IBRODIAN-ACER ($5 in chips) 
+Seat 6: FakaN4Kavera ($5 in chips) 
+Ingyeoking: posts small blind $0.02
+kalopara: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c Kh]
+Kenzo2211: folds 
+IBRODIAN-ACER: folds 
+FakaN4Kavera: folds 
+1Kronos: folds 
+Ingyeoking: folds 
+Uncalled bet ($0.03) returned to kalopara
+kalopara collected $0.04 from pot
+kalopara: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: kalopara (big blind) collected ($0.04)
+Seat 4: Kenzo2211 folded before Flop (didn't bet)
+Seat 5: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880042608:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:42:26 JST [2025/09/25 6:42:26 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: lefra9 ($5 in chips) 
+Seat 2: faithfulness ($5.46 in chips) 
+Seat 3: KRSofM ($4.88 in chips) 
+Seat 4: Kenzo2211 ($5.05 in chips) 
+Seat 5: FakaN4Kavera ($5 in chips) 
+Seat 6: YAG5292 ($4.89 in chips) 
+faithfulness: posts small blind $0.02
+KRSofM: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Th Tc]
+Kenzo2211: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+YAG5292: raises $0.24 to $0.36
+lefra9: folds 
+faithfulness: folds 
+KRSofM: folds 
+FakaN4Kavera: calls $0.24
+*** FLOP *** [Js 6d 9c]
+FakaN4Kavera: checks 
+YAG5292: bets $0.38
+FakaN4Kavera: calls $0.38
+*** TURN *** [Js 6d 9c] [Td]
+FakaN4Kavera: checks 
+YAG5292: checks 
+*** RIVER *** [Js 6d 9c Td] [Qh]
+FakaN4Kavera: checks 
+YAG5292: checks 
+*** SHOW DOWN ***
+FakaN4Kavera: shows [Th Tc] (three of a kind, Tens)
+YAG5292: mucks hand 
+FakaN4Kavera collected $1.49 from pot
+*** SUMMARY ***
+Total pot $1.55 | Rake $0.06 
+Board [Js 6d 9c Td Qh]
+Seat 1: lefra9 (button) folded before Flop (didn't bet)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: KRSofM (big blind) folded before Flop
+Seat 4: Kenzo2211 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera showed [Th Tc] and won ($1.49) with three of a kind, Tens
+Seat 6: YAG5292 mucked [Qs Ac]
+
+
+
+PokerStars Zoom Hand #257880036240:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:41:25 JST [2025/09/25 6:41:25 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.05 in chips) 
+Seat 2: 1Kronos ($12.68 in chips) 
+Seat 3: semmely ($9.42 in chips) 
+Seat 4: KRSofM ($4.95 in chips) 
+Seat 5: intentii ($6.35 in chips) 
+Seat 6: DurandalMIA ($3.07 in chips) 
+1Kronos: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qs 7d]
+KRSofM: folds 
+intentii: raises $0.08 to $0.13
+DurandalMIA: folds 
+FakaN4Kavera: folds 
+1Kronos: raises $0.42 to $0.55
+semmely: folds 
+intentii: raises $0.60 to $1.15
+1Kronos: calls $0.60
+*** FLOP *** [3h 5h 6h]
+1Kronos: checks 
+intentii: bets $0.56
+1Kronos: calls $0.56
+*** TURN *** [3h 5h 6h] [Ts]
+1Kronos: checks 
+intentii: checks 
+*** RIVER *** [3h 5h 6h Ts] [5c]
+1Kronos: bets $0.83
+intentii: folds 
+Uncalled bet ($0.83) returned to 1Kronos
+1Kronos collected $3.33 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $3.47 | Rake $0.14 
+Board [3h 5h 6h Ts 5c]
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: 1Kronos (small blind) collected ($3.33)
+Seat 3: semmely (big blind) folded before Flop
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: intentii folded on the River
+Seat 6: DurandalMIA folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880048679:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:43:25 JST [2025/09/25 6:43:25 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($4.69 in chips) 
+Seat 2: kalopara ($4.67 in chips) 
+Seat 3: kmc4444 ($5.07 in chips) 
+Seat 4: serg430606 ($5.46 in chips) 
+Seat 5: Ingyeoking ($10.90 in chips) 
+Seat 6: FakaN4Kavera ($5.73 in chips) 
+kalopara: posts small blind $0.02
+kmc4444: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6h 5d]
+serg430606: folds 
+Ingyeoking: folds 
+FakaN4Kavera: folds 
+KRSofM: folds 
+kalopara: folds 
+Uncalled bet ($0.03) returned to kmc4444
+kmc4444 collected $0.04 from pot
+kmc4444: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: KRSofM (button) folded before Flop (didn't bet)
+Seat 2: kalopara (small blind) folded before Flop
+Seat 3: kmc4444 (big blind) collected ($0.04)
+Seat 4: serg430606 folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880049031:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:43:29 JST [2025/09/25 6:43:29 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kalopara ($4.65 in chips) 
+Seat 2: serg430606 ($5.46 in chips) 
+Seat 3: Kenbunshoku ($8.85 in chips) 
+Seat 4: FakaN4Kavera ($5.73 in chips) 
+Seat 5: Baikasas ($5.42 in chips) 
+Seat 6: Kenzo2211 ($5.76 in chips) 
+serg430606: posts small blind $0.02
+Kenbunshoku: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ks Ts]
+FakaN4Kavera: raises $0.07 to $0.12
+Baikasas: folds 
+Kenzo2211: folds 
+kalopara: folds 
+serg430606: folds 
+Kenbunshoku: raises $0.36 to $0.48
+FakaN4Kavera: calls $0.36
+*** FLOP *** [9s 9c 7d]
+Kenbunshoku: bets $0.47
+FakaN4Kavera: folds 
+Uncalled bet ($0.47) returned to Kenbunshoku
+Kenbunshoku collected $0.94 from pot
+Kenbunshoku: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.98 | Rake $0.04 
+Board [9s 9c 7d]
+Seat 1: kalopara (button) folded before Flop (didn't bet)
+Seat 2: serg430606 (small blind) folded before Flop
+Seat 3: Kenbunshoku (big blind) collected ($0.94)
+Seat 4: FakaN4Kavera folded on the Flop
+Seat 5: Baikasas folded before Flop (didn't bet)
+Seat 6: Kenzo2211 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880052094:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:43:58 JST [2025/09/25 6:43:58 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: cherry006 ($3.77 in chips) 
+Seat 2: Miss Turbo G ($7.11 in chips) 
+Seat 3: FakaN4Kavera ($5.25 in chips) 
+Seat 4: KRSofM ($4.83 in chips) 
+Seat 5: Kenzo2211 ($5 in chips) 
+Seat 6: Kenbunshoku ($9.31 in chips) 
+Miss Turbo G: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ks Qh]
+KRSofM: folds 
+Kenzo2211: folds 
+Kenbunshoku: folds 
+cherry006: folds 
+Miss Turbo G: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: cherry006 (button) folded before Flop (didn't bet)
+Seat 2: Miss Turbo G (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: Kenzo2211 folded before Flop (didn't bet)
+Seat 6: Kenbunshoku folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880053422:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:11 JST [2025/09/25 6:44:11 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.27 in chips) 
+Seat 2: IBRODIAN-ACER ($5 in chips) 
+Seat 3: KRSofM ($4.81 in chips) 
+Seat 4: 1Kronos ($5 in chips) 
+Seat 5: kmc4444 ($5.31 in chips) 
+Seat 6: Coco_bear373 ($11.75 in chips) 
+IBRODIAN-ACER: posts small blind $0.02
+KRSofM: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2d 8s]
+1Kronos: folds 
+kmc4444: folds 
+Coco_bear373: folds 
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+Uncalled bet ($0.03) returned to KRSofM
+KRSofM collected $0.04 from pot
+KRSofM: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: IBRODIAN-ACER (small blind) folded before Flop
+Seat 3: KRSofM (big blind) collected ($0.04)
+Seat 4: 1Kronos folded before Flop (didn't bet)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: Coco_bear373 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880053008:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:07 JST [2025/09/25 6:44:07 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: lefra9 ($5.13 in chips) 
+Seat 2: Ingyeoking ($5 in chips) 
+Seat 3: huyjokezy ($5.04 in chips) 
+Seat 4: FakaN4Kavera ($5.27 in chips) 
+Seat 5: KRSofM ($5.92 in chips) 
+Seat 6: faithfulness ($5 in chips) 
+Ingyeoking: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c Jd]
+FakaN4Kavera: folds 
+KRSofM: raises $0.05 to $0.10
+faithfulness: folds 
+lefra9: folds 
+Ingyeoking: folds 
+huyjokezy: calls $0.05
+*** FLOP *** [Kc Jc 9h]
+huyjokezy: checks 
+KRSofM: bets $0.16
+huyjokezy: folds 
+Uncalled bet ($0.16) returned to KRSofM
+KRSofM collected $0.21 from pot
+KRSofM: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.22 | Rake $0.01 
+Board [Kc Jc 9h]
+Seat 1: lefra9 (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) folded on the Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: KRSofM collected ($0.21)
+Seat 6: faithfulness folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880054305:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:19 JST [2025/09/25 6:44:19 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: skygger777 ($4.87 in chips) 
+Seat 2: ICallForYou ($4.34 in chips) 
+Seat 3: FakaN4Kavera ($5.25 in chips) 
+Seat 4: huyjokezy ($5.07 in chips) 
+Seat 5: serg430606 ($5.46 in chips) 
+Seat 6: Baikasas ($5 in chips) 
+ICallForYou: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Th Ts]
+huyjokezy: folds 
+serg430606: folds 
+Baikasas: folds 
+skygger777: folds 
+ICallForYou: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: skygger777 (button) folded before Flop (didn't bet)
+Seat 2: ICallForYou (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: huyjokezy folded before Flop (didn't bet)
+Seat 5: serg430606 folded before Flop (didn't bet)
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880053967:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:16 JST [2025/09/25 6:44:16 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5.05 in chips) 
+Seat 2: FakaN4Kavera ($5.27 in chips) 
+Seat 3: semmely ($9.78 in chips) 
+Seat 4: Epist461 ($6.24 in chips) 
+Seat 5: Kenbunshoku ($9.31 in chips) 
+Seat 6: YAG5292 ($12.55 in chips) 
+FakaN4Kavera: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9s 6d]
+Epist461: folds 
+Kenbunshoku: raises $0.05 to $0.10
+YAG5292: folds 
+faithfulness: folds 
+FakaN4Kavera: folds 
+semmely: calls $0.05
+*** FLOP *** [4h 2c Jd]
+semmely: bets $0.05
+Kenbunshoku: raises $0.16 to $0.21
+semmely: calls $0.16
+*** TURN *** [4h 2c Jd] [2s]
+semmely: checks 
+Kenbunshoku: bets $0.31
+semmely: folds 
+Uncalled bet ($0.31) returned to Kenbunshoku
+Kenbunshoku collected $0.61 from pot
+Kenbunshoku: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.64 | Rake $0.03 
+Board [4h 2c Jd 2s]
+Seat 1: faithfulness (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: semmely (big blind) folded on the Turn
+Seat 4: Epist461 folded before Flop (didn't bet)
+Seat 5: Kenbunshoku collected ($0.61)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880056070:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:36 JST [2025/09/25 6:44:36 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Kenzo2211 ($5.85 in chips) 
+Seat 2: sv5555555 ($3.99 in chips) 
+Seat 3: huyjokezy ($10.27 in chips) 
+Seat 4: cherry006 ($3.72 in chips) 
+Seat 5: KRSofM ($6.03 in chips) 
+Seat 6: FakaN4Kavera ($5.27 in chips) 
+sv5555555: posts small blind $0.02
+huyjokezy: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qc 7h]
+cherry006: raises $0.12 to $0.17
+KRSofM: folds 
+FakaN4Kavera: folds 
+Kenzo2211: folds 
+sv5555555: folds 
+huyjokezy: folds 
+Uncalled bet ($0.12) returned to cherry006
+cherry006 collected $0.12 from pot
+cherry006: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: Kenzo2211 (button) folded before Flop (didn't bet)
+Seat 2: sv5555555 (small blind) folded before Flop
+Seat 3: huyjokezy (big blind) folded before Flop
+Seat 4: cherry006 collected ($0.12)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880046906:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:43:08 JST [2025/09/25 6:43:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.75 in chips) 
+Seat 3: intentii ($6.23 in chips) 
+Seat 4: KRSofM ($4.91 in chips) 
+Seat 5: kmc4444 ($5.07 in chips) 
+Seat 6: zodapoker ($8.21 in chips) 
+FakaN4Kavera: posts small blind $0.02
+intentii: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kh 9s]
+KRSofM: folds 
+kmc4444: folds 
+zodapoker: raises $0.07 to $0.12
+IBRODIAN-ACER: folds 
+FakaN4Kavera: folds 
+intentii: calls $0.07
+*** FLOP *** [Kc 2d 6d]
+intentii: checks 
+zodapoker: bets $0.13
+intentii: raises $0.26 to $0.39
+zodapoker: calls $0.26
+*** TURN *** [Kc 2d 6d] [6c]
+intentii: bets $0.75
+zodapoker: calls $0.75
+*** RIVER *** [Kc 2d 6d 6c] [5c]
+intentii: bets $4.97 and is all-in
+zodapoker: folds 
+Uncalled bet ($4.97) returned to intentii
+intentii collected $2.43 from pot
+intentii: doesn't show hand 
+*** SUMMARY ***
+Total pot $2.54 | Rake $0.11 
+Board [Kc 2d 6d 6c 5c]
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: intentii (big blind) collected ($2.43)
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: zodapoker folded on the River
+
+
+
+PokerStars Zoom Hand #257880056812:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:44 JST [2025/09/25 6:44:44 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: sv5555555 ($3.97 in chips) 
+Seat 2: huyjokezy ($5 in chips) 
+Seat 3: Coco_bear373 ($11.82 in chips) 
+Seat 4: Miss Turbo G ($6.97 in chips) 
+Seat 5: FakaN4Kavera ($5.27 in chips) 
+Seat 6: IBRODIAN-ACER ($5.16 in chips) 
+huyjokezy: posts small blind $0.02
+Coco_bear373: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ah 2s]
+Miss Turbo G: folds 
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+sv5555555: folds 
+huyjokezy: raises $0.10 to $0.15
+Coco_bear373: folds 
+Uncalled bet ($0.10) returned to huyjokezy
+huyjokezy collected $0.10 from pot
+huyjokezy: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: sv5555555 (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) collected ($0.10)
+Seat 3: Coco_bear373 (big blind) folded before Flop
+Seat 4: Miss Turbo G folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880057362:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:49 JST [2025/09/25 6:44:49 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5.16 in chips) 
+Seat 2: cherry006 ($3.79 in chips) 
+Seat 3: klevinjer ($5.45 in chips) 
+Seat 4: Kenbunshoku ($9.61 in chips) 
+Seat 5: Ingyeoking ($11.06 in chips) 
+Seat 6: FakaN4Kavera ($5.27 in chips) 
+cherry006: posts small blind $0.02
+klevinjer: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6s 4s]
+Kenbunshoku: folds 
+Ingyeoking: folds 
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+cherry006: folds 
+Uncalled bet ($0.03) returned to klevinjer
+klevinjer collected $0.04 from pot
+klevinjer: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: cherry006 (small blind) folded before Flop
+Seat 3: klevinjer (big blind) collected ($0.04)
+Seat 4: Kenbunshoku folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880058055:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:44:56 JST [2025/09/25 6:44:56 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.27 in chips) 
+Seat 2: 1Kronos ($5 in chips) 
+Seat 3: Ingyeoking ($11.06 in chips) 
+Seat 4: kmc4444 ($5.09 in chips) 
+Seat 5: IBRODIAN-ACER ($5.16 in chips) 
+Seat 6: YAG5292 ($8.53 in chips) 
+1Kronos: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3c Th]
+kmc4444: folds 
+IBRODIAN-ACER: folds 
+YAG5292: folds 
+FakaN4Kavera: folds 
+1Kronos: raises $0.10 to $0.15
+Ingyeoking: folds 
+Uncalled bet ($0.10) returned to 1Kronos
+1Kronos collected $0.10 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: 1Kronos (small blind) collected ($0.10)
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: kmc4444 folded before Flop (didn't bet)
+Seat 5: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880059008:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:45:05 JST [2025/09/25 6:45:05 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Coco_bear373 ($11.75 in chips) 
+Seat 2: klevinjer ($5.47 in chips) 
+Seat 3: sepik200 ($4.38 in chips) 
+Seat 4: Ingyeoking ($5.45 in chips) 
+Seat 5: FakaN4Kavera ($5.27 in chips) 
+Seat 6: IBRODIAN-ACER ($5.26 in chips) 
+klevinjer: posts small blind $0.02
+sepik200: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd Kc]
+Ingyeoking: folds 
+FakaN4Kavera: raises $0.07 to $0.12
+IBRODIAN-ACER: folds 
+Coco_bear373: folds 
+klevinjer: folds 
+sepik200: calls $0.07
+*** FLOP *** [8c 7h Js]
+sepik200: checks 
+FakaN4Kavera: bets $0.13
+sepik200: calls $0.13
+*** TURN *** [8c 7h Js] [6s]
+sepik200: checks 
+FakaN4Kavera: checks 
+*** RIVER *** [8c 7h Js 6s] [3d]
+sepik200: checks 
+FakaN4Kavera: checks 
+*** SHOW DOWN ***
+sepik200: shows [Ac 9h] (high card Ace)
+FakaN4Kavera: mucks hand 
+sepik200 collected $0.50 from pot
+*** SUMMARY ***
+Total pot $0.52 | Rake $0.02 
+Board [8c 7h Js 6s 3d]
+Seat 1: Coco_bear373 (button) folded before Flop (didn't bet)
+Seat 2: klevinjer (small blind) folded before Flop
+Seat 3: sepik200 (big blind) showed [Ac 9h] and won ($0.50) with high card Ace
+Seat 4: Ingyeoking folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera mucked [Qd Kc]
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880062153:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:45:35 JST [2025/09/25 6:45:35 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: kmc4444 ($5 in chips) 
+Seat 2: huyjokezy ($6.45 in chips) 
+Seat 3: FakaN4Kavera ($5.02 in chips) 
+Seat 4: Miss Turbo G ($6.97 in chips) 
+Seat 5: Ingyeoking ($10.89 in chips) 
+Seat 6: semmely ($9.42 in chips) 
+huyjokezy: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3d Kh]
+Miss Turbo G: folds 
+Ingyeoking: folds 
+semmely: raises $0.05 to $0.10
+kmc4444: folds 
+huyjokezy: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.05) returned to semmely
+semmely collected $0.12 from pot
+semmely: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: kmc4444 (button) folded before Flop (didn't bet)
+Seat 2: huyjokezy (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: Miss Turbo G folded before Flop (didn't bet)
+Seat 5: Ingyeoking folded before Flop (didn't bet)
+Seat 6: semmely collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257880063144:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:45:44 JST [2025/09/25 6:45:44 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($5 in chips) 
+Seat 2: FakaN4Kavera ($5 in chips) 
+Seat 3: faithfulness ($5.07 in chips) 
+Seat 4: YAG5292 ($3.50 in chips) 
+Seat 5: zodapoker ($8.37 in chips) 
+Seat 6: Ingyeoking ($5.45 in chips) 
+FakaN4Kavera: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ks 8h]
+YAG5292: folds 
+zodapoker: folds 
+Ingyeoking: folds 
+1Kronos: raises $0.05 to $0.10
+FakaN4Kavera: folds 
+faithfulness: folds 
+Uncalled bet ($0.05) returned to 1Kronos
+1Kronos collected $0.12 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: 1Kronos (button) collected ($0.12)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: faithfulness (big blind) folded before Flop
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: zodapoker folded before Flop (didn't bet)
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880063935:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:45:52 JST [2025/09/25 6:45:52 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: copperfield ($3.31 in chips) 
+Seat 2: Baikasas ($5 in chips) 
+Seat 3: scottie4barnes ($3.86 in chips) 
+Seat 4: FakaN4Kavera ($5 in chips) 
+Seat 5: intentii ($7.06 in chips) 
+Seat 6: zodapoker ($8.37 in chips) 
+Baikasas: posts small blind $0.02
+scottie4barnes: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8d 8s]
+FakaN4Kavera: raises $0.07 to $0.12
+intentii: folds 
+zodapoker: folds 
+copperfield: folds 
+Baikasas: folds 
+scottie4barnes: calls $0.07
+*** FLOP *** [Qh Tc 8c]
+scottie4barnes: bets $0.15
+FakaN4Kavera: calls $0.15
+*** TURN *** [Qh Tc 8c] [3h]
+scottie4barnes: bets $0.40
+FakaN4Kavera: raises $0.44 to $0.84
+scottie4barnes: folds 
+Uncalled bet ($0.44) returned to FakaN4Kavera
+FakaN4Kavera collected $1.30 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $1.36 | Rake $0.06 
+Board [Qh Tc 8c 3h]
+Seat 1: copperfield (button) folded before Flop (didn't bet)
+Seat 2: Baikasas (small blind) folded before Flop
+Seat 3: scottie4barnes (big blind) folded on the Turn
+Seat 4: FakaN4Kavera collected ($1.30)
+Seat 5: intentii folded before Flop (didn't bet)
+Seat 6: zodapoker folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880071171:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:01 JST [2025/09/25 6:47:01 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.63 in chips) 
+Seat 2: YAG5292 ($3.24 in chips) 
+Seat 3: egoor199 ($5.60 in chips) 
+Seat 4: Kenzo2211 ($5.17 in chips) 
+Seat 5: kmc4444 ($5 in chips) 
+Seat 6: Ingyeoking ($5.24 in chips) 
+YAG5292: posts small blind $0.02
+egoor199: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8h 4s]
+Kenzo2211: raises $0.05 to $0.10
+kmc4444: folds 
+Ingyeoking: folds 
+FakaN4Kavera: folds 
+YAG5292: folds 
+egoor199: folds 
+Uncalled bet ($0.05) returned to Kenzo2211
+Kenzo2211 collected $0.12 from pot
+Kenzo2211: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: YAG5292 (small blind) folded before Flop
+Seat 3: egoor199 (big blind) folded before Flop
+Seat 4: Kenzo2211 collected ($0.12)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: Ingyeoking folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880073379:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:23 JST [2025/09/25 6:47:23 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: 1Kronos ($5.13 in chips) 
+Seat 2: faithfulness ($5.23 in chips) 
+Seat 3: Ingyeoking ($5.24 in chips) 
+Seat 4: klevinjer ($5.84 in chips) 
+Seat 5: semmely ($9.93 in chips) 
+Seat 6: FakaN4Kavera ($5.63 in chips) 
+faithfulness: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5d Kh]
+klevinjer: folds 
+semmely: folds 
+FakaN4Kavera: folds 
+1Kronos: folds 
+faithfulness: raises $0.10 to $0.15
+Ingyeoking: folds 
+Uncalled bet ($0.10) returned to faithfulness
+faithfulness collected $0.10 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: 1Kronos (button) folded before Flop (didn't bet)
+Seat 2: faithfulness (small blind) collected ($0.10)
+Seat 3: Ingyeoking (big blind) folded before Flop
+Seat 4: klevinjer folded before Flop (didn't bet)
+Seat 5: semmely folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880073786:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:27 JST [2025/09/25 6:47:27 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5.09 in chips) 
+Seat 2: Tartarobass ($5 in chips) 
+Seat 3: FakaN4Kavera ($5.63 in chips) 
+Seat 4: klevinjer ($5.84 in chips) 
+Seat 5: KRSofM ($5.04 in chips) 
+Seat 6: semmely ($9.93 in chips) 
+Tartarobass: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jc Js]
+klevinjer: folds 
+KRSofM: folds 
+semmely: folds 
+faithfulness: folds 
+Tartarobass: raises $0.10 to $0.15
+FakaN4Kavera: raises $0.30 to $0.45
+Tartarobass: folds 
+Uncalled bet ($0.30) returned to FakaN4Kavera
+FakaN4Kavera collected $0.30 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.30 | Rake $0 
+Seat 1: faithfulness (button) folded before Flop (didn't bet)
+Seat 2: Tartarobass (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.30)
+Seat 4: klevinjer folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: semmely folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880071896:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:08 JST [2025/09/25 6:47:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($3.22 in chips) 
+Seat 2: Baikasas ($7.61 in chips) 
+Seat 3: 1Kronos ($5.18 in chips) 
+Seat 4: scottie4barnes ($3.19 in chips) 
+Seat 5: FakaN4Kavera ($5.63 in chips) 
+Seat 6: Epist461 ($6.73 in chips) 
+Baikasas: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2h 9d]
+scottie4barnes: raises $0.10 to $0.15
+FakaN4Kavera: folds 
+Epist461: folds 
+YAG5292: calls $0.15
+Baikasas: raises $0.30 to $0.45
+1Kronos: folds 
+scottie4barnes: raises $2.74 to $3.19 and is all-in
+YAG5292: folds 
+Baikasas: calls $2.74
+*** FLOP *** [7c 5h 4c]
+*** TURN *** [7c 5h 4c] [4s]
+*** RIVER *** [7c 5h 4c 4s] [9c]
+*** SHOW DOWN ***
+Baikasas: shows [Qc Qd] (two pair, Queens and Fours)
+scottie4barnes: shows [8h 8d] (two pair, Eights and Fours)
+Baikasas collected $6.31 from pot
+*** SUMMARY ***
+Total pot $6.58 | Rake $0.27 
+Board [7c 5h 4c 4s 9c]
+Seat 1: YAG5292 (button) folded before Flop
+Seat 2: Baikasas (small blind) showed [Qc Qd] and won ($6.31) with two pair, Queens and Fours
+Seat 3: 1Kronos (big blind) folded before Flop
+Seat 4: scottie4barnes showed [8h 8d] and lost with two pair, Eights and Fours
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: Epist461 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880078117:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:48:08 JST [2025/09/25 6:48:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.76 in chips) 
+Seat 2: taoo7878 ($3.02 in chips) 
+Seat 3: 1Kronos ($13.97 in chips) 
+Seat 4: Kenzo2211 ($5.24 in chips) 
+Seat 5: Baikasas ($10.73 in chips) 
+Seat 6: vlad.mdv ($2.75 in chips) 
+taoo7878: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [2c 3s]
+Kenzo2211: folds 
+Baikasas: folds 
+vlad.mdv: folds 
+FakaN4Kavera: folds 
+taoo7878: folds 
+Uncalled bet ($0.03) returned to 1Kronos
+1Kronos collected $0.04 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: taoo7878 (small blind) folded before Flop
+Seat 3: 1Kronos (big blind) collected ($0.04)
+Seat 4: Kenzo2211 folded before Flop (didn't bet)
+Seat 5: Baikasas folded before Flop (didn't bet)
+Seat 6: vlad.mdv folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880077058:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:58 JST [2025/09/25 6:47:58 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: vlad.mdv ($2.77 in chips) 
+Seat 2: Ingyeoking ($10.90 in chips) 
+Seat 3: Schöngeist71 ($12.65 in chips) 
+Seat 4: egoor199 ($5.48 in chips) 
+Seat 5: FakaN4Kavera ($5.76 in chips) 
+Seat 6: faithfulness ($5.09 in chips) 
+Ingyeoking: posts small blind $0.02
+Schöngeist71: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Ad 4s]
+egoor199: folds 
+FakaN4Kavera: folds 
+faithfulness: raises $0.07 to $0.12
+vlad.mdv: folds 
+Ingyeoking: folds 
+Schöngeist71: raises $0.28 to $0.40
+faithfulness: folds 
+Uncalled bet ($0.28) returned to Schöngeist71
+Schöngeist71 collected $0.26 from pot
+Schöngeist71: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0 
+Seat 1: vlad.mdv (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: Schöngeist71 (big blind) collected ($0.26)
+Seat 4: egoor199 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: faithfulness folded before Flop
+
+
+
+PokerStars Zoom Hand #257880079201:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:48:18 JST [2025/09/25 6:48:18 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: YAG5292 ($2.95 in chips) 
+Seat 2: Vasco4430 ($8.11 in chips) 
+Seat 3: zodapoker ($8.56 in chips) 
+Seat 4: FakaN4Kavera ($5.76 in chips) 
+Seat 5: KRSofM ($4.98 in chips) 
+Seat 6: Kenzo2211 ($5.24 in chips) 
+Vasco4430: posts small blind $0.02
+zodapoker: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9s 9d]
+FakaN4Kavera: raises $0.07 to $0.12
+KRSofM: folds 
+Kenzo2211: folds 
+YAG5292: folds 
+Vasco4430: folds 
+zodapoker: folds 
+Uncalled bet ($0.07) returned to FakaN4Kavera
+FakaN4Kavera collected $0.12 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: YAG5292 (button) folded before Flop (didn't bet)
+Seat 2: Vasco4430 (small blind) folded before Flop
+Seat 3: zodapoker (big blind) folded before Flop
+Seat 4: FakaN4Kavera collected ($0.12)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: Kenzo2211 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880076651:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:47:54 JST [2025/09/25 6:47:54 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Epist461 ($6.56 in chips) 
+Seat 2: FakaN4Kavera ($5.78 in chips) 
+Seat 3: goaßmaß-fips ($14.52 in chips) 
+Seat 4: YAG5292 ($9.70 in chips) 
+Seat 5: Schöngeist71 ($12.65 in chips) 
+Seat 6: IBRODIAN-ACER ($5.02 in chips) 
+FakaN4Kavera: posts small blind $0.02
+goaßmaß-fips: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [6c 2d]
+YAG5292: raises $0.09 to $0.14
+Schöngeist71: folds 
+IBRODIAN-ACER: folds 
+Epist461: folds 
+FakaN4Kavera: folds 
+goaßmaß-fips: calls $0.09
+*** FLOP *** [Td 9h 6d]
+goaßmaß-fips: checks 
+YAG5292: bets $0.15
+goaßmaß-fips: calls $0.15
+*** TURN *** [Td 9h 6d] [7s]
+goaßmaß-fips: checks 
+YAG5292: checks 
+*** RIVER *** [Td 9h 6d 7s] [Ah]
+goaßmaß-fips: bets $0.44
+YAG5292: folds 
+Uncalled bet ($0.44) returned to goaßmaß-fips
+goaßmaß-fips collected $0.58 from pot
+goaßmaß-fips: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.60 | Rake $0.02 
+Board [Td 9h 6d 7s Ah]
+Seat 1: Epist461 (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: goaßmaß-fips (big blind) collected ($0.58)
+Seat 4: YAG5292 folded on the River
+Seat 5: Schöngeist71 folded before Flop (didn't bet)
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880082003:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:48:45 JST [2025/09/25 6:48:45 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: lebifflemaster ($5.13 in chips) 
+Seat 2: tomis1312 ($6.07 in chips) 
+Seat 3: FakaN4Kavera ($5.83 in chips) 
+Seat 4: klevinjer ($5.52 in chips) 
+Seat 5: YAG5292 ($7.21 in chips) 
+Seat 6: semmely ($9.95 in chips) 
+tomis1312: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qs Ts]
+klevinjer: folds 
+YAG5292: folds 
+semmely: folds 
+lebifflemaster has timed out
+lebifflemaster: folds 
+tomis1312: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: lebifflemaster (button) folded before Flop (didn't bet)
+Seat 2: tomis1312 (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: klevinjer folded before Flop (didn't bet)
+Seat 5: YAG5292 folded before Flop (didn't bet)
+Seat 6: semmely folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880086497:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:28 JST [2025/09/25 6:49:28 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Ingyeoking ($5.33 in chips) 
+Seat 2: FakaN4Kavera ($5.85 in chips) 
+Seat 3: zodapoker ($4.24 in chips) 
+Seat 4: YAG5292 ($4.03 in chips) 
+Seat 5: taoo7878 ($3.58 in chips) 
+Seat 6: faithfulness ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+zodapoker: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Kh 8c]
+YAG5292: folds 
+taoo7878: folds 
+faithfulness: folds 
+Ingyeoking: folds 
+FakaN4Kavera: folds 
+Uncalled bet ($0.03) returned to zodapoker
+zodapoker collected $0.04 from pot
+zodapoker: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Ingyeoking (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: zodapoker (big blind) collected ($0.04)
+Seat 4: YAG5292 folded before Flop (didn't bet)
+Seat 5: taoo7878 folded before Flop (didn't bet)
+Seat 6: faithfulness folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880087294:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:36 JST [2025/09/25 6:49:36 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.83 in chips) 
+Seat 2: faithfulness ($5.14 in chips) 
+Seat 3: IBRODIAN-ACER ($5.68 in chips) 
+Seat 4: Ingyeoking ($5.33 in chips) 
+Seat 5: YAG5292 ($2.73 in chips) 
+Seat 6: elmex886 ($6.01 in chips) 
+faithfulness: posts small blind $0.02
+IBRODIAN-ACER: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4s 7d]
+Ingyeoking: folds 
+YAG5292: folds 
+elmex886: folds 
+FakaN4Kavera: folds 
+faithfulness: folds 
+Uncalled bet ($0.03) returned to IBRODIAN-ACER
+IBRODIAN-ACER collected $0.04 from pot
+IBRODIAN-ACER: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: faithfulness (small blind) folded before Flop
+Seat 3: IBRODIAN-ACER (big blind) collected ($0.04)
+Seat 4: Ingyeoking folded before Flop (didn't bet)
+Seat 5: YAG5292 folded before Flop (didn't bet)
+Seat 6: elmex886 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880085796:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:21 JST [2025/09/25 6:49:21 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: klevinjer ($5.45 in chips) 
+Seat 2: Schöngeist71 ($12.63 in chips) 
+Seat 3: VXNX$157 ($2.83 in chips) 
+Seat 4: FakaN4Kavera ($5.85 in chips) 
+Seat 5: goaßmaß-fips ($14.98 in chips) 
+Seat 6: Kenzo2211 ($5.17 in chips) 
+Schöngeist71: posts small blind $0.02
+VXNX$157: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c 9d]
+FakaN4Kavera: folds 
+goaßmaß-fips: raises $0.10 to $0.15
+Kenzo2211: folds 
+klevinjer: folds 
+Schöngeist71: calls $0.13
+VXNX$157: folds 
+*** FLOP *** [Td 8d 2s]
+Schöngeist71: bets $0.20
+goaßmaß-fips: folds 
+Uncalled bet ($0.20) returned to Schöngeist71
+Schöngeist71 collected $0.34 from pot
+Schöngeist71: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.35 | Rake $0.01 
+Board [Td 8d 2s]
+Seat 1: klevinjer (button) folded before Flop (didn't bet)
+Seat 2: Schöngeist71 (small blind) collected ($0.34)
+Seat 3: VXNX$157 (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: goaßmaß-fips folded on the Flop
+Seat 6: Kenzo2211 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880084613:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:10 JST [2025/09/25 6:49:10 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: vlad.mdv ($2.77 in chips) 
+Seat 2: lebifflemaster ($7.68 in chips) 
+Seat 3: zodapoker ($8.49 in chips) 
+Seat 4: skygger777 ($4.35 in chips) 
+Seat 5: Tartarobass ($5 in chips) 
+Seat 6: FakaN4Kavera ($5.85 in chips) 
+lebifflemaster: posts small blind $0.02
+zodapoker: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c 2s]
+skygger777: folds 
+Tartarobass: folds 
+FakaN4Kavera: folds 
+vlad.mdv: calls $0.05
+lebifflemaster: raises $0.20 to $0.25
+zodapoker: folds 
+vlad.mdv: calls $0.20
+*** FLOP *** [Ac Ts 4c]
+lebifflemaster: bets $0.17
+vlad.mdv: calls $0.17
+*** TURN *** [Ac Ts 4c] [As]
+lebifflemaster: checks 
+vlad.mdv: bets $0.43
+lebifflemaster: calls $0.43
+*** RIVER *** [Ac Ts 4c As] [Ad]
+lebifflemaster: checks 
+vlad.mdv: bets $1.92 and is all-in
+lebifflemaster: calls $1.92
+*** SHOW DOWN ***
+vlad.mdv: shows [9c Ah] (four of a kind, Aces)
+lebifflemaster: shows [Qd Qh] (a full house, Aces full of Queens)
+vlad.mdv collected $5.36 from pot
+*** SUMMARY ***
+Total pot $5.59 | Rake $0.23 
+Board [Ac Ts 4c As Ad]
+Seat 1: vlad.mdv (button) showed [9c Ah] and won ($5.36) with four of a kind, Aces
+Seat 2: lebifflemaster (small blind) showed [Qd Qh] and lost with a full house, Aces full of Queens
+Seat 3: zodapoker (big blind) folded before Flop
+Seat 4: skygger777 folded before Flop (didn't bet)
+Seat 5: Tartarobass folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880088012:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:43 JST [2025/09/25 6:49:43 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5.17 in chips) 
+Seat 2: Baikasas ($5 in chips) 
+Seat 3: FakaN4Kavera ($5.83 in chips) 
+Seat 4: Epist461 ($6.82 in chips) 
+Seat 5: kmc4444 ($5 in chips) 
+Seat 6: YAG5292 ($2.73 in chips) 
+Baikasas: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3d Ad]
+Epist461: folds 
+kmc4444: folds 
+YAG5292: folds 
+IBRODIAN-ACER: folds 
+Baikasas: folds 
+Uncalled bet ($0.03) returned to FakaN4Kavera
+FakaN4Kavera collected $0.04 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: Baikasas (small blind) folded before Flop
+Seat 3: FakaN4Kavera (big blind) collected ($0.04)
+Seat 4: Epist461 folded before Flop (didn't bet)
+Seat 5: kmc4444 folded before Flop (didn't bet)
+Seat 6: YAG5292 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880087710:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:40 JST [2025/09/25 6:49:40 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: zodapoker ($4.26 in chips) 
+Seat 2: elmex886 ($6.01 in chips) 
+Seat 3: 1Kronos ($13.27 in chips) 
+Seat 4: FakaN4Kavera ($5.83 in chips) 
+Seat 5: KRSofM ($4.85 in chips) 
+Seat 6: kmc4444 ($6.54 in chips) 
+elmex886: posts small blind $0.02
+1Kronos: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jh 3c]
+FakaN4Kavera: folds 
+KRSofM: folds 
+kmc4444: folds 
+zodapoker: raises $0.07 to $0.12
+elmex886: folds 
+1Kronos: raises $0.43 to $0.55
+zodapoker: folds 
+Uncalled bet ($0.43) returned to 1Kronos
+1Kronos collected $0.26 from pot
+1Kronos: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.26 | Rake $0 
+Seat 1: zodapoker (button) folded before Flop
+Seat 2: elmex886 (small blind) folded before Flop
+Seat 3: 1Kronos (big blind) collected ($0.26)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: kmc4444 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880089662:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:59 JST [2025/09/25 6:49:59 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5.68 in chips) 
+Seat 2: sk1bbz ($5 in chips) 
+Seat 3: faithfulness ($5.07 in chips) 
+Seat 4: 1Kronos ($5 in chips) 
+Seat 5: Baikasas ($10.16 in chips) 
+Seat 6: FakaN4Kavera ($5.85 in chips) 
+sk1bbz: posts small blind $0.02
+faithfulness: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4h Qh]
+1Kronos: folds 
+Baikasas: folds 
+FakaN4Kavera: folds 
+IBRODIAN-ACER: folds 
+sk1bbz: folds 
+Uncalled bet ($0.03) returned to faithfulness
+faithfulness collected $0.04 from pot
+faithfulness: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: sk1bbz (small blind) folded before Flop
+Seat 3: faithfulness (big blind) collected ($0.04)
+Seat 4: 1Kronos folded before Flop (didn't bet)
+Seat 5: Baikasas folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880089245:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:49:55 JST [2025/09/25 6:49:55 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: goaßmaß-fips ($14.83 in chips) 
+Seat 2: IBRODIAN-ACER ($5.70 in chips) 
+Seat 3: YAG5292 ($4.01 in chips) 
+Seat 4: faithfulness ($5.07 in chips) 
+Seat 5: FakaN4Kavera ($5.85 in chips) 
+Seat 6: Gogart87 ($5 in chips) 
+IBRODIAN-ACER: posts small blind $0.02
+YAG5292: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [3c Qd]
+faithfulness: folds 
+FakaN4Kavera: folds 
+Gogart87: folds 
+goaßmaß-fips: folds 
+IBRODIAN-ACER: folds 
+Uncalled bet ($0.03) returned to YAG5292
+YAG5292 collected $0.04 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: goaßmaß-fips (button) folded before Flop (didn't bet)
+Seat 2: IBRODIAN-ACER (small blind) folded before Flop
+Seat 3: YAG5292 (big blind) collected ($0.04)
+Seat 4: faithfulness folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: Gogart87 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880090537:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:07 JST [2025/09/25 6:50:07 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.85 in chips) 
+Seat 3: tomis1312 ($5.93 in chips) 
+Seat 4: Gogart87 ($5.21 in chips) 
+Seat 5: KRSofM ($4.80 in chips) 
+Seat 6: IBRODIAN-ACER ($5.10 in chips) 
+FakaN4Kavera: posts small blind $0.02
+tomis1312: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8h 3d]
+Gogart87: folds 
+KRSofM: raises $0.05 to $0.10
+IBRODIAN-ACER: folds 
+faithfulness: folds 
+FakaN4Kavera: folds 
+tomis1312: calls $0.05
+*** FLOP *** [7c 5s 5c]
+tomis1312: checks 
+KRSofM: checks 
+*** TURN *** [7c 5s 5c] [Ts]
+tomis1312: checks 
+KRSofM: checks 
+*** RIVER *** [7c 5s 5c Ts] [8s]
+tomis1312: checks 
+KRSofM: checks 
+*** SHOW DOWN ***
+tomis1312: shows [Jh Qd] (a pair of Fives)
+KRSofM: shows [Js Kd] (a pair of Fives - King kicker)
+KRSofM collected $0.21 from pot
+*** SUMMARY ***
+Total pot $0.22 | Rake $0.01 
+Board [7c 5s 5c Ts 8s]
+Seat 1: faithfulness (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: tomis1312 (big blind) showed [Jh Qd] and lost with a pair of Fives
+Seat 4: Gogart87 folded before Flop (didn't bet)
+Seat 5: KRSofM showed [Js Kd] and won ($0.21) with a pair of Fives
+Seat 6: IBRODIAN-ACER folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880092491:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:26 JST [2025/09/25 6:50:26 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: KRSofM ($5.62 in chips) 
+Seat 2: YAG5292 ($9.70 in chips) 
+Seat 3: FakaN4Kavera ($5.83 in chips) 
+Seat 4: IBRODIAN-ACER ($5.10 in chips) 
+Seat 5: lebifflemaster ($5.11 in chips) 
+Seat 6: semmely ($10.25 in chips) 
+YAG5292: posts small blind $0.02
+FakaN4Kavera: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Qd 8c]
+IBRODIAN-ACER: folds 
+lebifflemaster: folds 
+semmely: folds 
+KRSofM: folds 
+YAG5292: raises $0.08 to $0.13
+FakaN4Kavera: folds 
+Uncalled bet ($0.08) returned to YAG5292
+YAG5292 collected $0.10 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: KRSofM (button) folded before Flop (didn't bet)
+Seat 2: YAG5292 (small blind) collected ($0.10)
+Seat 3: FakaN4Kavera (big blind) folded before Flop
+Seat 4: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 5: lebifflemaster folded before Flop (didn't bet)
+Seat 6: semmely folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880091031:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:12 JST [2025/09/25 6:50:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: intentii ($5.70 in chips) 
+Seat 2: lebifflemaster ($7.15 in chips) 
+Seat 3: IBRODIAN-ACER ($5.68 in chips) 
+Seat 4: FakaN4Kavera ($5.83 in chips) 
+Seat 5: Epist461 ($6.68 in chips) 
+Seat 6: YAG5292 ($4.03 in chips) 
+lebifflemaster: posts small blind $0.02
+IBRODIAN-ACER: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Js 8s]
+FakaN4Kavera: folds 
+Epist461: folds 
+YAG5292: raises $0.09 to $0.14
+intentii: folds 
+lebifflemaster: folds 
+IBRODIAN-ACER: folds 
+Uncalled bet ($0.09) returned to YAG5292
+YAG5292 collected $0.12 from pot
+YAG5292: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: intentii (button) folded before Flop (didn't bet)
+Seat 2: lebifflemaster (small blind) folded before Flop
+Seat 3: IBRODIAN-ACER (big blind) folded before Flop
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: Epist461 folded before Flop (didn't bet)
+Seat 6: YAG5292 collected ($0.12)
+
+
+
+PokerStars Zoom Hand #257880092057:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:22 JST [2025/09/25 6:50:22 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.83 in chips) 
+Seat 2: Coco_bear373 ($10.65 in chips) 
+Seat 3: Gogart87 ($7.70 in chips) 
+Seat 4: Ingyeoking ($5.70 in chips) 
+Seat 5: 1Kronos ($9.85 in chips) 
+Seat 6: VXNX$157 ($2.75 in chips) 
+Coco_bear373: posts small blind $0.02
+Gogart87: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [4h 6s]
+Ingyeoking: folds 
+1Kronos: folds 
+VXNX$157: folds 
+FakaN4Kavera: folds 
+Coco_bear373: raises $0.10 to $0.15
+Gogart87: folds 
+Uncalled bet ($0.10) returned to Coco_bear373
+Coco_bear373 collected $0.10 from pot
+Coco_bear373: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: Coco_bear373 (small blind) collected ($0.10)
+Seat 3: Gogart87 (big blind) folded before Flop
+Seat 4: Ingyeoking folded before Flop (didn't bet)
+Seat 5: 1Kronos folded before Flop (didn't bet)
+Seat 6: VXNX$157 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880093778:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:39 JST [2025/09/25 6:50:39 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: klevinjer ($4.61 in chips) 
+Seat 2: elmex886 ($5.94 in chips) 
+Seat 3: KRSofM ($5.62 in chips) 
+Seat 4: tomis1312 ($5.81 in chips) 
+Seat 5: FakaN4Kavera ($5.78 in chips) 
+Seat 6: copperfield ($3.66 in chips) 
+elmex886: posts small blind $0.02
+KRSofM: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7d 9d]
+tomis1312: raises $0.05 to $0.10
+FakaN4Kavera: folds 
+copperfield: folds 
+klevinjer: folds 
+elmex886: raises $0.30 to $0.40
+KRSofM: folds 
+tomis1312: calls $0.30
+*** FLOP *** [2c 8h 3h]
+elmex886: bets $0.41
+tomis1312: folds 
+Uncalled bet ($0.41) returned to elmex886
+elmex886 collected $0.81 from pot
+elmex886: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.85 | Rake $0.04 
+Board [2c 8h 3h]
+Seat 1: klevinjer (button) folded before Flop (didn't bet)
+Seat 2: elmex886 (small blind) collected ($0.81)
+Seat 3: KRSofM (big blind) folded before Flop
+Seat 4: tomis1312 folded on the Flop
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: copperfield folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880095444:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:55 JST [2025/09/25 6:50:55 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Coco_bear373 ($10.70 in chips) 
+Seat 2: Jrsiqueira8 ($5 in chips) 
+Seat 3: semmely ($10.25 in chips) 
+Seat 4: IBRODIAN-ACER ($5.36 in chips) 
+Seat 5: lebifflemaster ($7.01 in chips) 
+Seat 6: FakaN4Kavera ($5.76 in chips) 
+Jrsiqueira8: posts small blind $0.02
+semmely: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8c 4c]
+IBRODIAN-ACER: folds 
+lebifflemaster: folds 
+FakaN4Kavera: folds 
+Coco_bear373: raises $0.10 to $0.15
+Jrsiqueira8: folds 
+semmely: folds 
+Uncalled bet ($0.10) returned to Coco_bear373
+Coco_bear373 collected $0.12 from pot
+Coco_bear373: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: Coco_bear373 (button) collected ($0.12)
+Seat 2: Jrsiqueira8 (small blind) folded before Flop
+Seat 3: semmely (big blind) folded before Flop
+Seat 4: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 5: lebifflemaster folded before Flop (didn't bet)
+Seat 6: FakaN4Kavera folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880096823:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:51:08 JST [2025/09/25 6:51:08 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: IBRODIAN-ACER ($5.50 in chips) 
+Seat 2: Gogart87 ($7.72 in chips) 
+Seat 3: KRSofM ($5.14 in chips) 
+Seat 4: Epist461 ($6.53 in chips) 
+Seat 5: FakaN4Kavera ($5.76 in chips) 
+Seat 6: intentii ($5.93 in chips) 
+Gogart87: posts small blind $0.02
+KRSofM: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c Ts]
+Epist461: folds 
+FakaN4Kavera: folds 
+intentii: folds 
+IBRODIAN-ACER: folds 
+Gogart87: folds 
+Uncalled bet ($0.03) returned to KRSofM
+KRSofM collected $0.04 from pot
+KRSofM: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: IBRODIAN-ACER (button) folded before Flop (didn't bet)
+Seat 2: Gogart87 (small blind) folded before Flop
+Seat 3: KRSofM (big blind) collected ($0.04)
+Seat 4: Epist461 folded before Flop (didn't bet)
+Seat 5: FakaN4Kavera folded before Flop (didn't bet)
+Seat 6: intentii folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880097218:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:51:12 JST [2025/09/25 6:51:12 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($5.76 in chips) 
+Seat 2: Ingyeoking ($5.84 in chips) 
+Seat 3: muhaaa3000 ($2.74 in chips) 
+Seat 4: IBRODIAN-ACER ($5.50 in chips) 
+Seat 5: faithfulness ($5.17 in chips) 
+Seat 6: elmex886 ($6.35 in chips) 
+Ingyeoking: posts small blind $0.02
+muhaaa3000: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [5c 2s]
+IBRODIAN-ACER: raises $0.05 to $0.10
+faithfulness: folds 
+elmex886: folds 
+FakaN4Kavera: folds 
+Ingyeoking: folds 
+muhaaa3000: folds 
+Uncalled bet ($0.05) returned to IBRODIAN-ACER
+IBRODIAN-ACER collected $0.12 from pot
+IBRODIAN-ACER: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.12 | Rake $0 
+Seat 1: FakaN4Kavera (button) folded before Flop (didn't bet)
+Seat 2: Ingyeoking (small blind) folded before Flop
+Seat 3: muhaaa3000 (big blind) folded before Flop
+Seat 4: IBRODIAN-ACER collected ($0.12)
+Seat 5: faithfulness folded before Flop (didn't bet)
+Seat 6: elmex886 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880094387:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:50:45 JST [2025/09/25 6:50:45 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Gogart87 ($6.43 in chips) 
+Seat 2: FakaN4Kavera ($5.78 in chips) 
+Seat 3: Ingyeoking ($3.88 in chips) 
+Seat 4: KRSofM ($5.57 in chips) 
+Seat 5: IBRODIAN-ACER ($5.08 in chips) 
+Seat 6: 1Kronos ($5 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Ingyeoking: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [9d 3h]
+KRSofM: folds 
+IBRODIAN-ACER: folds 
+1Kronos: raises $0.07 to $0.12
+Gogart87: folds 
+FakaN4Kavera: folds 
+Ingyeoking: calls $0.07
+*** FLOP *** [5s Ks 8s]
+Ingyeoking: checks 
+1Kronos: bets $0.08
+Ingyeoking: calls $0.08
+*** TURN *** [5s Ks 8s] [8c]
+Ingyeoking: checks 
+1Kronos: bets $0.20
+Ingyeoking: calls $0.20
+*** RIVER *** [5s Ks 8s 8c] [7c]
+Ingyeoking: checks 
+1Kronos: bets $0.26
+Ingyeoking: raises $0.84 to $1.10
+1Kronos: folds 
+Uncalled bet ($0.84) returned to Ingyeoking
+Ingyeoking collected $1.28 from pot
+Ingyeoking: doesn't show hand 
+*** SUMMARY ***
+Total pot $1.34 | Rake $0.06 
+Board [5s Ks 8s 8c 7c]
+Seat 1: Gogart87 (button) folded before Flop (didn't bet)
+Seat 2: FakaN4Kavera (small blind) folded before Flop
+Seat 3: Ingyeoking (big blind) collected ($1.28)
+Seat 4: KRSofM folded before Flop (didn't bet)
+Seat 5: IBRODIAN-ACER folded before Flop (didn't bet)
+Seat 6: 1Kronos folded on the River
+
+
+
+PokerStars Zoom Hand #257880098178:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:51:21 JST [2025/09/25 6:51:21 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: Baikasas ($5.26 in chips) 
+Seat 2: 1Kronos ($9.78 in chips) 
+Seat 3: ICallForYou ($5 in chips) 
+Seat 4: FakaN4Kavera ($5.76 in chips) 
+Seat 5: Gogart87 ($6.48 in chips) 
+Seat 6: Coco_bear373 ($10.77 in chips) 
+1Kronos: posts small blind $0.02
+ICallForYou: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [8d Kh]
+FakaN4Kavera: folds 
+Gogart87: folds 
+Coco_bear373: folds 
+Baikasas: folds 
+1Kronos: folds 
+Uncalled bet ($0.03) returned to ICallForYou
+ICallForYou collected $0.04 from pot
+ICallForYou: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.04 | Rake $0 
+Seat 1: Baikasas (button) folded before Flop (didn't bet)
+Seat 2: 1Kronos (small blind) folded before Flop
+Seat 3: ICallForYou (big blind) collected ($0.04)
+Seat 4: FakaN4Kavera folded before Flop (didn't bet)
+Seat 5: Gogart87 folded before Flop (didn't bet)
+Seat 6: Coco_bear373 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257880098598:  Hold'em No Limit ($0.02/$0.05) - 2025/09/25 19:51:25 JST [2025/09/25 6:51:25 ET]
+Table 'Donati' 6-max Seat #1 is the button
+Seat 1: faithfulness ($5 in chips) 
+Seat 2: FakaN4Kavera ($5.76 in chips) 
+Seat 3: Kenzo2211 ($5.37 in chips) 
+Seat 4: 1Kronos ($13.22 in chips) 
+Seat 5: KRSofM ($5.16 in chips) 
+Seat 6: Baikasas ($5.26 in chips) 
+FakaN4Kavera: posts small blind $0.02
+Kenzo2211: posts big blind $0.05
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [Jc Js]
+1Kronos: folds 
+KRSofM: folds 
+Baikasas: folds 
+faithfulness: raises $0.07 to $0.12
+FakaN4Kavera: raises $0.29 to $0.41
+Kenzo2211: folds 
+faithfulness: calls $0.29
+*** FLOP *** [7h Jh As]
+FakaN4Kavera: checks 
+faithfulness: checks 
+*** TURN *** [7h Jh As] [6h]
+FakaN4Kavera: bets $0.64
+faithfulness: folds 
+Uncalled bet ($0.64) returned to FakaN4Kavera
+FakaN4Kavera collected $0.83 from pot
+FakaN4Kavera: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.87 | Rake $0.04 
+Board [7h Jh As 6h]
+Seat 1: faithfulness (button) folded on the Turn
+Seat 2: FakaN4Kavera (small blind) collected ($0.83)
+Seat 3: Kenzo2211 (big blind) folded before Flop
+Seat 4: 1Kronos folded before Flop (didn't bet)
+Seat 5: KRSofM folded before Flop (didn't bet)
+Seat 6: Baikasas folded before Flop (didn't bet)
+
+
+

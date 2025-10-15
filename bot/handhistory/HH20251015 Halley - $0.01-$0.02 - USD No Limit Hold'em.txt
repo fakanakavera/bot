@@ -1,0 +1,42 @@
+
+PokerStars Zoom Hand #530775139401:  Hold'em No Limit ($0.01/$0.02) - 2025/10/15 21:19:35
+Table 'Halley' 6-max Seat #5 is the button
+Seat 1: Player1 ($2.00 in chips)
+Seat 2: FakaN4Kavera ($2.00 in chips)
+Seat 3: Player3 ($2.00 in chips)
+Seat 4: Player4 ($2.00 in chips)
+Seat 5: Player5 ($2.00 in chips)
+Seat 6: Player6 ($2.00 in chips)
+Player6: posts small blind $0.01
+Player1: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7H 2D]
+FakaN4Kavera: raises $0.05 to $0.05
+Player3: folds
+Player4: folds
+Player5: folds
+*** FLOP *** [9d Qc Ts]
+Player6: checks
+Player1: checks
+FakaN4Kavera: checks
+*** TURN *** [9d Qc Ts] [Jc]
+Player6: checks
+Player1: checks
+FakaN4Kavera: checks
+*** RIVER *** [9d Qc Ts Jc] [Kd]
+Player6: checks
+Player1: checks
+FakaN4Kavera: checks
+Player6: bets $1.63
+Player1: calls $1.63
+FakaN4Kavera: folds
+*** SHOW DOWN ***
+Player1: shows [7d Ad] (straight)
+Player6: shows [Ac Td] (straight)
+Player1 collected $164.50 from pot
+*** SUMMARY ***
+Total pot $164.50 | Rake $0
+Board [9d Qc Ts Jc Kd]
+Seat 2: FakaN4Kavera folded before Flop
+
+

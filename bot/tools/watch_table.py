@@ -154,6 +154,397 @@ def _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls: Dict[str, Tuple[any, O
         return None
 
 
+def _normalize_card_label(label: str) -> str:
+    try:
+        if not label:
+            return label
+        if label.startswith('card_'):
+            label = label[5:]
+        label = label.strip()
+        if len(label) != 2:
+            return label
+        rank, suit = label[0], label[1]
+        rank = rank.upper() if rank.isalpha() else rank
+        suit = suit.lower()
+        return f"{rank}{suit}"
+    except Exception:
+        return label
+
+
+def _rank_value(r: str) -> int:
+    order = {'2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, 'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}
+    return order.get(r.upper(), 0)
+
+
+def _rank_name_plural(r: str) -> str:
+    names = {'2': 'Twos', '3': 'Threes', '4': 'Fours', '5': 'Fives', '6': 'Sixes', '7': 'Sevens', '8': 'Eights', '9': 'Nines', 'T': 'Tens', 'J': 'Jacks', 'Q': 'Queens', 'K': 'Kings', 'A': 'Aces'}
+    return names.get(r.upper(), r)
+
+
+def _evaluate_hand_rank(board_cards: List[str], hole_cards: List[str]) -> str:
+    try:
+        cards = [
+            _normalize_card_label(c) for c in (list(board_cards) + list(hole_cards)) if c
+        ]
+        if len(cards) < 5:
+            return 'high card'
+        ranks = [c[0].upper() for c in cards]
+        suits = [c[1].lower() for c in cards]
+        from collections import Counter
+        rc = Counter(ranks)
+        sc = Counter(suits)
+
+        # Flush?
+        flush_suit = None
+        for s, cnt in sc.items():
+            if cnt >= 5:
+                flush_suit = s
+                break
+
+        # Unique rank values for straights
+        vals = sorted({(_rank_value(r)) for r in ranks})
+        if 14 in vals:
+            vals.append(1)  # wheel
+        def straight_high(vs: List[int]) -> Optional[int]:
+            run = 1
+            best = None
+            for i in range(1, len(vs)):
+                if vs[i] == vs[i-1] + 1:
+                    run += 1
+                    if run >= 5:
+                        best = vs[i]
+                elif vs[i] != vs[i-1]:
+                    run = 1
+            return best
+        sh = straight_high(vals)
+
+        # Straight flush?
+        if flush_suit is not None:
+            fvals = sorted({_rank_value(cards[i][0]) if cards[i][0] != 'A' else 14 for i in range(len(cards)) if suits[i] == flush_suit})
+            if 14 in fvals:
+                fvals.append(1)
+            sfh = straight_high(fvals)
+            if sfh is not None:
+                return 'straight flush'
+
+        # Quads / Full house / Trips / Two pair / Pair
+        counts = sorted(rc.items(), key=lambda x: (x[1], _rank_value(x[0])), reverse=True)
+        four = [r for r, n in counts if n == 4]
+        trips = [r for r, n in counts if n == 3]
+        pairs = [r for r, n in counts if n == 2]
+        if four:
+            return f"four of a kind, {_rank_name_plural(four[0])}"
+        if trips and (pairs or len(trips) >= 2):
+            t = trips[0]
+            p = pairs[0] if pairs else trips[1]
+            return f"full house, {_rank_name_plural(t)} over {_rank_name_plural(p)}"
+        if flush_suit is not None:
+            return 'flush'
+        if sh is not None:
+            return 'straight'
+        if trips:
+            return f"three of a kind, {_rank_name_plural(trips[0])}"
+        if len(pairs) >= 2:
+            hi, lo = pairs[0], pairs[1]
+            # Ensure correct ordering by rank value
+            if _rank_value(hi) < _rank_value(lo):
+                hi, lo = lo, hi
+            return f"two pair, {_rank_name_plural(hi)} and {_rank_name_plural(lo)}"
+        if pairs:
+            return f"a pair of {_rank_name_plural(pairs[0])}"
+        return 'high card'
+    except Exception:
+        return 'high card'
+
+def _generate_hand_id(num_digits: int = 12) -> str:
+    # Use timestamp in microseconds to build a unique numeric hand id of fixed digits
+    base = str(int(time.time() * 1_000_000))
+    if len(base) >= num_digits:
+        return base[-num_digits:]
+    return base.rjust(num_digits, '0')
+
+
+def _choose_hero_cards(used: set) -> Tuple[str, str]:
+    # Prefer 7-2 offsuit, otherwise 7-3 offsuit, ensuring cards not used
+    suits = ['h', 'd', 'c', 's']
+    def pick_pair(low_rank: str) -> Optional[Tuple[str, str]]:
+        for s1 in suits:
+            for s2 in suits:
+                if s1 == s2:
+                    continue
+                c1 = f"7{s1}"
+                c2 = f"{low_rank}{s2}"
+                if c1 not in used and c2 not in used:
+                    return c1, c2
+        return None
+    pair = pick_pair('2')
+    if pair:
+        return pair
+    pair = pick_pair('3')
+    if pair:
+        return pair
+    # Fallback to the first available 7x offsuit not used
+    for s1 in suits:
+        for s2 in suits:
+            if s1 == s2:
+                continue
+            c1 = f"7{s1}"
+            c2 = f"2{s2}"
+            if c1 not in used and c2 not in used:
+                return c1, c2
+    # As a last resort return a fixed pair (may duplicate if vision failed)
+    return '7h', '2d'
+
+
+def _write_hand_history(args, dealer_seat_zero_based: Optional[int], prev_board: Optional[List[Optional[str]]], showdown_map: Dict[int, List[str]], prev_pot_text: Optional[str], hh_actions):
+    try:
+        if not getattr(args, 'hh_enable', False):
+            return
+        out_dir = getattr(args, 'hh_out', 'bot/handhistory')
+        os.makedirs(out_dir, exist_ok=True)
+
+        # Config
+        table_name = getattr(args, 'hh_table', 'Halley')
+        num_players = int(getattr(args, 'hh_players', 6))
+        sb = float(getattr(args, 'hh_sb', 0.01))
+        bb = float(getattr(args, 'hh_bb', 0.02))
+        currency = getattr(args, 'hh_currency', 'USD')
+        hero_name = getattr(args, 'hero_name', 'FakaN4Kavera')
+        is_zoom = bool(getattr(args, 'hh_zoom', True))
+
+        # Time strings
+        t = time.localtime()
+        ts_local = time.strftime('%Y/%m/%d %H:%M:%S', t)
+        ymd = time.strftime('%Y%m%d', t)
+
+        # File name to append to
+        fname = f"HH{ymd} {table_name} - ${sb:.2f}-${bb:.2f} - {currency} No Limit Hold'em.txt"
+        fpath = os.path.join(out_dir, fname)
+
+        # Header
+        hand_id = _generate_hand_id(12)
+        header_left = 'PokerStars Zoom Hand' if is_zoom else 'PokerStars Hand'
+        header = f"{header_left} #{hand_id}:  Hold'em No Limit (${sb:.2f}/${bb:.2f}) - {ts_local}"
+
+        # Seat and positions
+        button_seat = (int(dealer_seat_zero_based) % num_players + 1) if dealer_seat_zero_based is not None else 1
+        sb_seat = (button_seat % num_players) + 1  # button+1
+        bb_seat = (sb_seat % num_players) + 1      # button+2
+
+        # Fake player names and stacks
+        seat_to_name: Dict[int, str] = {}
+        for s in range(1, num_players + 1):
+            seat_to_name[s] = f"Player{s}"
+
+        # Seats that showed down
+        showdown_seats = sorted([int(s) + 1 for s, cards in showdown_map.items() if cards])
+
+        # Choose hero seat as any seat that did not show down; default to button if all showed
+        hero_seat = None
+        for s in range(1, num_players + 1):
+            if s not in showdown_seats:
+                hero_seat = s
+                break
+        if hero_seat is None:
+            hero_seat = button_seat
+
+        seat_to_name[hero_seat] = hero_name
+
+        # Used cards (board + showdown)
+        used_cards: set = set()
+        if isinstance(prev_board, (list, tuple)):
+            for c in prev_board:
+                if c:
+                    used_cards.add(str(c))
+        for cards in showdown_map.values():
+            for c in cards:
+                used_cards.add(str(c))
+
+        hero_c1, hero_c2 = _choose_hero_cards(used_cards)
+
+        # Compose lines
+        lines: List[str] = []
+        lines.append(header)
+        lines.append(f"Table '{table_name}' 6-max Seat #{button_seat} is the button")
+        for s in range(1, num_players + 1):
+            lines.append(f"Seat {s}: {seat_to_name[s]} ($2.00 in chips)")
+        lines.append(f"{seat_to_name[sb_seat]}: posts small blind ${sb:.2f}")
+        lines.append(f"{seat_to_name[bb_seat]}: posts big blind ${bb:.2f}")
+        lines.append('*** HOLE CARDS ***')
+        lines.append(f"Dealt to {hero_name} [{hero_c1.upper()} {hero_c2.upper()}]")
+
+        # Helper to render action lines
+        def _render_action_line_dict(act: dict) -> str:
+            seat0 = int(act.get('seat0', 0))
+            action = str(act.get('act', ''))
+            is_allin = bool(act.get('is_allin', False))
+            name = seat_to_name.get(seat0 + 1, f"Player{seat0 + 1}")
+            action_l = action.lower()
+            suffix_allin = " and is all-in" if is_allin else ""
+            if action_l == 'fold':
+                return f"{name}: folds"
+            if action_l == 'check':
+                return f"{name}: checks"
+            if action_l == 'call':
+                call_bb = act.get('call_bb')
+                if call_bb is not None:
+                    try:
+                        return f"{name}: calls ${float(call_bb) * bb:.2f}{suffix_allin}"
+                    except Exception:
+                        pass
+                return f"{name}: calls{suffix_allin}"
+            if action_l == 'bet':
+                to_bb = act.get('to_bb')
+                if to_bb is not None:
+                    try:
+                        return f"{name}: bets ${float(to_bb) * bb:.2f}{suffix_allin}"
+                    except Exception:
+                        pass
+                return f"{name}: bets{suffix_allin}"
+            if action_l == 'raise':
+                by_bb = act.get('by_bb')
+                to_bb = act.get('to_bb')
+                try:
+                    if by_bb is not None and to_bb is not None:
+                        return f"{name}: raises ${float(by_bb) * bb:.2f} to ${float(to_bb) * bb:.2f}{suffix_allin}"
+                    if to_bb is not None:
+                        return f"{name}: raises to ${float(to_bb) * bb:.2f}{suffix_allin}"
+                except Exception:
+                    pass
+                return f"{name}: raises{suffix_allin}"
+            if action_l == 'allin':
+                to_bb = act.get('to_bb')
+                if to_bb is not None:
+                    try:
+                        return f"{name}: bets ${float(to_bb) * bb:.2f} and is all-in"
+                    except Exception:
+                        pass
+                return f"{name}: is all-in"
+            return f"{name}: {action}"
+
+        # Preflop actions
+        preflop_actions = list(hh_actions.get('preflop', []))
+        for act in preflop_actions:
+            lines.append(_render_action_line_dict(act))
+
+        # Streets and actions
+        # Normalize board cards like [4c 8d Qh]
+        raw_cards = [c for c in (prev_board or []) if c]
+        board_cards = [_normalize_card_label(c) for c in raw_cards]
+        if len(board_cards) >= 3:
+            lines.append(f"*** FLOP *** [{board_cards[0]} {board_cards[1]} {board_cards[2]}]")
+            for act in hh_actions.get('flop', []):
+                lines.append(_render_action_line_dict(act))
+        if len(board_cards) >= 4:
+            lines.append(f"*** TURN *** [{board_cards[0]} {board_cards[1]} {board_cards[2]}] [{board_cards[3]}]")
+            for act in hh_actions.get('turn', []):
+                lines.append(_render_action_line_dict(act))
+        if len(board_cards) >= 5:
+            lines.append(f"*** RIVER *** [{board_cards[0]} {board_cards[1]} {board_cards[2]} {board_cards[3]}] [{board_cards[4]}]")
+            for act in hh_actions.get('river', []):
+                lines.append(_render_action_line_dict(act))
+
+        # Showdown
+        any_show = any(showdown_map.values())
+        if any_show:
+            lines.append('*** SHOW DOWN ***')
+            winner_seat: Optional[int] = None
+            # Prefer a seat that showed 2 cards
+            for s0, cards in showdown_map.items():
+                if len(cards) >= 2:
+                    winner_seat = int(s0) + 1
+                    break
+            if winner_seat is None and showdown_seats:
+                winner_seat = showdown_seats[0]
+            # Emit show lines
+            for s0, cards in showdown_map.items():
+                if cards:
+                    seat_num = int(s0) + 1
+                    card_str = ' '.join([_normalize_card_label(c) for c in cards])
+                    rank_name = _evaluate_hand_rank(board_cards, cards)
+                    lines.append(f"{seat_to_name[seat_num]}: shows [{card_str}] ({rank_name})")
+            # Winner collected
+            try:
+                pot_val = float(prev_pot_text) if prev_pot_text is not None else 0.0
+            except Exception:
+                pot_val = 0.0
+            if winner_seat is not None:
+                lines.append(f"{seat_to_name[winner_seat]} collected ${pot_val:.2f} from pot")
+        else:
+            # No showdown: handle uncalled bet and winner collection if applicable
+            # Build chronological action list across streets
+            order = ['preflop', 'flop', 'turn', 'river']
+            chrono: List[Tuple[str, dict]] = []
+            for st in order:
+                for act in hh_actions.get(st, []):
+                    chrono.append((st, act))
+            # Find last aggressive action (bet/raise)
+            last_aggr_idx = None
+            for i in range(len(chrono) - 1, -1, -1):
+                a = str(chrono[i][1].get('act', '')).lower()
+                if a in ('bet', 'raise'):
+                    last_aggr_idx = i
+                    break
+            if last_aggr_idx is not None:
+                # Check if any call/raise after that; if none, it's uncalled
+                has_response = False
+                for j in range(last_aggr_idx + 1, len(chrono)):
+                    aj = str(chrono[j][1].get('act', '')).lower()
+                    if aj in ('call', 'raise'):
+                        has_response = True
+                        break
+                actor = int(chrono[last_aggr_idx][1].get('seat0', 0))
+                actor_name = seat_to_name.get(actor + 1, f"Player{actor + 1}")
+                try:
+                    pot_val = float(prev_pot_text) if prev_pot_text is not None else 0.0
+                except Exception:
+                    pot_val = 0.0
+                if not has_response:
+                    if str(chrono[last_aggr_idx][1].get('act', '')).lower() == 'raise':
+                        by_bb = chrono[last_aggr_idx][1].get('by_bb')
+                        if by_bb is not None:
+                            try:
+                                lines.append(f"Uncalled bet (${float(by_bb) * bb:.2f}) returned to {actor_name}")
+                            except Exception:
+                                pass
+                    elif str(chrono[last_aggr_idx][1].get('act', '')).lower() == 'bet':
+                        to_bb = chrono[last_aggr_idx][1].get('to_bb')
+                        if to_bb is not None:
+                            try:
+                                lines.append(f"Uncalled bet (${float(to_bb) * bb:.2f}) returned to {actor_name}")
+                            except Exception:
+                                pass
+                # Winner collects and doesn't show
+                lines.append(f"{actor_name} collected ${pot_val:.2f} from pot")
+                lines.append(f"{actor_name}: doesn't show hand ")
+
+        # Summary
+        lines.append('*** SUMMARY ***')
+        try:
+            pot_val = float(prev_pot_text) if prev_pot_text is not None else 0.0
+        except Exception:
+            pot_val = 0.0
+        lines.append(f"Total pot ${pot_val:.2f} | Rake $0")
+        if len(board_cards) == 5:
+            lines.append(f"Board [{board_cards[0]} {board_cards[1]} {board_cards[2]} {board_cards[3]} {board_cards[4]}]")
+        elif len(board_cards) == 4:
+            lines.append(f"Board [{board_cards[0]} {board_cards[1]} {board_cards[2]} {board_cards[3]}]")
+        elif len(board_cards) == 3:
+            lines.append(f"Board [{board_cards[0]} {board_cards[1]} {board_cards[2]}]")
+        # Hero folded before flop per request
+        if hero_seat == button_seat:
+            lines.append(f"Seat {hero_seat}: {hero_name} (button) folded before Flop")
+        else:
+            lines.append(f"Seat {hero_seat}: {hero_name} folded before Flop")
+
+        with open(fpath, 'a', encoding='utf-8') as f:
+            for ln in lines:
+                f.write(ln + "\n")
+            f.write("\n\n")
+    except Exception:
+        # Silent failure to not interrupt capture loop
+        pass
+
 def main():
     parser = argparse.ArgumentParser(description='Watch one table and print changes: dealer seat and board cards')
     parser.add_argument('--device', default='/dev/v4l/by-id/usb-Actions_Micro_UGREEN-25854_-1575730626-video-index0')
@@ -184,6 +575,15 @@ def main():
     parser.add_argument('--bb-threshold', type=float, default=0.99, help='Threshold for BB label match (finite and rightmost)')
     parser.add_argument('--bb-digit-threshold', type=float, default=0.99, help='Threshold for digit/dot matches when parsing player BB')
     parser.add_argument('--bb-digit-min-var', type=float, default=15, help='Reject player BB glyphs below this variance')
+    # Hand history options
+    parser.add_argument('--hh-enable', action='store_true', help='Enable writing PokerStars-like hand history files')
+    parser.add_argument('--hh-out', default='bot/handhistory', help='Output directory for hand history files')
+    parser.add_argument('--hh-table', default='Halley', help='Table name for hand history')
+    parser.add_argument('--hh-players', type=int, default=6, help='Number of seats at the table')
+    parser.add_argument('--hh-sb', type=float, default=0.01, help='Small blind amount')
+    parser.add_argument('--hh-bb', type=float, default=0.02, help='Big blind amount')
+    parser.add_argument('--hh-currency', default='USD', help='Currency label, e.g., USD')
+    parser.add_argument('--hero-name', default='FakaN4Kavera', help='Hero player name to embed in HH')
     args = parser.parse_args()
 
     # Load configs
@@ -274,7 +674,10 @@ def main():
         prev_dealer: Optional[int] = None
         prev_board: Optional[List[Optional[str]]] = None
         prev_pot: Optional[str] = None
-        prev_pot_num: Optional[float] = None
+        # Announce a new hand only once per hand
+        new_hand_announced: bool = False
+        # Track last non-empty board for HH writing
+        hh_board_last: List[str] = []
         action_rois = _get_action_rois_from_profile(profile)
         if not action_rois:
             # Fallback to built-in defaults if not present in JSON
@@ -290,6 +693,19 @@ def main():
         prev_allin: Dict[int, bool] = {s: False for s in action_rois.keys()}
         # Track showdown/hole cards for other players: seat -> [card labels]
         prev_seat_cards: Dict[int, List[str]] = {s: [] for s in action_rois.keys()}
+        # Hand history action accumulator: street -> list of action dicts
+        hh_actions = {"preflop": [], "flop": [], "turn": [], "river": []}
+        current_street: str = "preflop"
+        prev_street: str = "preflop"
+        # Betting state per street
+        street_to_call_bb: float = 0.0
+        seat_to_bet_bb: Dict[int, float] = {s: 0.0 for s in action_rois.keys()}
+        seat_last_action: Dict[int, Optional[str]] = {s: None for s in action_rois.keys()}
+        # Order-of-action tracking
+        seat_order: List[int] = sorted(action_rois.keys())
+        seat_to_idx: Dict[int, int] = {s: i for i, s in enumerate(seat_order)}
+        seat_folded: Dict[int, bool] = {s: False for s in seat_order}
+        street_next_idx: Optional[int] = None
         interval = 1.0 / max(0.1, args.fps)
         while True:
             frame = cap.get_frame(timeout_sec=0.3)
@@ -334,6 +750,15 @@ def main():
             if cards_det is not None:
                 holes, hole_scores, board, board_scores = cards_det.detect(gray)
                 board_val = board
+
+            # Reset new-hand announcement once any board card appears
+            try:
+                if board_val is not None and any(bool(c) for c in board_val):
+                    new_hand_announced = False
+                    # Update last non-empty board snapshot for HH
+                    hh_board_last = [str(c) for c in board_val if c]
+            except Exception:
+                pass
 
             # Read pot
             pot_val = None
@@ -459,6 +884,35 @@ def main():
             if board_val is not None and board_val != prev_board:
                 print(json.dumps({"event": "board_change", "board": board_val}))
                 prev_board = board_val
+                # Advance street
+                try:
+                    bc = len([c for c in board_val if c]) if isinstance(board_val, (list, tuple)) else 0
+                except Exception:
+                    bc = 0
+                new_street = "preflop"
+                if bc >= 5:
+                    new_street = "river"
+                elif bc == 4:
+                    new_street = "turn"
+                elif bc == 3:
+                    new_street = "flop"
+                if new_street != current_street:
+                    prev_street = current_street
+                    current_street = new_street
+                    # Reset betting state for new street
+                    street_to_call_bb = 0.0
+                    seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
+                    seat_last_action = {s: None for s in seat_last_action.keys()}
+                    # Reset next-to-act pointer based on dealer
+                    try:
+                        street_next_idx = 0
+                        base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                        if base_dealer is not None:
+                            d_idx = seat_to_idx.get(int(base_dealer), 0)
+                            offset = 3 if current_street == 'preflop' else 1
+                            street_next_idx = (d_idx + offset) % max(1, len(seat_order))
+                    except Exception:
+                        street_next_idx = 0
                 changed = True
             if pot_val is not None and pot_val != prev_pot:
                 print(json.dumps({"event": "pot_change", "text": pot_val}))
@@ -495,17 +949,56 @@ def main():
                             if txt:
                                 bb_vals[seat] = txt
                 if bb_vals:
-                    print(json.dumps({"event": "player_bb_change", "values": bb_vals}))
-                # Detect new hand when pot drops compared to previous value
-                try:
-                    pot_num = float(pot_val)
-                except Exception:
-                    pot_num = None
-                if prev_pot_num is not None and pot_num is not None:
-                    if pot_num < prev_pot_num - 1e-6:
+                    # Determine if there are no cards on the board
+                    no_board_cards = False
+                    try:
+                        if board_val is not None and isinstance(board_val, (list, tuple)):
+                            no_board_cards = all(not c for c in board_val)
+                    except Exception:
+                        no_board_cards = False
+
+                    # Check if at least one player's on-table amount is < 1 BB
+                    any_below_1bb = False
+                    for txt in bb_vals.values():
+                        try:
+                            if float(txt) < 1.0 - 1e-6:
+                                any_below_1bb = True
+                                break
+                        except Exception:
+                            continue
+
+                    # Print NEW HAND before player BBs if condition met, only once per hand
+                    if no_board_cards and any_below_1bb and not new_hand_announced:
+                        # Write HH for the previous hand (use last non-empty board and previous pot)
+                        try:
+                            showdown_snapshot = {s: list(cards) for s, cards in prev_seat_cards.items()}
+                            _write_hand_history(args, prev_dealer, hh_board_last, showdown_snapshot, prev_pot, hh_actions)
+                        except Exception:
+                            pass
                         print("--------- NEW HAND --------")
+                        new_hand_announced = True
+                        # Clear showdown cache for next hand
+                        try:
+                            prev_seat_cards = {s: [] for s in prev_seat_cards.keys()}
+                            hh_actions = {"preflop": [], "flop": [], "turn": [], "river": []}
+                            current_street = "preflop"
+                            street_to_call_bb = 0.0
+                            seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
+                            seat_last_action = {s: None for s in seat_last_action.keys()}
+                            seat_folded = {s: False for s in seat_order}
+                            # set next-to-act pointer for new hand
+                            try:
+                                base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                                d_idx = seat_to_idx.get(int(base_dealer), 0)
+                                street_next_idx = (d_idx + 3) % max(1, len(seat_order))
+                            except Exception:
+                                street_next_idx = 0
+                        except Exception:
+                            pass
+
+                    # Now emit the player BB values
+                    print(json.dumps({"event": "player_bb_change", "values": bb_vals}))
                 prev_pot = pot_val
-                prev_pot_num = pot_num if pot_num is not None else prev_pot_num
                 changed = True
 
             # Detect player actions per seat using base action templates
@@ -532,7 +1025,143 @@ def main():
                 if action_val != prev_actions.get(seat):
                     # Only print when action is non-null
                     if action_val is not None:
+                        # Ignore any actions from a seat already folded
+                        if seat_folded.get(seat, False):
+                            prev_actions[seat] = action_val
+                            continue
                         print(json.dumps({"event": "action_change", "seat": seat, "action": action_val, "score": round(best_score, 3)}))
+                        # Force/read BBs to compute amounts and update betting state
+                        try:
+                            # Initialize next-to-act pointer if needed
+                            if street_next_idx is None:
+                                try:
+                                    base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                                    d_idx = seat_to_idx.get(int(base_dealer), 0)
+                                    offset = 3 if current_street == 'preflop' else 1
+                                    street_next_idx = (d_idx + offset) % max(1, len(seat_order))
+                                except Exception:
+                                    street_next_idx = 0
+                            # Infer missing actions up to current actor
+                            eps = 1e-6
+                            safety = 0
+                            while seat_order and street_next_idx is not None and seat_order[street_next_idx] != seat and safety < len(seat_order):
+                                s_between = seat_order[street_next_idx]
+                                safety += 1
+                                if seat_folded.get(s_between, False):
+                                    street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                                    continue
+                                prev_amt_between = float(seat_to_bet_bb.get(s_between, 0.0))
+                                if street_to_call_bb > prev_amt_between + eps:
+                                    hh_actions[current_street].append({"seat0": s_between, "act": "fold", "is_allin": False})
+                                    seat_last_action[s_between] = 'fold'
+                                    seat_folded[s_between] = True
+                                else:
+                                    # Only BB can check preflop when unopened
+                                    can_check_preflop = False
+                                    if current_street == 'preflop':
+                                        try:
+                                            base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                                            d_idx = seat_to_idx.get(int(base_dealer), 0)
+                                            bb_idx = (d_idx + 2) % max(1, len(seat_order))
+                                            bb_seat0 = seat_order[bb_idx]
+                                            can_check_preflop = (s_between == bb_seat0)
+                                        except Exception:
+                                            can_check_preflop = False
+                                    if current_street != 'preflop' or can_check_preflop:
+                                        if seat_last_action.get(s_between) != 'check':
+                                            hh_actions[current_street].append({"seat0": s_between, "act": "check", "is_allin": False})
+                                            seat_last_action[s_between] = 'check'
+                                street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                            bb_vals: Dict[int, Optional[str]] = {}
+                            bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
+                            rois_src: Dict[int, Tuple[int, int, int, int]] = {}
+                            if isinstance(bb_rois, dict):
+                                for k, v in bb_rois.items():
+                                    try:
+                                        sk = int(k)
+                                    except Exception:
+                                        continue
+                                    if isinstance(v, (list, tuple)) and len(v) == 4:
+                                        rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+                            if not rois_src:
+                                rois_src = dict(DEFAULT_SEAT_BB_ROIS)
+                            for s_seat, (bx, by, bw, bh) in rois_src.items():
+                                rx_bb = max(0, int(bx) - max(0, int(args.bb_left_pad)))
+                                rw_bb = max(0, int(bx) + int(bw) - rx_bb)
+                                roi_bgr = table[by:by+bh, rx_bb:rx_bb+rw_bb]
+                                if roi_bgr.size == 0:
+                                    continue
+                                roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
+                                bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
+                                if np.isfinite(bb_score) and bb_score >= args.bb_threshold and bb_loc is not None:
+                                    bxx = int(bb_loc[0])
+                                    left_w = max(0, min(bxx, rw_bb))
+                                    if left_w > 0:
+                                        crop_gray = roi_gray[:, 0:left_w]
+                                        txt = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, args.bb_digit_threshold, args.bb_digit_min_var)
+                                        if txt:
+                                            bb_vals[s_seat] = txt
+                            if bb_vals:
+                                print(json.dumps({"event": "player_bb_change", "values": bb_vals}))
+                            # Compute action semantics
+                            eps = 1e-6
+                            a = action_val.lower()
+                            prev_amt = float(seat_to_bet_bb.get(seat, 0.0))
+                            new_amt = prev_amt
+                            try:
+                                if seat in bb_vals and bb_vals.get(seat) is not None:
+                                    new_amt = float(bb_vals.get(seat))
+                            except Exception:
+                                new_amt = prev_amt
+                            # Update other seats' bet amounts if available
+                            for s_seat, txt in bb_vals.items():
+                                try:
+                                    seat_to_bet_bb[s_seat] = float(txt)
+                                except Exception:
+                                    pass
+
+                            record = None
+                            is_ai = bool(prev_allin.get(seat, False))
+                            if a == 'bet':
+                                if street_to_call_bb <= eps and new_amt > prev_amt + eps:
+                                    record = {"seat0": seat, "act": "bet", "to_bb": new_amt, "is_allin": is_ai}
+                                    street_to_call_bb = new_amt
+                                    seat_to_bet_bb[seat] = new_amt
+                            elif a == 'raise':
+                                if new_amt > street_to_call_bb + eps:
+                                    by_bb = new_amt - street_to_call_bb
+                                    record = {"seat0": seat, "act": "raise", "by_bb": by_bb, "to_bb": new_amt, "is_allin": is_ai}
+                                    street_to_call_bb = new_amt
+                                    seat_to_bet_bb[seat] = new_amt
+                            elif a == 'call':
+                                if street_to_call_bb > prev_amt + eps:
+                                    call_bb = street_to_call_bb - prev_amt
+                                    record = {"seat0": seat, "act": "call", "call_bb": call_bb, "is_allin": is_ai}
+                                    seat_to_bet_bb[seat] = street_to_call_bb
+                            elif a == 'check':
+                                if street_to_call_bb <= prev_amt + eps and seat_last_action.get(seat) != 'check':
+                                    record = {"seat0": seat, "act": "check", "is_allin": is_ai}
+                            elif a == 'fold':
+                                record = {"seat0": seat, "act": "fold", "is_allin": is_ai}
+
+                            if record is not None:
+                                hh_actions[current_street].append(record)
+                                seat_last_action[seat] = a
+                                # Update folded map and next actor pointer
+                                if a == 'fold':
+                                    seat_folded[seat] = True
+                                if street_next_idx is not None:
+                                    try:
+                                        idx = seat_to_idx.get(seat, street_next_idx)
+                                        street_next_idx = (idx + 1) % max(1, len(seat_order))
+                                        safety2 = 0
+                                        while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
+                                            street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                                            safety2 += 1
+                                    except Exception:
+                                        pass
+                        except Exception:
+                            pass
                         actions_changed = True
                     # Always update internal state (even if None), but suppress printing for None
                     prev_actions[seat] = action_val
