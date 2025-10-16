@@ -552,13 +552,13 @@ def main():
     parser.add_argument('--templates', default='bot/templates')
     parser.add_argument('--match', default='bot/config/match.json')
     parser.add_argument('--table-id', type=int, default=0)
-    parser.add_argument('--fps', type=float, default=10.0)
+    parser.add_argument('--fps', type=float, default=60.0)
     parser.add_argument('--debug', action='store_true', help='Print mapping distances and save annotated frame on changes')
     parser.add_argument('--debug-dir', default='bot/frames_out', help='Directory to save debug frames')
     parser.add_argument('--actions-dir', default='bot/templates/actions', help='Directory containing base action templates (PNG files named by action)')
-    parser.add_argument('--action-threshold', type=float, default=0.9, help='Threshold for matching against base action templates')
+    parser.add_argument('--action-threshold', type=float, default=0.99, help='Threshold for matching against base action templates')
     parser.add_argument('--allin-dir', default=None, help='Directory containing all-in templates (defaults to actions-dir/allin)')
-    parser.add_argument('--allin-threshold', type=float, default=0.9, help='Threshold for matching all-in templates')
+    parser.add_argument('--allin-threshold', type=float, default=0.99, help='Threshold for matching all-in templates')
     parser.add_argument('--allin-y-offset', type=int, default=22, help='Vertical offset (pixels) from action ROI for all-in text')
     # Pot reading (templates directory is hardcoded via POT_TEMPL_DIR)
     # Pot ROI will be read from tables.json (landmarks.pot_roi); CLI defaults are fallback only
@@ -584,7 +584,20 @@ def main():
     parser.add_argument('--hh-bb', type=float, default=0.02, help='Big blind amount')
     parser.add_argument('--hh-currency', default='USD', help='Currency label, e.g., USD')
     parser.add_argument('--hero-name', default='FakaN4Kavera', help='Hero player name to embed in HH')
+    # Villan hole (back-of-card) detection
+    parser.add_argument('--villan-dump', action='store_true', help='Dump villan presence annotated frame at NEW HAND')
+    # Snapshot (export a single frame and exit)
+    parser.add_argument('--snapshot-out', default=None, help='If set, save one frame image to this path and exit (defaults to debug-dir/snapshot_table{table-id}.png)')
+    parser.add_argument('--snapshot-full', action='store_true', help='When saving snapshot, save the full frame instead of cropping to table ROI')
+    parser.add_argument('--json-logs', action='store_true', help='Print JSON debug events instead of dashboard')
     args = parser.parse_args()
+
+    def _log(payload):
+        try:
+            if args.json_logs:
+                print(json.dumps(payload))
+        except Exception:
+            pass
 
     # Load configs
     with open(args.match, 'r') as f:
@@ -668,14 +681,90 @@ def main():
             stem = os.path.splitext(name)[0]
             allin_tpls.append((stem, gray, mask))
 
+    # Load villan hole templates (paths from config if present; otherwise defaults)
+    villan_templates: List[Tuple[str, any, Optional[any]]] = []
+    cfg_templates = []
+    try:
+        cfg_templates = list(profile.landmarks.get('villan_hole_templates', []))
+    except Exception:
+        cfg_templates = []
+    if not cfg_templates:
+        cfg_templates = [
+            os.path.join(args.templates, 'villan_hole', 'villan_hole.png'),
+            os.path.join(args.templates, 'villan_hole', 'villan_hole2.png'),
+            os.path.join('/templates', 'villan_hole', 'villan_hole.png'),
+            os.path.join('/templates', 'villan_hole', 'villan_hole2.png'),
+        ]
+    loaded_names = set()
+    for pth in cfg_templates:
+        if not pth or not os.path.isfile(pth):
+            continue
+        img = cv2.imread(pth, cv2.IMREAD_UNCHANGED)
+        if img is None:
+            continue
+        mask = None
+        if img.ndim == 3 and img.shape[2] == 4:
+            bgr = img[:, :, :3]
+            alpha = img[:, :, 3]
+            gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+            mask = cv2.threshold(alpha, 0, 255, cv2.THRESH_BINARY)[1]
+        else:
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if img.ndim == 3 else img
+        stem = os.path.splitext(os.path.basename(pth))[0]
+        if stem in loaded_names:
+            continue
+        loaded_names.add(stem)
+        villan_templates.append((stem, gray, mask))
+
     cap = BackgroundCapture(args.device, warmup_frames=45, target_fps=max(8.0, args.fps))
     cap.start()
+
+    # If snapshot requested, capture one frame, save, and exit
+    if args.snapshot_out is not None:
+        # Determine output path (allow empty string to trigger default into debug-dir)
+        out_path = args.snapshot_out
+        if not out_path:
+            try:
+                os.makedirs(args.debug_dir, exist_ok=True)
+            except Exception:
+                pass
+            out_path = os.path.join(args.debug_dir, f"snapshot_table{args.table_id}.png")
+        # Attempt to fetch a frame
+        snap = None
+        for _ in range(40):
+            snap = cap.get_frame(timeout_sec=0.4)
+            if snap is not None:
+                break
+            time.sleep(0.05)
+        if snap is None:
+            cap.stop()
+            raise SystemExit('Failed to capture frame for snapshot')
+        # Crop to table ROI unless full requested
+        try:
+            if args.snapshot_full:
+                img_to_save = snap
+            else:
+                img_to_save = snap[profile.roi.y:profile.roi.y+profile.roi.h, profile.roi.x:profile.roi.x+profile.roi.w]
+        except Exception:
+            img_to_save = snap
+        try:
+            os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
+        except Exception:
+            pass
+        cv2.imwrite(out_path, img_to_save)
+        _log({"event": "snapshot_saved", "path": out_path, "full": bool(args.snapshot_full), "w": int(img_to_save.shape[1]), "h": int(img_to_save.shape[0])})
+        cap.stop()
+        return
     try:
         prev_dealer: Optional[int] = None
         prev_board: Optional[List[Optional[str]]] = None
         prev_pot: Optional[str] = None
         # Announce a new hand only once per hand
         new_hand_announced: bool = False
+        # Enable action monitoring only after the first NEW HAND is detected at startup
+        monitor_ready: bool = False
+        # Villan presence (back-of-card) cache for current hand: seat -> bool
+        villan_present: Dict[int, bool] = {}
         # Track last non-empty board for HH writing
         hh_board_last: List[str] = []
         action_rois = _get_action_rois_from_profile(profile)
@@ -689,6 +778,20 @@ def main():
                 4: (341, 375, 421 - 341, 394 - 375),
                 5: (33, 283, 112 - 33, 303 - 283),
             }
+        # Villan hole ROIs map (persistent)
+        villan_rois_map: Dict[int, Tuple[int, int, int, int]] = {}
+        try:
+            vroi_src = profile.landmarks.get('villan_hole_rois') if isinstance(profile.landmarks, dict) else None
+            if isinstance(vroi_src, dict):
+                for k, v in vroi_src.items():
+                    try:
+                        sk = int(k)
+                    except Exception:
+                        continue
+                    if isinstance(v, (list, tuple)) and len(v) == 4:
+                        villan_rois_map[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+        except Exception:
+            villan_rois_map = {}
         prev_actions: Dict[int, Optional[str]] = {s: None for s in action_rois.keys()}
         prev_allin: Dict[int, bool] = {s: False for s in action_rois.keys()}
         # Track showdown/hole cards for other players: seat -> [card labels]
@@ -706,6 +809,24 @@ def main():
         seat_to_idx: Dict[int, int] = {s: i for i, s in enumerate(seat_order)}
         seat_folded: Dict[int, bool] = {s: False for s in seat_order}
         street_next_idx: Optional[int] = None
+        # Track last announced waiting actor to avoid spam
+        last_waiting_actor: Optional[int] = None
+        # Thinking pixel per seat (x,y) from config
+        thinking_pixels: Dict[int, Tuple[int, int]] = {}
+        try:
+            tps = profile.landmarks.get('thinking_pixels') if isinstance(profile.landmarks, dict) else None
+            if isinstance(tps, dict):
+                for k, v in tps.items():
+                    try:
+                        sk = int(k)
+                    except Exception:
+                        continue
+                    if isinstance(v, (list, tuple)) and len(v) == 2:
+                        thinking_pixels[sk] = (int(v[0]), int(v[1]))
+        except Exception:
+            thinking_pixels = {}
+        # Cache last thinking state per seat to print only on change
+        prev_thinking: Dict[int, Optional[bool]] = {s: None for s in seat_order}
         interval = 1.0 / max(0.1, args.fps)
         while True:
             frame = cap.get_frame(timeout_sec=0.3)
@@ -878,11 +999,11 @@ def main():
                         payload["debug_frame"] = out_path
                     except Exception:
                         pass
-                print(json.dumps(payload))
+                _log(payload)
                 prev_dealer = dealer_val
                 changed = True
             if board_val is not None and board_val != prev_board:
-                print(json.dumps({"event": "board_change", "board": board_val}))
+                _log({"event": "board_change", "board": board_val})
                 prev_board = board_val
                 # Advance street
                 try:
@@ -915,7 +1036,7 @@ def main():
                         street_next_idx = 0
                 changed = True
             if pot_val is not None and pot_val != prev_pot:
-                print(json.dumps({"event": "pot_change", "text": pot_val}))
+                _log({"event": "pot_change", "text": pot_val})
                 # Also emit per-seat player BB readings using bb_text_rois if available
                 bb_vals: Dict[int, Optional[str]] = {}
                 bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
@@ -975,8 +1096,63 @@ def main():
                             _write_hand_history(args, prev_dealer, hh_board_last, showdown_snapshot, prev_pot, hh_actions)
                         except Exception:
                             pass
-                        print("--------- NEW HAND --------")
+                        if args.json_logs:
+                            print("--------- NEW HAND --------")
                         new_hand_announced = True
+                        monitor_ready = True
+                        # At NEW HAND, scan villan hole in configured ROIs to mark AFK/present
+                        try:
+                            villan_present = {s: False for s in action_rois.keys()}
+                            rois = profile.landmarks.get('villan_hole_rois') if isinstance(profile.landmarks, dict) else None
+                            seat_rois: Dict[int, Tuple[int, int, int, int]] = {}
+                            if isinstance(rois, dict):
+                                for k, v in rois.items():
+                                    try:
+                                        sk = int(k)
+                                    except Exception:
+                                        continue
+                                    if isinstance(v, (list, tuple)) and len(v) == 4:
+                                        seat_rois[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+                            # Only attempt if we have templates and rois
+                            if villan_templates and seat_rois:
+                                gray_full = gray
+                                found_any = False
+                                for seat, (vx, vy, vw, vh) in seat_rois.items():
+                                    sub = gray_full[vy:vy+vh, vx:vx+vw]
+                                    if sub.size == 0:
+                                        continue
+                                    best = -1.0
+                                    for tname, tgray, tmask in villan_templates:
+                                        th, tw = tgray.shape[:2]
+                                        if sub.shape[0] < th or sub.shape[1] < tw:
+                                            continue
+                                        try:
+                                            res = cv2.matchTemplate(sub, tgray, cv2.TM_CCOEFF_NORMED, mask=tmask)
+                                        except Exception:
+                                            res = cv2.matchTemplate(sub, tgray, cv2.TM_CCOEFF_NORMED)
+                                        _, sc, _, _ = cv2.minMaxLoc(res)
+                                        if sc > best:
+                                            best = float(sc)
+                                    if np.isfinite(best) and best >= float(args.villan_threshold):
+                                        villan_present[seat] = True
+                                        found_any = True
+                                print(json.dumps({"event": "villan_scan", "present": {str(s): bool(v) for s, v in villan_present.items()}}))
+                                if args.villan_dump:
+                                    try:
+                                        os.makedirs(args.debug_dir, exist_ok=True)
+                                        vis = table.copy()
+                                        for s, ok in villan_present.items():
+                                            if s in seat_rois:
+                                                vx, vy, vw, vh = seat_rois[s]
+                                                color = (0, 255, 0) if ok else (0, 0, 255)
+                                                cv2.rectangle(vis, (vx, vy), (vx + vw, vy + vh), color, 2)
+                                                cv2.putText(vis, f"{s}:{'Y' if ok else 'N'}", (vx, max(0, vy - 4)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+                                        out_v = os.path.join(args.debug_dir, f"villan_scan_table{args.table_id}.png")
+                                        cv2.imwrite(out_v, vis)
+                                    except Exception:
+                                        pass
+                        except Exception:
+                            pass
                         # Clear showdown cache for next hand
                         try:
                             prev_seat_cards = {s: [] for s in prev_seat_cards.keys()}
@@ -997,17 +1173,196 @@ def main():
                             pass
 
                     # Now emit the player BB values
-                    print(json.dumps({"event": "player_bb_change", "values": bb_vals}))
+                    _log({"event": "player_bb_change", "values": bb_vals})
                 prev_pot = pot_val
                 changed = True
 
+            # Startup gating: if monitor not ready yet, proactively scan BBs to detect a NEW HAND
+            if not monitor_ready:
+                try:
+                    bb_vals_boot: Dict[int, Optional[str]] = {}
+                    bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
+                    rois_src: Dict[int, Tuple[int, int, int, int]] = {}
+                    if isinstance(bb_rois, dict):
+                        for k, v in bb_rois.items():
+                            try:
+                                sk = int(k)
+                            except Exception:
+                                continue
+                            if isinstance(v, (list, tuple)) and len(v) == 4:
+                                rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+                    if not rois_src:
+                        rois_src = dict(DEFAULT_SEAT_BB_ROIS)
+                    for s_seat, (bx, by, bw, bh) in rois_src.items():
+                        rx_bb = max(0, int(bx) - max(0, int(args.bb_left_pad)))
+                        rw_bb = max(0, int(bx) + int(bw) - rx_bb)
+                        roi_bgr = table[by:by+bh, rx_bb:rx_bb+rw_bb]
+                        if roi_bgr.size == 0:
+                            continue
+                        roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
+                        bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
+                        if np.isfinite(bb_score) and bb_score >= args.bb_threshold and bb_loc is not None:
+                            bxx = int(bb_loc[0])
+                            left_w = max(0, min(bxx, rw_bb))
+                            if left_w > 0:
+                                crop_gray = roi_gray[:, 0:left_w]
+                                txt = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, args.bb_digit_threshold, args.bb_digit_min_var)
+                                if txt:
+                                    bb_vals_boot[s_seat] = txt
+                    # Determine if there are no cards on the board yet
+                    no_board_cards_boot = False
+                    try:
+                        if board_val is not None and isinstance(board_val, (list, tuple)):
+                            no_board_cards_boot = all(not c for c in board_val)
+                        else:
+                            no_board_cards_boot = True
+                    except Exception:
+                        no_board_cards_boot = True
+                    any_below_1bb_boot = False
+                    for txt in bb_vals_boot.values():
+                        try:
+                            if float(txt) < 1.0 - 1e-6:
+                                any_below_1bb_boot = True
+                                break
+                        except Exception:
+                            continue
+                    if no_board_cards_boot and any_below_1bb_boot and not new_hand_announced:
+                        if args.json_logs:
+                            print("--------- NEW HAND --------")
+                        new_hand_announced = True
+                        monitor_ready = True
+                        # Initialize for new hand (same as pot-change branch)
+                        try:
+                            prev_seat_cards = {s: [] for s in prev_seat_cards.keys()}
+                            hh_actions = {"preflop": [], "flop": [], "turn": [], "river": []}
+                            current_street = "preflop"
+                            street_to_call_bb = 0.0
+                            seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
+                            seat_last_action = {s: None for s in seat_last_action.keys()}
+                            seat_folded = {s: False for s in seat_order}
+                            try:
+                                base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                                d_idx = seat_to_idx.get(int(base_dealer), 0)
+                                street_next_idx = (d_idx + 3) % max(1, len(seat_order))
+                            except Exception:
+                                street_next_idx = 0
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+
+            # Skip action/thinking detection until first NEW HAND detected
+            if not monitor_ready:
+                if not changed:
+                    time.sleep(interval)
+                continue
+
             # Detect player actions per seat using base action templates
             actions_changed = False
+            # Compute current actor seat (always gate to current actor)
+            current_actor_seat: Optional[int] = None
+            try:
+                if street_next_idx is not None and seat_order:
+                    current_actor_seat = seat_order[street_next_idx]
+                    # Skip folded seats
+                    safety_ga = 0
+                    while seat_folded.get(current_actor_seat, False) and safety_ga < len(seat_order):
+                        street_next_idx = (seat_to_idx.get(current_actor_seat, 0) + 1) % max(1, len(seat_order))
+                        current_actor_seat = seat_order[street_next_idx]
+                        safety_ga += 1
+            except Exception:
+                current_actor_seat = None
+
+            # Announce waiting seat when it changes
+            if current_actor_seat is not None and current_actor_seat != last_waiting_actor:
+                _log({"event": "waiting_actor", "seat": int(current_actor_seat)})
+                last_waiting_actor = current_actor_seat
+
+            # Track if actor is currently thinking (to avoid sleeping)
+            actor_thinking_now: bool = False
+
             for seat, rect in action_rois.items():
+                if current_actor_seat is not None and seat != current_actor_seat:
+                    continue
                 x, y, w, h = rect
                 sub = gray[y:y+h, x:x+w]
                 if sub.size == 0:
                     continue
+                # While waiting: check thinking pixel (highlight vs gray) for this seat and emit on change
+                try:
+                    if seat in thinking_pixels:
+                        px, py = thinking_pixels[seat]
+                        # scan small vertical range py-2..py+2
+                        is_highlight = False
+                        bgr_val = None
+                        used_y = py
+                        for dy in (-2, -1, 0, 1, 2):
+                            yy = py + dy
+                            if 0 <= yy < table.shape[0] and 0 <= px < table.shape[1]:
+                                b, g, r = table[yy, px]
+                                bgr_val = (int(b), int(g), int(r))
+                                if not (b < 30 and g < 30 and r < 30):
+                                    is_highlight = True
+                                    used_y = yy
+                                    break
+                        if is_highlight:
+                            actor_thinking_now = True
+                        if prev_thinking.get(seat) is None or bool(prev_thinking.get(seat)) != is_highlight:
+                            _log({
+                                "event": "thinking",
+                                "seat": seat,
+                                "highlight": bool(is_highlight),
+                                "x": int(px),
+                                "y": int(used_y),
+                                "bgr": [int(bgr_val[0]) if bgr_val else 0, int(bgr_val[1]) if bgr_val else 0, int(bgr_val[2]) if bgr_val else 0]
+                            })
+                            prev_thinking[seat] = is_highlight
+                            changed = True
+                except Exception:
+                    pass
+                # Quick fold inference: if villan back-of-card not detected in this seat ROI, assume fold
+                try:
+                    if villan_templates and seat in villan_rois_map and not seat_folded.get(seat, False):
+                        vx, vy, vw, vh = villan_rois_map[seat]
+                        vsub = gray[vy:vy+vh, vx:vx+vw]
+                        best_v = -1.0
+                        if vsub.size > 0:
+                            for tname, tgray, tmask in villan_templates:
+                                th_v, tw_v = tgray.shape[:2]
+                                if vsub.shape[0] < th_v or vsub.shape[1] < tw_v:
+                                    continue
+                                try:
+                                    vres = cv2.matchTemplate(vsub, tgray, cv2.TM_CCOEFF_NORMED, mask=tmask)
+                                except Exception:
+                                    vres = cv2.matchTemplate(vsub, tgray, cv2.TM_CCOEFF_NORMED)
+                                _, vmax, _, _ = cv2.minMaxLoc(vres)
+                                if float(vmax) > best_v:
+                                    best_v = float(vmax)
+                        # If no strong villan template present, infer fold
+                        if not (np.isfinite(best_v) and best_v >= 0.99):
+                            _log({"event": "action_change", "seat": seat, "action": "fold", "score": 1.0, "source": "villan_absent"})
+                            # Record fold
+                            try:
+                                hh_actions[current_street].append({"seat0": seat, "act": "fold", "is_allin": False})
+                                seat_last_action[seat] = 'fold'
+                                seat_folded[seat] = True
+                                villan_present[seat] = False
+                                prev_actions[seat] = 'fold'
+                                # advance next actor pointer
+                                if street_next_idx is not None:
+                                    idx = seat_to_idx.get(seat, street_next_idx)
+                                    street_next_idx = (idx + 1) % max(1, len(seat_order))
+                                    safety2 = 0
+                                    while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
+                                        street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                                        safety2 += 1
+                            except Exception:
+                                pass
+                            actions_changed = True
+                            # Move on to next seat (if any)
+                            continue
+                except Exception:
+                    pass
                 best_name = None
                 best_score = -1.0
                 for name, tmpl, mask in base_actions:
@@ -1029,7 +1384,7 @@ def main():
                         if seat_folded.get(seat, False):
                             prev_actions[seat] = action_val
                             continue
-                        print(json.dumps({"event": "action_change", "seat": seat, "action": action_val, "score": round(best_score, 3)}))
+                        _log({"event": "action_change", "seat": seat, "action": action_val, "score": round(best_score, 3)})
                         # Force/read BBs to compute amounts and update betting state
                         try:
                             # Initialize next-to-act pointer if needed
@@ -1072,6 +1427,7 @@ def main():
                                             hh_actions[current_street].append({"seat0": s_between, "act": "check", "is_allin": False})
                                             seat_last_action[s_between] = 'check'
                                 street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                            # Focused BB read for acting seat only
                             bb_vals: Dict[int, Optional[str]] = {}
                             bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
                             rois_src: Dict[int, Tuple[int, int, int, int]] = {}
@@ -1085,24 +1441,23 @@ def main():
                                         rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
                             if not rois_src:
                                 rois_src = dict(DEFAULT_SEAT_BB_ROIS)
-                            for s_seat, (bx, by, bw, bh) in rois_src.items():
+                            if seat in rois_src:
+                                bx, by, bw, bh = rois_src[seat]
                                 rx_bb = max(0, int(bx) - max(0, int(args.bb_left_pad)))
                                 rw_bb = max(0, int(bx) + int(bw) - rx_bb)
                                 roi_bgr = table[by:by+bh, rx_bb:rx_bb+rw_bb]
-                                if roi_bgr.size == 0:
-                                    continue
-                                roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
-                                bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
-                                if np.isfinite(bb_score) and bb_score >= args.bb_threshold and bb_loc is not None:
-                                    bxx = int(bb_loc[0])
-                                    left_w = max(0, min(bxx, rw_bb))
-                                    if left_w > 0:
-                                        crop_gray = roi_gray[:, 0:left_w]
-                                        txt = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, args.bb_digit_threshold, args.bb_digit_min_var)
-                                        if txt:
-                                            bb_vals[s_seat] = txt
-                            if bb_vals:
-                                print(json.dumps({"event": "player_bb_change", "values": bb_vals}))
+                                if roi_bgr.size != 0:
+                                    roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
+                                    bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
+                                    if np.isfinite(bb_score) and bb_score >= args.bb_threshold and bb_loc is not None:
+                                        bxx = int(bb_loc[0])
+                                        left_w = max(0, min(bxx, rw_bb))
+                                        if left_w > 0:
+                                            crop_gray = roi_gray[:, 0:left_w]
+                                            txt = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, args.bb_digit_threshold, args.bb_digit_min_var)
+                                            if txt:
+                                                bb_vals[seat] = txt
+                                                _log({"event": "player_bb_change", "values": {str(seat): txt}})
                             # Compute action semantics
                             eps = 1e-6
                             a = action_val.lower()
@@ -1113,7 +1468,7 @@ def main():
                                     new_amt = float(bb_vals.get(seat))
                             except Exception:
                                 new_amt = prev_amt
-                            # Update other seats' bet amounts if available
+                            # Update acting seat bet amount if available
                             for s_seat, txt in bb_vals.items():
                                 try:
                                     seat_to_bet_bb[s_seat] = float(txt)
@@ -1186,9 +1541,10 @@ def main():
                             if max_val > ai_best:
                                 ai_best = float(max_val)
                         is_allin = ai_best >= args.allin_threshold
-                        if is_allin != prev_allin.get(seat, False):
+                        prev_ai = prev_allin.get(seat, False)
+                        if is_allin != prev_ai:
                             if is_allin:
-                                print(json.dumps({"event": "allin", "seat": seat, "score": round(ai_best, 3)}))
+                                _log({"event": "allin", "seat": seat, "score": round(ai_best, 3)})
                                 actions_changed = True
                             prev_allin[seat] = is_allin
 
@@ -1257,13 +1613,62 @@ def main():
                     cards = [lbl for (_, _, lbl) in top]
                     if cards != prev_seat_cards.get(s, []):
                         if cards:  # only print non-empty
-                            print(json.dumps({"event": "showdown_seat_cards", "seat": s, "cards": cards}))
+                            _log({"event": "showdown_seat_cards", "seat": s, "cards": cards})
                             seat_cards_changed = True
                         prev_seat_cards[s] = cards
 
             changed = changed or seat_cards_changed
 
-            if not changed:
+            # Render dashboard view when any change occurs
+            if changed:
+                try:
+                    # Build table
+                    header = ["seat", "waiting", "last_action", "player_BB", "has_hole"]
+                    colw = [5, 9, 12, 11, 9]
+                    lines = []
+                    # Header
+                    lines.append(
+                        header[0].ljust(colw[0]) + "  " +
+                        header[1].ljust(colw[1]) + "  " +
+                        header[2].ljust(colw[2]) + "  " +
+                        header[3].ljust(colw[3]) + "  " +
+                        header[4].ljust(colw[4])
+                    )
+                    for s in seat_order:
+                        waiting = (current_actor_seat == s)
+                        last_act = seat_last_action.get(s) or 'none'
+                        if seat_folded.get(s, False):
+                            bb_txt = '0'
+                        else:
+                            val = seat_to_bet_bb.get(s, 0.0)
+                            bb_txt = (str(val) if val and val > 0 else 'none')
+                        has_hole = False
+                        try:
+                            has_hole = bool(villan_present.get(s, False))
+                        except Exception:
+                            has_hole = False
+                        lines.append(
+                            str(s).ljust(colw[0]) + "  " +
+                            ("true" if waiting else "false").ljust(colw[1]) + "  " +
+                            str(last_act).ljust(colw[2]) + "  " +
+                            str(bb_txt).ljust(colw[3]) + "  " +
+                            ("true" if has_hole else "false").ljust(colw[4])
+                        )
+                    # Footer
+                    lines.append("")
+                    lines.append("")
+                    lines.append(f"waiting player: seat {current_actor_seat if current_actor_seat is not None else '-'}")
+                    lines.append(f"POT: {prev_pot if prev_pot is not None else 'none'}")
+                    # Clear screen and print
+                    try:
+                        sys.stdout.write("\033[2J\033[H")
+                    except Exception:
+                        pass
+                    print("\n".join(lines))
+                except Exception:
+                    pass
+
+            if not changed and not actor_thinking_now:
                 time.sleep(interval)
     finally:
         cap.stop()
