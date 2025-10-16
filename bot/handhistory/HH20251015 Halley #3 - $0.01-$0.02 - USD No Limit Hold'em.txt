@@ -1,0 +1,41 @@
+﻿
+PokerStars Zoom Hand #258131574432:  Hold'em No Limit ($0.01/$0.02) - 2025/10/15 20:00:16 JST [2025/10/15 7:00:16 ET]
+Table 'Halley' 6-max Seat #1 is the button
+Seat 1: FakaN4Kavera ($2 in chips) 
+Seat 2: lowelyms ($1.52 in chips) 
+Seat 3: seriojaa477 ($2.11 in chips) 
+Seat 4: HardingTv ($2 in chips) 
+Seat 5: LeopoldusR ($8.51 in chips) 
+Seat 6: PozzzitiF ($1.24 in chips) 
+lowelyms: posts small blind $0.01
+seriojaa477: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to FakaN4Kavera [7c 8c]
+HardingTv: folds 
+LeopoldusR: folds 
+PozzzitiF: folds 
+FakaN4Kavera: raises $0.03 to $0.05
+lowelyms: folds 
+seriojaa477: calls $0.03
+*** FLOP *** [4c 8d Qh]
+seriojaa477: checks 
+FakaN4Kavera: checks 
+*** TURN *** [4c 8d Qh] [Th]
+seriojaa477: checks 
+FakaN4Kavera: checks 
+*** RIVER *** [4c 8d Qh Th] [Qc]
+seriojaa477: checks 
+FakaN4Kavera: checks 
+*** SHOW DOWN ***
+seriojaa477: shows [Ah 5d] (a pair of Queens)
+FakaN4Kavera: shows [7c 8c] (two pair, Queens and Eights)
+FakaN4Kavera collected $0.11 from pot
+*** SUMMARY ***
+Total pot $0.11 | Rake $0 
+Board [4c 8d Qh Th Qc]
+Seat 1: FakaN4Kavera (button) showed [7c 8c] and won ($0.11) with two pair, Queens and Eights
+Seat 2: lowelyms (small blind) folded before Flop
+Seat 3: seriojaa477 (big blind) showed [Ah 5d] and lost with a pair of Queens
+Seat 4: HardingTv folded before Flop (didn't bet)
+Seat 5: LeopoldusR folded before Flop (didn't bet)
+Seat 6: PozzzitiF folded before Flop (didn't bet)
