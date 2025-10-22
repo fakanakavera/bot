@@ -4,6 +4,7 @@ import json
 import argparse
 import time
 from typing import Optional, List, Tuple, Dict
+import re
 import cv2
 import numpy as np
 
@@ -84,24 +85,33 @@ def _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls: Dict[str, Tuple[any, O
             matched = False
             for width in range(1, end_limit - x_scan + 1):
                 slice_img = crop_gray[:, x_scan:x_scan+width]
-                # digits first
+                
+                # Skip slices that are too small (prevents infinite scores)
+                if slice_img.size == 0:
+                    continue
+                
+                # digits first - try all templates for each digit
                 best_d = None
                 best_s = -1.0
                 best_lx = 0
                 best_w = 0
-                for d, (dt, dm) in digit_tmpls.items():
-                    try:
-                        res = cv2.matchTemplate(slice_img, dt, cv2.TM_CCOEFF_NORMED, mask=dm) if dm is not None else cv2.matchTemplate(slice_img, dt, cv2.TM_CCOEFF_NORMED)
-                    except Exception:
-                        res = None
-                    if res is None:
-                        continue
-                    _, sc, _, loc = cv2.minMaxLoc(res)
-                    if sc > best_s and loc is not None:
-                        best_s = float(sc)
-                        best_d = d
-                        best_lx = int(loc[0])
-                        best_w = dt.shape[1]
+                for d, tmpl_list in digit_tmpls.items():
+                    for dt, dm in tmpl_list:
+                        # Skip if slice is smaller than template (prevents infinite scores)
+                        if slice_img.shape[0] < dt.shape[0] or slice_img.shape[1] < dt.shape[1]:
+                            continue
+                        try:
+                            res = cv2.matchTemplate(slice_img, dt, cv2.TM_CCOEFF_NORMED, mask=dm) if dm is not None else cv2.matchTemplate(slice_img, dt, cv2.TM_CCOEFF_NORMED)
+                        except Exception:
+                            res = None
+                        if res is None:
+                            continue
+                        _, sc, _, loc = cv2.minMaxLoc(res)
+                        if sc > best_s and loc is not None:
+                            best_s = float(sc)
+                            best_d = d
+                            best_lx = int(loc[0])
+                            best_w = dt.shape[1]
                 if best_d is not None and np.isfinite(best_s) and best_s >= threshold:
                     abs_x = x_scan + best_lx
                     if min_var > 0.0:
@@ -556,10 +566,20 @@ def main():
     parser.add_argument('--debug', action='store_true', help='Print mapping distances and save annotated frame on changes')
     parser.add_argument('--debug-dir', default='bot/frames_out', help='Directory to save debug frames')
     parser.add_argument('--actions-dir', default='bot/templates/actions', help='Directory containing base action templates (PNG files named by action)')
-    parser.add_argument('--action-threshold', type=float, default=0.99, help='Threshold for matching against base action templates')
+    parser.add_argument('--action-threshold', type=float, default=0.9, help='Threshold for matching against base action templates')
     parser.add_argument('--allin-dir', default=None, help='Directory containing all-in templates (defaults to actions-dir/allin)')
     parser.add_argument('--allin-threshold', type=float, default=0.99, help='Threshold for matching all-in templates')
     parser.add_argument('--allin-y-offset', type=int, default=22, help='Vertical offset (pixels) from action ROI for all-in text')
+    # Forced seat monitoring and robustness flags
+    parser.add_argument('--seat', type=int, default=None, help='Force matching this zero-based seat each frame (overrides actor gating)')
+    parser.add_argument('--no-infer-fold', action='store_true', help='Disable quick fold inference based on villan-hole absence')
+    parser.add_argument('--retry-nomatch-ms', type=int, default=500, help='Retry matching even when ROI unchanged after this many ms')
+    parser.add_argument('--actor-gating', action='store_true', help='Only match current actor seat each frame (faster)')
+    parser.add_argument('--full-table', action='store_true', help='Match all seats each frame (overrides actor-gating)')
+    parser.add_argument('--showdown-interval', type=int, default=30, help='Scan showdown (hole cards) once every N frames')
+    # Debug watch: save frames when a specific seat action is detected
+    parser.add_argument('--debug-watch-seat', type=int, default=None, help='If set, save frame on action match for this zero-based seat')
+    parser.add_argument('--debug-watch-dir', default='bot/frames_out/watch', help='Directory to save debug watch frames')
     # Pot reading (templates directory is hardcoded via POT_TEMPL_DIR)
     # Pot ROI will be read from tables.json (landmarks.pot_roi); CLI defaults are fallback only
     parser.add_argument('--pot-x', type=int, default=325)
@@ -572,9 +592,13 @@ def main():
     # Player BB reading (match behavior in read_player_bbs)
     parser.add_argument('--numbers-dir', default='bot/templates/player_bb/numbers', help='Directory with dot.png and 0-9.png for parsing amounts')
     parser.add_argument('--bb-left-pad', type=int, default=30, help='Extra pixels to include to the left of seat ROI to avoid truncating numbers')
-    parser.add_argument('--bb-threshold', type=float, default=0.99, help='Threshold for BB label match (finite and rightmost)')
-    parser.add_argument('--bb-digit-threshold', type=float, default=0.99, help='Threshold for digit/dot matches when parsing player BB')
-    parser.add_argument('--bb-digit-min-var', type=float, default=15, help='Reject player BB glyphs below this variance')
+    parser.add_argument('--bb-threshold', type=float, default=0.92, help='Threshold for BB label match (finite and rightmost)')
+    parser.add_argument('--bb-digit-threshold', type=float, default=0.90, help='Threshold for digit/dot matches when parsing player BB')
+    parser.add_argument('--bb-digit-min-var', type=float, default=2, help='Reject player BB glyphs below this variance')
+    # Immediate BB read tuning
+    parser.add_argument('--bb-immediate-retries', type=int, default=5, help='Frames to retry BB read after bet/raise/call')
+    parser.add_argument('--bb-relaxed-threshold', type=float, default=0.9, help='Relaxed threshold for immediate BB read')
+    parser.add_argument('--bb-relaxed-min-var', type=float, default=2, help='Relaxed min variance for immediate BB read')
     # Hand history options
     parser.add_argument('--hh-enable', action='store_true', help='Enable writing PokerStars-like hand history files')
     parser.add_argument('--hh-out', default='bot/handhistory', help='Output directory for hand history files')
@@ -628,36 +652,192 @@ def main():
         cards_det = CardsDetector(card_tpls, threshold=cards_thresh, hole_rois=[], board_rois=profile.landmarks['board_rois'])
 
     # Load base action templates (smaller than ROI) from actions-dir
-    base_actions: List[Tuple[str, any, Optional[any]]] = []
+    # Support per-action subdirectories and multiple variants per action (e.g., raise.png, raise2.png)
+    action_templates: Dict[str, List[Tuple[any, Optional[any]]]] = {}
+    def _add_action_tmpl(action_key: str, gray_img, mask_img) -> None:
+        try:
+            if not action_key:
+                return
+            key = action_key.strip().lower()
+            if key not in action_templates:
+                action_templates[key] = []
+            action_templates[key].append((gray_img, mask_img))
+        except Exception:
+            pass
+
     if os.path.isdir(args.actions_dir):
-        for name in sorted(os.listdir(args.actions_dir)):
-            path = os.path.join(args.actions_dir, name)
-            if not os.path.isfile(path) or not name.lower().endswith('.png'):
-                continue
-            img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
-            if img is None:
-                continue
-            mask = None
-            if img.ndim == 3 and img.shape[2] == 4:
-                bgr = img[:, :, :3]
-                alpha = img[:, :, 3]
-                gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
-                mask = cv2.threshold(alpha, 0, 255, cv2.THRESH_BINARY)[1]
-            else:
-                gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if img.ndim == 3 else img
-            stem = os.path.splitext(name)[0]
-            base_actions.append((stem, gray, mask))
+        for entry in sorted(os.listdir(args.actions_dir)):
+            entry_path = os.path.join(args.actions_dir, entry)
+            if os.path.isdir(entry_path):
+                # Folder name is the action name
+                action_key = entry.strip().lower()
+                for fname in sorted(os.listdir(entry_path)):
+                    fpath = os.path.join(entry_path, fname)
+                    if not os.path.isfile(fpath) or not fname.lower().endswith('.png'):
+                        continue
+                    img = cv2.imread(fpath, cv2.IMREAD_UNCHANGED)
+                    if img is None:
+                        continue
+                    mask = None
+                    if img.ndim == 3 and img.shape[2] == 4:
+                        bgr = img[:, :, :3]
+                        alpha = img[:, :, 3]
+                        gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+                        mask = cv2.threshold(alpha, 0, 255, cv2.THRESH_BINARY)[1]
+                    else:
+                        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if img.ndim == 3 else img
+                    _add_action_tmpl(action_key, gray, mask)
+            elif os.path.isfile(entry_path) and entry.lower().endswith('.png'):
+                # File at root: derive action name from file stem ignoring trailing digits
+                stem = os.path.splitext(entry)[0]
+                action_key = re.sub(r'\d+$', '', stem).strip().lower()
+                img = cv2.imread(entry_path, cv2.IMREAD_UNCHANGED)
+                if img is None:
+                    continue
+                mask = None
+                if img.ndim == 3 and img.shape[2] == 4:
+                    bgr = img[:, :, :3]
+                    alpha = img[:, :, 3]
+                    gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+                    mask = cv2.threshold(alpha, 0, 255, cv2.THRESH_BINARY)[1]
+                else:
+                    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if img.ndim == 3 else img
+                _add_action_tmpl(action_key, gray, mask)
 
     # Load pot templates
     pot_tmpl, pot_mask = _load_gray_with_optional_mask(os.path.join(POT_TEMPL_DIR, 'pot.png'))
     bb_tmpl, bb_mask = _load_gray_with_optional_mask(os.path.join(POT_TEMPL_DIR, 'bb.png'))
     # Use player BB numbers (includes dot) for numeric parsing (configurable dir)
     dot_tmpl, dot_mask = _load_gray_with_optional_mask(os.path.join(args.numbers_dir, 'dot.png'))
-    digit_tmpls: Dict[str, Tuple[any, Optional[any]]] = {}
-    for d in '0123456789':
-        dt, dm = _load_gray_with_optional_mask(os.path.join(args.numbers_dir, f'{d}.png'))
-        if dt is not None:
-            digit_tmpls[d] = (dt, dm)
+    
+    # Load digit templates - support multiple templates per digit (e.g., 2.png, 22.png, 222.png)
+    digit_tmpls: Dict[str, List[Tuple[any, Optional[any]]]] = {}
+    if os.path.isdir(args.numbers_dir):
+        for fname in os.listdir(args.numbers_dir):
+            if fname.endswith('.png') and fname != 'dot.png':
+                # Extract first character as the digit (e.g., "2.png" -> "2", "22.png" -> "2")
+                digit = fname[0]
+                if digit in '0123456789':
+                    dt, dm = _load_gray_with_optional_mask(os.path.join(args.numbers_dir, fname))
+                    if dt is not None:
+                        if digit not in digit_tmpls:
+                            digit_tmpls[digit] = []
+                        digit_tmpls[digit].append((dt, dm))
+    
+    # Log template loading info (will be written after debug_log is opened)
+    template_info = f"Loaded {sum(len(tmpls) for tmpls in digit_tmpls.values())} digit templates for {len(digit_tmpls)} digits"
+
+    # Helper: robustly read player's BB amount for a specific seat from current table frame
+    # EXACT SAME CODE AS read_player_bbs.py
+    def _read_player_bb_for_seat(table_img, seat_idx: int, *, use_relaxed: bool = False) -> Optional[str]:
+        try:
+            bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
+            rois_src: Dict[int, Tuple[int, int, int, int]] = {}
+            if isinstance(bb_rois, dict):
+                for k, v in bb_rois.items():
+                    try:
+                        sk = int(k)
+                    except Exception:
+                        continue
+                    if isinstance(v, (list, tuple)) and len(v) == 4:
+                        rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+            if not rois_src:
+                rois_src = dict(DEFAULT_SEAT_BB_ROIS)
+            if seat_idx not in rois_src:
+                debug_print(f"DEBUG BB READ: seat {seat_idx} not in rois_src")
+                return None
+            x, y, w, h = rois_src[seat_idx]
+            # Expand ROI to the left by left-pad (bounded by table)
+            rx = max(0, int(x) - max(0, int(args.bb_left_pad)))
+            rw = max(0, int(x) + int(w) - rx)
+            # Use BGR ROI
+            roi_bgr = table_img[y:y+h, rx:rx+rw]
+            if roi_bgr.size == 0:
+                debug_print(f"DEBUG BB READ: seat {seat_idx} ROI is empty")
+                return None
+            roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
+            
+            # Initialize variables
+            out_text = None
+            bb_score = None
+            bb_loc = None
+            
+            # Find BB label; prefer the rightmost high-confidence match to avoid false matches on the left
+            bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
+            try:
+                res_bb = cv2.matchTemplate(roi_gray, bb_tmpl, cv2.TM_CCOEFF_NORMED, mask=bb_mask) if roi_gray.size else None
+            except Exception:
+                res_bb = None
+            had_bb_match = False
+            if res_bb is not None:
+                bb_thresh = float(args.bb_threshold) if not use_relaxed else float(args.bb_relaxed_threshold)
+                ys, xs = np.where(res_bb >= bb_thresh)
+                if xs.size > 0:
+                    idx = int(np.argmax(xs))  # pick rightmost among above-threshold matches
+                    bb_loc = (int(xs[idx]), int(ys[idx]))
+                    bb_score = float(res_bb[ys[idx], xs[idx]])
+                    had_bb_match = True
+                    debug_print(f"DEBUG BB READ: seat {seat_idx}, BB found, score={bb_score:.3f}, thresh={bb_thresh:.3f}")
+                else:
+                    debug_print(f"DEBUG BB READ: seat {seat_idx}, NO BB matches above thresh {bb_thresh:.3f}")
+            else:
+                debug_print(f"DEBUG BB READ: seat {seat_idx}, res_bb is None")
+            
+            # Require finite score and threshold
+            if np.isfinite(bb_score) and bb_score >= bb_thresh and bb_loc is not None:
+                bx = int(bb_loc[0])
+                by = int(bb_loc[1])
+                left_w = max(0, min(bx, rw))
+                if left_w > 0:
+                    crop_bgr = roi_bgr[:, 0:left_w]
+                    crop_gray = cv2.cvtColor(crop_bgr, cv2.COLOR_BGR2GRAY)
+                    
+                    # Parse amount text from the cropped region
+                    digit_thresh = float(args.bb_digit_threshold) if not use_relaxed else float(args.bb_relaxed_threshold)
+                    min_var = float(args.bb_digit_min_var) if not use_relaxed else float(args.bb_relaxed_min_var)
+                    debug_print(f"DEBUG BB READ: seat {seat_idx}, scanning digits, thresh={digit_thresh:.3f}, min_var={min_var}")
+                    out_text = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, digit_thresh, min_var)
+                    if out_text:
+                        debug_print(f"DEBUG BB READ: seat {seat_idx}, SUCCESS! value={out_text}")
+                        return out_text
+                    else:
+                        debug_print(f"DEBUG BB READ: seat {seat_idx}, digit scan returned None")
+                else:
+                    debug_print(f"DEBUG BB READ: seat {seat_idx}, left_w={left_w} is <= 0")
+            else:
+                debug_print(f"DEBUG BB READ: seat {seat_idx}, BB score/thresh check failed: score={bb_score}, thresh={bb_thresh}, loc={bb_loc}")
+            
+            return None
+        except Exception as e:
+            debug_print(f"DEBUG BB READ: seat {seat_idx}, EXCEPTION: {e}")
+            return None
+
+    # Helper function to check if betting street is complete
+    def _is_street_complete(seat_order: List[int], seat_folded: Dict[int, bool], seat_allin: Dict[int, bool],
+                           seat_has_acted: Dict[int, bool], seat_to_bet_bb: Dict[int, float], 
+                           street_to_call_bb: float, eps: float = 1e-6) -> bool:
+        """
+        Check if the current betting street is complete.
+        A street is complete when all active (non-folded, non-allin) players have:
+        1. Acted at least once
+        2. Matched the current bet amount (seat_to_bet_bb >= street_to_call_bb)
+        """
+        active_players = [s for s in seat_order if not seat_folded.get(s, False) and not seat_allin.get(s, False)]
+        
+        # If only 0 or 1 active players remain, street is complete
+        if len(active_players) <= 1:
+            return True
+        
+        # Check if all active players have acted and matched the bet
+        for seat in active_players:
+            # Player hasn't acted yet
+            if not seat_has_acted.get(seat, False):
+                return False
+            # Player hasn't matched the current bet
+            if seat_to_bet_bb.get(seat, 0.0) < street_to_call_bb - eps:
+                return False
+        
+        return True
 
     # Load all-in templates (PNG) from provided dir or actions-dir/allin
     allin_dir = args.allin_dir if args.allin_dir else os.path.join(args.actions_dir, 'allin')
@@ -715,6 +895,17 @@ def main():
             continue
         loaded_names.add(stem)
         villan_templates.append((stem, gray, mask))
+
+    # Open debug log file
+    debug_log = open('bot/frames_out/watch_table_debug.log', 'w')
+    def debug_print(msg):
+        # Only write to log file, not to console
+        debug_log.write(msg + '\n')
+        debug_log.flush()
+    
+    # Write template loading info to log
+    debug_log.write(template_info + '\n')
+    debug_log.flush()
 
     cap = BackgroundCapture(args.device, warmup_frames=45, target_fps=max(8.0, args.fps))
     cap.start()
@@ -808,7 +999,10 @@ def main():
         seat_order: List[int] = sorted(action_rois.keys())
         seat_to_idx: Dict[int, int] = {s: i for i, s in enumerate(seat_order)}
         seat_folded: Dict[int, bool] = {s: False for s in seat_order}
+        seat_allin: Dict[int, bool] = {s: False for s in seat_order}
+        seat_has_acted: Dict[int, bool] = {s: False for s in seat_order}
         street_next_idx: Optional[int] = None
+        street_complete: bool = False
         # Track last announced waiting actor to avoid spam
         last_waiting_actor: Optional[int] = None
         # Thinking pixel per seat (x,y) from config
@@ -827,7 +1021,16 @@ def main():
             thinking_pixels = {}
         # Cache last thinking state per seat to print only on change
         prev_thinking: Dict[int, Optional[bool]] = {s: None for s in seat_order}
+        # Cache last ROI checksum when last attempt yielded no action; used to skip redundant matches until ROI changes
+        seat_nomatch_checksum: Dict[int, Optional[int]] = {s: None for s in seat_order}
+        # Timestamp (ms) of last no-match attempt per seat
+        seat_nomatch_time_ms: Dict[int, Optional[int]] = {s: None for s in seat_order}
+        # Track BB retry attempts after bet/raise/call actions (seat -> frames remaining)
+        seat_bb_retry_count: Dict[int, int] = {s: 0 for s in seat_order}
+        # Track delay before starting BB retry (seat -> frames remaining)
+        seat_bb_retry_delay: Dict[int, int] = {s: 0 for s in seat_order}
         interval = 1.0 / max(0.1, args.fps)
+        frame_count = 0
         while True:
             frame = cap.get_frame(timeout_sec=0.3)
             if frame is None:
@@ -893,6 +1096,7 @@ def main():
                     roi_gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
                     # find POT
                     score_pot, loc_pot = _match_score_and_loc(roi_gray, pot_tmpl, pot_mask)
+                    #debug_print(f"DEBUG POT: score={score_pot:.3f}, threshold={args.pot_threshold:.3f}, loc={loc_pot}")
                     if score_pot >= args.pot_threshold and loc_pot is not None:
                         px = int(loc_pot[0]) + pot_tmpl.shape[1] + 1
                         # find BB to determine end
@@ -900,70 +1104,46 @@ def main():
                         score_bb, loc_bb = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
                         if score_bb >= args.pot_threshold and loc_bb is not None:
                             end_limit = max(0, min(int(loc_bb[0]), rw))
-                        # parse slice between POT and BB (digits-first, dot only after digits), with variance filter
+                        # parse slice between POT and BB (try DOT first like read_pot.py, then digits)
                         x = max(0, min(px, rw - 1))
-                        chars: List[str] = []
+                        text: List[str] = []
                         dot_found = False
                         while x < end_limit:
                             matched = False
+                            # Grow width from 1 px upward until we can match something
                             for width in range(1, end_limit - x + 1):
                                 slice_img = roi_gray[:, x:x+width]
-                                # digits first
-                                best_d = None
-                                best_s = -1.0
-                                best_lx = 0
-                                best_w = 0
-                                for d, (dt, dm) in digit_tmpls.items():
-                                    sc, loc = _match_score_and_loc(slice_img, dt, dm)
-                                    if sc > best_s and loc is not None:
-                                        best_s = sc
-                                        best_d = d
-                                        best_lx = int(loc[0])
-                                        best_w = dt.shape[1]
-                                if best_d is not None and np.isfinite(best_s) and best_s >= args.pot_digit_threshold:
-                                    abs_x = x + best_lx
-                                    glyph = roi_gray[:, abs_x:abs_x + best_w]
-                                    # variance filter
-                                    if glyph.size > 0:
-                                        _, stddev = cv2.meanStdDev(glyph)
-                                        pix_var = float(stddev.mean()**2)
-                                    else:
-                                        pix_var = 0.0
-                                    if args.pot_digit_min_var > 0.0 and pix_var < args.pot_digit_min_var:
-                                        # skip low-variance; advance safely
-                                        x = abs_x + max(1, best_w // 2)
-                                        matched = True
-                                        break
-                                    chars.append(best_d)
-                                    x = abs_x + best_w + 1
-                                    matched = True
-                                    break
-                                # allow a single dot, but only after at least one digit
-                                if not matched and not dot_found and len(chars) > 0:
-                                    ds, dl = _match_score_and_loc(slice_img, dot_tmpl, dot_mask)
-                                    if np.isfinite(ds) and ds >= args.pot_digit_threshold and dl is not None:
-                                        lx = int(dl[0])
-                                        abs_x = x + lx
-                                        dw = dot_tmpl.shape[1]
-                                        glyph = roi_gray[:, abs_x:abs_x + dw]
-                                        if glyph.size > 0:
-                                            _, stddev = cv2.meanStdDev(glyph)
-                                            pix_var = float(stddev.mean()**2)
-                                        else:
-                                            pix_var = 0.0
-                                        if args.pot_digit_min_var > 0.0 and pix_var < args.pot_digit_min_var:
-                                            x = abs_x + max(1, dw // 2)
-                                            matched = True
-                                            break
-                                        chars.append('.')
-                                        x = abs_x + dw + 1
+                                # Try dot first to reduce confusion (like read_pot.py)
+                                if not dot_found:
+                                    dot_score, dot_loc = _match_score_and_loc(slice_img, dot_tmpl, dot_mask)
+                                    if dot_score >= args.pot_digit_threshold and dot_loc is not None:
+                                        text.append('.')
+                                        x = x + dot_loc[0] + dot_tmpl.shape[1] + 1
                                         matched = True
                                         dot_found = True
                                         break
+                                # Try digits 0-9
+                                best_digit = None
+                                best_score = -1.0
+                                best_loc_x = 0
+                                best_w = 0
+                                for d, (dt, dm) in digit_tmpls.items():
+                                    score, loc = _match_score_and_loc(slice_img, dt, dm)
+                                    if score > best_score and loc is not None:
+                                        best_score = score
+                                        best_digit = d
+                                        best_loc_x = int(loc[0])
+                                        best_w = dt.shape[1]
+                                if best_score >= args.pot_digit_threshold and best_digit is not None:
+                                    text.append(best_digit)
+                                    x = x + best_loc_x + best_w + 1
+                                    matched = True
+                                    break
                             if not matched:
+                                # No match until end; stop parsing
                                 break
-                        if chars:
-                            pot_val = ''.join(chars)
+                        if text:
+                            pot_val = ''.join(text)
             except Exception:
                 pot_val = None
 
@@ -1002,39 +1182,8 @@ def main():
                 _log(payload)
                 prev_dealer = dealer_val
                 changed = True
-            if board_val is not None and board_val != prev_board:
-                _log({"event": "board_change", "board": board_val})
-                prev_board = board_val
-                # Advance street
-                try:
-                    bc = len([c for c in board_val if c]) if isinstance(board_val, (list, tuple)) else 0
-                except Exception:
-                    bc = 0
-                new_street = "preflop"
-                if bc >= 5:
-                    new_street = "river"
-                elif bc == 4:
-                    new_street = "turn"
-                elif bc == 3:
-                    new_street = "flop"
-                if new_street != current_street:
-                    prev_street = current_street
-                    current_street = new_street
-                    # Reset betting state for new street
-                    street_to_call_bb = 0.0
-                    seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
-                    seat_last_action = {s: None for s in seat_last_action.keys()}
-                    # Reset next-to-act pointer based on dealer
-                    try:
-                        street_next_idx = 0
-                        base_dealer = dealer_val if dealer_val is not None else prev_dealer
-                        if base_dealer is not None:
-                            d_idx = seat_to_idx.get(int(base_dealer), 0)
-                            offset = 3 if current_street == 'preflop' else 1
-                            street_next_idx = (d_idx + offset) % max(1, len(seat_order))
-                    except Exception:
-                        street_next_idx = 0
-                changed = True
+            # Defer board card detection until after action processing
+            # This ensures we read the final action before detecting street changes
             if pot_val is not None and pot_val != prev_pot:
                 _log({"event": "pot_change", "text": pot_val})
                 # Also emit per-seat player BB readings using bb_text_rois if available
@@ -1162,6 +1311,9 @@ def main():
                             seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
                             seat_last_action = {s: None for s in seat_last_action.keys()}
                             seat_folded = {s: False for s in seat_order}
+                            seat_allin = {s: False for s in seat_order}
+                            seat_has_acted = {s: False for s in seat_order}
+                            street_complete = False
                             # set next-to-act pointer for new hand
                             try:
                                 base_dealer = dealer_val if dealer_val is not None else prev_dealer
@@ -1240,6 +1392,9 @@ def main():
                             seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
                             seat_last_action = {s: None for s in seat_last_action.keys()}
                             seat_folded = {s: False for s in seat_order}
+                            seat_allin = {s: False for s in seat_order}
+                            seat_has_acted = {s: False for s in seat_order}
+                            street_complete = False
                             try:
                                 base_dealer = dealer_val if dealer_val is not None else prev_dealer
                                 d_idx = seat_to_idx.get(int(base_dealer), 0)
@@ -1262,7 +1417,11 @@ def main():
             # Compute current actor seat (always gate to current actor)
             current_actor_seat: Optional[int] = None
             try:
-                if street_next_idx is not None and seat_order:
+                if args.seat is not None:
+                    # Forced seat override: always monitor this seat
+                    if int(args.seat) in action_rois:
+                        current_actor_seat = int(args.seat)
+                elif street_next_idx is not None and seat_order and not street_complete:
                     current_actor_seat = seat_order[street_next_idx]
                     # Skip folded seats
                     safety_ga = 0
@@ -1276,15 +1435,34 @@ def main():
             # Announce waiting seat when it changes
             if current_actor_seat is not None and current_actor_seat != last_waiting_actor:
                 _log({"event": "waiting_actor", "seat": int(current_actor_seat)})
+                debug_print(f"DEBUG: Waiting for action from seat {current_actor_seat}")
                 last_waiting_actor = current_actor_seat
+            elif current_actor_seat is None and last_waiting_actor is not None:
+                debug_print(f"DEBUG: No waiting player (current_actor_seat is None)")
+                last_waiting_actor = None
 
-            # Track if actor is currently thinking (to avoid sleeping)
+            # Track if any seat is currently thinking (to avoid sleeping)
             actor_thinking_now: bool = False
 
-            for seat, rect in action_rois.items():
-                if current_actor_seat is not None and seat != current_actor_seat:
-                    continue
-                x, y, w, h = rect
+            # Decide which seats to process this frame
+            focus_actor = True
+            try:
+                if args.full_table:
+                    focus_actor = False
+                elif getattr(args, 'actor_gating', False):
+                    focus_actor = True
+            except Exception:
+                focus_actor = True
+
+            if args.seat is not None and int(args.seat) in action_rois:
+                seats_to_check = [int(args.seat)]
+            elif focus_actor:
+                seats_to_check = [current_actor_seat] if current_actor_seat is not None else []
+            else:
+                seats_to_check = list(seat_order)
+
+            for seat in seats_to_check:
+                x, y, w, h = action_rois.get(seat, (0, 0, 0, 0))
                 sub = gray[y:y+h, x:x+w]
                 if sub.size == 0:
                     continue
@@ -1320,9 +1498,13 @@ def main():
                             changed = True
                 except Exception:
                     pass
-                # Quick fold inference: if villan back-of-card not detected in this seat ROI, assume fold
+
+                action_detected_this_step = False
+
+                # Quick fold inference (non-blocking): compute presence but still attempt action match
+                inferred_fold = False
                 try:
-                    if villan_templates and seat in villan_rois_map and not seat_folded.get(seat, False):
+                    if (not getattr(args, 'no_infer_fold', False)) and villan_templates and seat in villan_rois_map and not seat_folded.get(seat, False):
                         vx, vy, vw, vh = villan_rois_map[seat]
                         vsub = gray[vy:vy+vh, vx:vx+vw]
                         best_v = -1.0
@@ -1338,54 +1520,106 @@ def main():
                                 _, vmax, _, _ = cv2.minMaxLoc(vres)
                                 if float(vmax) > best_v:
                                     best_v = float(vmax)
-                        # If no strong villan template present, infer fold
-                        if not (np.isfinite(best_v) and best_v >= 0.99):
-                            _log({"event": "action_change", "seat": seat, "action": "fold", "score": 1.0, "source": "villan_absent"})
-                            # Record fold
-                            try:
-                                hh_actions[current_street].append({"seat0": seat, "act": "fold", "is_allin": False})
-                                seat_last_action[seat] = 'fold'
-                                seat_folded[seat] = True
-                                villan_present[seat] = False
-                                prev_actions[seat] = 'fold'
-                                # advance next actor pointer
-                                if street_next_idx is not None:
-                                    idx = seat_to_idx.get(seat, street_next_idx)
-                                    street_next_idx = (idx + 1) % max(1, len(seat_order))
-                                    safety2 = 0
-                                    while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
-                                        street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
-                                        safety2 += 1
-                            except Exception:
-                                pass
-                            actions_changed = True
-                            # Move on to next seat (if any)
-                            continue
+                        inferred_fold = not (np.isfinite(best_v) and best_v >= 0.99)
+                        try:
+                            villan_present[seat] = not inferred_fold
+                        except Exception:
+                            pass
                 except Exception:
-                    pass
-                best_name = None
-                best_score = -1.0
-                for name, tmpl, mask in base_actions:
-                    if tmpl.shape[0] > sub.shape[0] or tmpl.shape[1] > sub.shape[1]:
-                        continue
+                    inferred_fold = False
+
+                # ROI-change short-circuit: if last attempt was no-match and ROI checksum unchanged, skip template match
+                try:
+                    current_checksum = int(sub.sum())
+                except Exception:
+                    current_checksum = None
+
+                skip_match = False
+                # Only use ROI no-match skipping in full-table mode; always try every frame when focusing actor
+                if prev_actions.get(seat) is None and current_checksum is not None and not focus_actor:
                     try:
-                        res = cv2.matchTemplate(sub, tmpl, cv2.TM_CCOEFF_NORMED, mask=mask)
+                        last_chk = seat_nomatch_checksum.get(seat)
+                        last_t = seat_nomatch_time_ms.get(seat)
+                        now_ms = int(time.time() * 1000)
+                        if last_chk is not None and last_chk == current_checksum:
+                            # Allow periodic retry even if checksum unchanged
+                            if last_t is not None and (now_ms - int(last_t)) < int(getattr(args, 'retry_nomatch_ms', 500)):
+                                skip_match = True
+                        # If we won't skip, fall through to match again
                     except Exception:
-                        res = cv2.matchTemplate(sub, tmpl, cv2.TM_CCOEFF_NORMED)
-                    _, max_val, _, _ = cv2.minMaxLoc(res)
-                    if max_val > best_score:
-                        best_score = float(max_val)
-                        best_name = name
-                action_val = best_name if best_score >= args.action_threshold else None
+                        skip_match = False
+
+                best_action = None
+                best_score = -1.0
+                if not skip_match:
+                    for act_name, tmpl_list in action_templates.items():
+                        # Compute best score among all variants for this action
+                        action_best = -1.0
+                        for tmpl, mask in tmpl_list:
+                            if tmpl.shape[0] > sub.shape[0] or tmpl.shape[1] > sub.shape[1]:
+                                continue
+                            try:
+                                res = cv2.matchTemplate(sub, tmpl, cv2.TM_CCOEFF_NORMED, mask=mask)
+                            except Exception:
+                                res = cv2.matchTemplate(sub, tmpl, cv2.TM_CCOEFF_NORMED)
+                            _, max_val, _, _ = cv2.minMaxLoc(res)
+                            if max_val > action_best:
+                                action_best = float(max_val)
+                        if action_best > best_score:
+                            best_score = action_best
+                            best_action = act_name
+                action_val = best_action if best_score >= args.action_threshold else None
+
+                if action_val is None and current_checksum is not None:
+                    seat_nomatch_checksum[seat] = current_checksum
+                    try:
+                        seat_nomatch_time_ms[seat] = int(time.time() * 1000)
+                    except Exception:
+                        seat_nomatch_time_ms[seat] = None
+                else:
+                    seat_nomatch_checksum[seat] = None
+                    seat_nomatch_time_ms[seat] = None
+
                 if action_val != prev_actions.get(seat):
+                    debug_print(f"DEBUG: Action changed for seat {seat}: {prev_actions.get(seat)} -> {action_val}")
                     # Only print when action is non-null
                     if action_val is not None:
-                        # Ignore any actions from a seat already folded
-                        if seat_folded.get(seat, False):
-                            prev_actions[seat] = action_val
-                            continue
+                        debug_print(f"DEBUG: action_val is NOT None for seat {seat}, entering action processing")
+                        # If seat was previously marked folded but a non-fold action appears, unmark and accept
+                        try:
+                            if seat_folded.get(seat, False) and str(action_val).lower() != 'fold':
+                                seat_folded[seat] = False
+                        except Exception:
+                            pass
                         _log({"event": "action_change", "seat": seat, "action": action_val, "score": round(best_score, 3)})
-                        # Force/read BBs to compute amounts and update betting state
+                        # Store old action for condition checking
+                        old_last_action = seat_last_action.get(seat)
+                        # Update last_action immediately for UI responsiveness
+                        try:
+                            seat_last_action[seat] = str(action_val).lower()
+                            changed = True
+                            debug_print(f"DEBUG: Set seat_last_action[{seat}] = '{str(action_val).lower()}' (early update)")
+                        except Exception:
+                            pass
+                        # Debug watch: save cropped table frame for this seat on each action detection
+                        try:
+                            if getattr(args, 'debug_watch_seat', None) is not None and int(args.debug_watch_seat) == int(seat):
+                                out_dir = getattr(args, 'debug_watch_dir', 'bot/frames_out/watch')
+                                try:
+                                    os.makedirs(out_dir, exist_ok=True)
+                                except Exception:
+                                    pass
+                                ts_ms = int(time.time() * 1000)
+                                fname = f"{str(action_val)}_seat{int(seat)}_{ts_ms}.png"
+                                out_path = os.path.join(out_dir, fname)
+                                # Save cropped table region for context
+                                try:
+                                    cv2.imwrite(out_path, table)
+                                except Exception:
+                                    pass
+                        except Exception:
+                            pass
+                        # Immediately read acting player's BB to compute amounts and update betting state
                         try:
                             # Initialize next-to-act pointer if needed
                             if street_next_idx is None:
@@ -1407,6 +1641,7 @@ def main():
                                     continue
                                 prev_amt_between = float(seat_to_bet_bb.get(s_between, 0.0))
                                 if street_to_call_bb > prev_amt_between + eps:
+                                    debug_print(f"DEBUG: FOLD inferred for seat {s_between} (missed action, street_to_call={street_to_call_bb} > prev_amt={prev_amt_between})")
                                     hh_actions[current_street].append({"seat0": s_between, "act": "fold", "is_allin": False})
                                     seat_last_action[s_between] = 'fold'
                                     seat_folded[s_between] = True
@@ -1424,40 +1659,12 @@ def main():
                                             can_check_preflop = False
                                     if current_street != 'preflop' or can_check_preflop:
                                         if seat_last_action.get(s_between) != 'check':
+                                            debug_print(f"DEBUG: CHECK inferred for seat {s_between} (missed action)")
                                             hh_actions[current_street].append({"seat0": s_between, "act": "check", "is_allin": False})
                                             seat_last_action[s_between] = 'check'
                                 street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
-                            # Focused BB read for acting seat only
+                            # BB read will happen after delay via retry mechanism
                             bb_vals: Dict[int, Optional[str]] = {}
-                            bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
-                            rois_src: Dict[int, Tuple[int, int, int, int]] = {}
-                            if isinstance(bb_rois, dict):
-                                for k, v in bb_rois.items():
-                                    try:
-                                        sk = int(k)
-                                    except Exception:
-                                        continue
-                                    if isinstance(v, (list, tuple)) and len(v) == 4:
-                                        rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
-                            if not rois_src:
-                                rois_src = dict(DEFAULT_SEAT_BB_ROIS)
-                            if seat in rois_src:
-                                bx, by, bw, bh = rois_src[seat]
-                                rx_bb = max(0, int(bx) - max(0, int(args.bb_left_pad)))
-                                rw_bb = max(0, int(bx) + int(bw) - rx_bb)
-                                roi_bgr = table[by:by+bh, rx_bb:rx_bb+rw_bb]
-                                if roi_bgr.size != 0:
-                                    roi_gray = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2GRAY)
-                                    bb_score, bb_loc = _match_score_and_loc(roi_gray, bb_tmpl, bb_mask)
-                                    if np.isfinite(bb_score) and bb_score >= args.bb_threshold and bb_loc is not None:
-                                        bxx = int(bb_loc[0])
-                                        left_w = max(0, min(bxx, rw_bb))
-                                        if left_w > 0:
-                                            crop_gray = roi_gray[:, 0:left_w]
-                                            txt = _scan_number_simple(crop_gray, dot_tmpl, digit_tmpls, args.bb_digit_threshold, args.bb_digit_min_var)
-                                            if txt:
-                                                bb_vals[seat] = txt
-                                                _log({"event": "player_bb_change", "values": {str(seat): txt}})
                             # Compute action semantics
                             eps = 1e-6
                             a = action_val.lower()
@@ -1477,35 +1684,79 @@ def main():
 
                             record = None
                             is_ai = bool(prev_allin.get(seat, False))
+                            debug_print(f"DEBUG ACTION CHECK: seat={seat}, a='{a}', type={type(a)}")
+                            
+                            # Set retry counters ONLY for bet/raise actions
+                            # For call, we already know the amount (street_to_call_bb - prev_amt)
+                            # and don't need to read BB from table (which may be swept away if call ends street)
+                            try:
+                                if a in ('bet', 'raise'):
+                                    seat_bb_retry_delay[seat] = 1
+                                    seat_bb_retry_count[seat] = int(args.bb_immediate_retries)
+                                    debug_print(f"DEBUG: Set retry counters for seat {seat}, action={a}, delay=1, retries={args.bb_immediate_retries}")
+                            except Exception as ex:
+                                debug_print(f"DEBUG: Exception setting retry counters: {ex}")
+                            
                             if a == 'bet':
+                                debug_print(f"DEBUG BET: seat={seat}, new_amt={new_amt}, street_to_call_bb={street_to_call_bb}, prev_amt={prev_amt}, eps={eps}")
                                 if street_to_call_bb <= eps and new_amt > prev_amt + eps:
                                     record = {"seat0": seat, "act": "bet", "to_bb": new_amt, "is_allin": is_ai}
                                     street_to_call_bb = new_amt
                                     seat_to_bet_bb[seat] = new_amt
+                                    debug_print(f"DEBUG: BET recorded for seat {seat}, to_bb={new_amt}")
+                                else:
+                                    debug_print(f"DEBUG BET: Condition NOT met for seat {seat}")
                             elif a == 'raise':
+                                debug_print(f"DEBUG RAISE: seat={seat}, new_amt={new_amt}, street_to_call_bb={street_to_call_bb}, eps={eps}")
                                 if new_amt > street_to_call_bb + eps:
                                     by_bb = new_amt - street_to_call_bb
                                     record = {"seat0": seat, "act": "raise", "by_bb": by_bb, "to_bb": new_amt, "is_allin": is_ai}
                                     street_to_call_bb = new_amt
                                     seat_to_bet_bb[seat] = new_amt
+                                    debug_print(f"DEBUG: RAISE recorded for seat {seat}, by_bb={by_bb}, to_bb={new_amt}")
+                                else:
+                                    debug_print(f"DEBUG RAISE: Condition NOT met for seat {seat}")
                             elif a == 'call':
+                                debug_print(f"DEBUG CALL: seat={seat}, street_to_call_bb={street_to_call_bb}, prev_amt={prev_amt}, eps={eps}")
                                 if street_to_call_bb > prev_amt + eps:
                                     call_bb = street_to_call_bb - prev_amt
                                     record = {"seat0": seat, "act": "call", "call_bb": call_bb, "is_allin": is_ai}
                                     seat_to_bet_bb[seat] = street_to_call_bb
+                                    debug_print(f"DEBUG: CALL recorded for seat {seat}, call_bb={call_bb}, set seat_to_bet_bb[{seat}]={street_to_call_bb}")
+                                else:
+                                    debug_print(f"DEBUG CALL: Condition NOT met for seat {seat} (street_to_call_bb={street_to_call_bb} <= prev_amt={prev_amt} + eps={eps})")
                             elif a == 'check':
-                                if street_to_call_bb <= prev_amt + eps and seat_last_action.get(seat) != 'check':
+                                debug_print(f"DEBUG CHECK: seat={seat}, street_to_call_bb={street_to_call_bb}, prev_amt={prev_amt}, old_last_action={old_last_action}")
+                                if street_to_call_bb <= prev_amt + eps and old_last_action != 'check':
                                     record = {"seat0": seat, "act": "check", "is_allin": is_ai}
+                                    debug_print(f"DEBUG: CHECK recorded for seat {seat}")
+                                else:
+                                    debug_print(f"DEBUG CHECK: Condition NOT met for seat {seat} (old_last_action={old_last_action})")
                             elif a == 'fold':
                                 record = {"seat0": seat, "act": "fold", "is_allin": is_ai}
+                                debug_print(f"DEBUG: FOLD detected for seat {seat}")
 
                             if record is not None:
                                 hh_actions[current_street].append(record)
-                                seat_last_action[seat] = a
-                                # Update folded map and next actor pointer
+                                # seat_last_action already updated earlier
+                                debug_print(f"DEBUG: Record created for seat {seat}, action '{a}'")
+                                # Mark that this seat has acted on this street
+                                seat_has_acted[seat] = True
+                                # Update folded map
                                 if a == 'fold':
                                     seat_folded[seat] = True
-                                if street_next_idx is not None:
+                                
+                                # Check if street is complete after this action
+                                eps = 1e-6
+                                street_complete = _is_street_complete(
+                                    seat_order, seat_folded, seat_allin, seat_has_acted, 
+                                    seat_to_bet_bb, street_to_call_bb, eps
+                                )
+                                
+                                if street_complete:
+                                    debug_print(f"DEBUG: Street is COMPLETE after {a} from seat {seat}, not advancing to next player")
+                                    # Don't advance - wait for street change
+                                elif street_next_idx is not None:
                                     try:
                                         idx = seat_to_idx.get(seat, street_next_idx)
                                         street_next_idx = (idx + 1) % max(1, len(seat_order))
@@ -1513,13 +1764,49 @@ def main():
                                         while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
                                             street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
                                             safety2 += 1
+                                        next_seat = seat_order[street_next_idx] if street_next_idx < len(seat_order) else None
+                                        debug_print(f"DEBUG: Advanced to next player after {a}: seat {next_seat}")
                                     except Exception:
                                         pass
+                            else:
+                                debug_print(f"DEBUG: No record created for action '{a}' at seat {seat}")
                         except Exception:
                             pass
                         actions_changed = True
+                        action_detected_this_step = True
                     # Always update internal state (even if None), but suppress printing for None
                     prev_actions[seat] = action_val
+
+                # If no explicit action matched and fold was inferred, record fold now
+                if action_val is None and inferred_fold and not seat_folded.get(seat, False):
+                    try:
+                        _log({"event": "action_change", "seat": seat, "action": "fold", "score": 1.0, "source": "villan_absent"})
+                        debug_print(f"DEBUG: FOLD inferred for seat {seat} (villain absent)")
+                        hh_actions[current_street].append({"seat0": seat, "act": "fold", "is_allin": False})
+                        seat_last_action[seat] = 'fold'
+                        seat_folded[seat] = True
+                        seat_has_acted[seat] = True
+                        prev_actions[seat] = 'fold'
+                        
+                        # Check if street is complete after this fold
+                        eps = 1e-6
+                        street_complete = _is_street_complete(
+                            seat_order, seat_folded, seat_allin, seat_has_acted, 
+                            seat_to_bet_bb, street_to_call_bb, eps
+                        )
+                        
+                        if street_complete:
+                            debug_print(f"DEBUG: Street is COMPLETE after inferred fold from seat {seat}, not advancing to next player")
+                        elif street_next_idx is not None:
+                            idx = seat_to_idx.get(seat, street_next_idx)
+                            street_next_idx = (idx + 1) % max(1, len(seat_order))
+                            safety2 = 0
+                            while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
+                                street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                                safety2 += 1
+                        actions_changed = True
+                    except Exception:
+                        pass
 
                 # Detect all-in using shifted ROI (same x,w; y+offset)
                 if allin_tpls:
@@ -1546,11 +1833,61 @@ def main():
                             if is_allin:
                                 _log({"event": "allin", "seat": seat, "score": round(ai_best, 3)})
                                 actions_changed = True
+                                seat_allin[seat] = True
                             prev_allin[seat] = is_allin
+
+                # No cascade loop; we process all requested seats within this frame
 
             changed = changed or actions_changed
 
-            # Detect other players' hole cards (showdown) outside board
+            # Process board card changes AFTER action reading
+            # Only check for board changes if:
+            # 1. We just detected an action (actions_changed), OR
+            # 2. We're not currently waiting for a specific player
+            should_check_board = actions_changed or (current_actor_seat is None)
+            if should_check_board and board_val is not None and board_val != prev_board:
+                _log({"event": "board_change", "board": board_val})
+                board_cards_str = ' '.join([c for c in board_val if c]) if board_val else 'none'
+                debug_print(f"DEBUG: Board cards detected: {board_cards_str}")
+                prev_board = board_val
+                # Advance street
+                try:
+                    bc = len([c for c in board_val if c]) if isinstance(board_val, (list, tuple)) else 0
+                except Exception:
+                    bc = 0
+                new_street = "preflop"
+                if bc >= 5:
+                    new_street = "river"
+                elif bc == 4:
+                    new_street = "turn"
+                elif bc == 3:
+                    new_street = "flop"
+                if new_street != current_street:
+                    prev_street = current_street
+                    current_street = new_street
+                    debug_print(f"DEBUG: Street changed from {prev_street} to {current_street}")
+                    if prev_street == "preflop" and current_street == "flop":
+                        debug_print(f"DEBUG: Preflop is over! Board: {board_cards_str}")
+                    # Reset betting state for new street
+                    street_to_call_bb = 0.0
+                    seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
+                    seat_last_action = {s: None for s in seat_last_action.keys()}
+                    seat_has_acted = {s: False for s in seat_order}
+                    street_complete = False
+                    # Note: seat_allin is NOT reset - players remain all-in across streets
+                    # Reset next-to-act pointer based on dealer
+                    try:
+                        street_next_idx = 0
+                        base_dealer = dealer_val if dealer_val is not None else prev_dealer
+                        if base_dealer is not None:
+                            d_idx = seat_to_idx.get(int(base_dealer), 0)
+                            offset = 3 if current_street == 'preflop' else 1
+                            street_next_idx = (d_idx + offset) % max(1, len(seat_order))
+                    except Exception:
+                        street_next_idx = 0
+                changed = True
+
+            # Detect other players' hole cards (showdown) outside board (throttled)
             try:
                 nms_overlap = match_cfg['defaults'].get('nms', {}).get('overlap', 0.3)
             except Exception:
@@ -1566,58 +1903,216 @@ def main():
                 cy = ay + ah / 2.0
                 return (bx <= cx <= bx + bw) and (by <= cy <= by + bh)
 
-            boxes: List[Tuple[int, int, int, int]] = []
-            scores: List[float] = []
-            labels: List[str] = []
-            for label, (tmpl, mask) in card_tpls.items():
-                th, tw = tmpl.shape[:2]
-                res = match_template(gray, tmpl, method=cv2.TM_CCOEFF_NORMED, mask=mask)
-                loc = np.where(res >= cards_thresh)
-                for pt_y, pt_x in zip(*loc):
-                    rx, ry = int(pt_x), int(pt_y)
-                    rw, rh = int(tw), int(th)
-                    rect = (rx, ry, rw, rh)
-                    # Exclude overlaps with board slots by center-inside heuristic
-                    if any(_center_inside(rect, b) for b in board_boxes):
-                        continue
-                    boxes.append(rect)
-                    scores.append(float(res[pt_y, pt_x]))
-                    labels.append(label.replace('card_', ''))
-
+            # When river is complete, scan aggressively for showdown cards every frame
+            scan_showdown = False
+            if street_complete and current_street == "river":
+                scan_showdown = True
+                debug_print(f"DEBUG: River complete, scanning for showdown cards")
+            elif (frame_count % max(1, int(getattr(args, 'showdown_interval', 30)))) == 0:
+                scan_showdown = True
+            
             seat_cards_changed = False
-            if boxes:
-                keep = nms_boxes(boxes, scores, overlap_thresh=nms_overlap)
-                kept = sorted([(boxes[i], scores[i], labels[i]) for i in keep], key=lambda x: x[1], reverse=True)
-                # Assign detections to nearest seat by action_roi center; keep top 2 per seat
-                assigned: Dict[int, List[Tuple[Tuple[int, int, int, int], float, str]]] = {s: [] for s in action_rois.keys()}
-                # Precompute seat centers
-                seat_centers: Dict[int, Tuple[float, float]] = {}
-                for s, (sx, sy, sw, sh) in action_rois.items():
-                    seat_centers[s] = (sx + sw / 2.0, sy + sh / 2.0)
-                for rect, sc, lbl in kept:
-                    rx, ry, rw, rh = rect
-                    cx = rx + rw / 2.0
-                    cy = ry + rh / 2.0
-                    best_s = None
-                    best_d = 1e12
-                    for s, (sx, sy) in seat_centers.items():
-                        d = (sx - cx) * (sx - cx) + (sy - cy) * (sy - cy)
-                        if d < best_d:
-                            best_d = d
-                            best_s = s
-                    if best_s is not None:
-                        assigned[best_s].append((rect, sc, lbl))
-                # Build per-seat card labels (top 2 by score)
-                for s in assigned.keys():
-                    top = sorted(assigned[s], key=lambda x: x[1], reverse=True)[:2]
-                    cards = [lbl for (_, _, lbl) in top]
-                    if cards != prev_seat_cards.get(s, []):
-                        if cards:  # only print non-empty
-                            _log({"event": "showdown_seat_cards", "seat": s, "cards": cards})
-                            seat_cards_changed = True
-                        prev_seat_cards[s] = cards
+            if scan_showdown:
+                boxes: List[Tuple[int, int, int, int]] = []
+                scores: List[float] = []
+                labels: List[str] = []
+                for label, (tmpl, mask) in card_tpls.items():
+                    th, tw = tmpl.shape[:2]
+                    res = match_template(gray, tmpl, method=cv2.TM_CCOEFF_NORMED, mask=mask)
+                    loc = np.where(res >= cards_thresh)
+                    for pt_y, pt_x in zip(*loc):
+                        rx, ry = int(pt_x), int(pt_y)
+                        rw, rh = int(tw), int(th)
+                        rect = (rx, ry, rw, rh)
+                        # Exclude overlaps with board slots by center-inside heuristic
+                        if any(_center_inside(rect, b) for b in board_boxes):
+                            continue
+                        boxes.append(rect)
+                        scores.append(float(res[pt_y, pt_x]))
+                        labels.append(label.replace('card_', ''))
+
+                if boxes:
+                    keep = nms_boxes(boxes, scores, overlap_thresh=nms_overlap)
+                    kept = sorted([(boxes[i], scores[i], labels[i]) for i in keep], key=lambda x: x[1], reverse=True)
+                    # Assign detections to nearest seat by action_roi center; keep top 2 per seat
+                    assigned: Dict[int, List[Tuple[Tuple[int, int, int, int], float, str]]] = {s: [] for s in action_rois.keys()}
+                    # Precompute seat centers
+                    seat_centers: Dict[int, Tuple[float, float]] = {}
+                    for s, (sx, sy, sw, sh) in action_rois.items():
+                        seat_centers[s] = (sx + sw / 2.0, sy + sh / 2.0)
+                    for rect, sc, lbl in kept:
+                        rx, ry, rw, rh = rect
+                        cx = rx + rw / 2.0
+                        cy = ry + rh / 2.0
+                        best_s = None
+                        best_d = 1e12
+                        for s, (sx, sy) in seat_centers.items():
+                            d = (sx - cx) * (sx - cx) + (sy - cy) * (sy - cy)
+                            if d < best_d:
+                                best_d = d
+                                best_s = s
+                        if best_s is not None:
+                            assigned[best_s].append((rect, sc, lbl))
+                    # Build per-seat card labels (top 2 by score)
+                    for s in assigned.keys():
+                        top = sorted(assigned[s], key=lambda x: x[1], reverse=True)[:2]
+                        cards = [lbl for (_, _, lbl) in top]
+                        if cards != prev_seat_cards.get(s, []):
+                            if cards:  # only print non-empty
+                                _log({"event": "showdown_seat_cards", "seat": s, "cards": cards})
+                                seat_cards_changed = True
+                            prev_seat_cards[s] = cards
 
             changed = changed or seat_cards_changed
+            
+            # Detect board cards disappearing after showdown to trigger hand end
+            if street_complete and current_street == "river" and hh_board_last:
+                # Check if board has disappeared (all empty or None)
+                board_disappeared = False
+                try:
+                    if board_val is None:
+                        board_disappeared = True
+                    elif isinstance(board_val, (list, tuple)):
+                        if all(not c for c in board_val):
+                            board_disappeared = True
+                except Exception:
+                    pass
+                
+                if board_disappeared:
+                    debug_print(f"DEBUG: Board disappeared after showdown, hand is over")
+                    # Write hand history with showdown cards before resetting
+                    try:
+                        showdown_snapshot = {s: list(cards) for s, cards in prev_seat_cards.items()}
+                        _write_hand_history(args, prev_dealer, hh_board_last, showdown_snapshot, prev_pot, hh_actions)
+                        debug_print(f"DEBUG: Hand history written with showdown data")
+                    except Exception as e:
+                        debug_print(f"DEBUG: Failed to write hand history: {e}")
+                    
+                    # Reset state for new hand
+                    try:
+                        prev_seat_cards = {s: [] for s in prev_seat_cards.keys()}
+                        hh_actions = {"preflop": [], "flop": [], "turn": [], "river": []}
+                        current_street = "preflop"
+                        street_to_call_bb = 0.0
+                        seat_to_bet_bb = {s: 0.0 for s in seat_to_bet_bb.keys()}
+                        seat_last_action = {s: None for s in seat_last_action.keys()}
+                        seat_folded = {s: False for s in seat_order}
+                        seat_allin = {s: False for s in seat_order}
+                        seat_has_acted = {s: False for s in seat_order}
+                        street_complete = False
+                        street_next_idx = None
+                        hh_board_last = []
+                        new_hand_announced = False
+                        monitor_ready = False
+                        debug_print(f"DEBUG: State reset for new hand after showdown")
+                    except Exception as e:
+                        debug_print(f"DEBUG: Failed to reset state: {e}")
+
+            # BB retry logic: attempt to read BB for seats with active retry counters
+            bb_retry_changed = False
+            # Check if any retry counters are active
+            active_retries = {s: c for s, c in seat_bb_retry_count.items() if c > 0}
+            #debug_print(f"DEBUG: Active retries: {active_retries}")
+            
+            for seat, retry_count in seat_bb_retry_count.items():
+                if retry_count > 0:
+                    debug_print(f"DEBUG RETRY LOOP: seat={seat}, retry_count={retry_count}")
+                    # Check if delay is still active
+                    delay = seat_bb_retry_delay.get(seat, 0)
+                    if delay > 0:
+                        # Still waiting, decrement delay
+                        debug_print(f"DEBUG RETRY LOOP: seat={seat}, delay={delay}, waiting...")
+                        seat_bb_retry_delay[seat] = delay - 1
+                    else:
+                        # Delay expired, try to read BB
+                        debug_print(f"DEBUG RETRY LOOP: seat={seat}, delay expired, attempting BB read...")
+                        try:
+                            # Save frame and ROI for debugging
+                            try:
+                                debug_dir = 'bot/frames_out/bb_retry'
+                                os.makedirs(debug_dir, exist_ok=True)
+                                ts_ms = int(time.time() * 1000)
+                                
+                                # Save full table frame
+                                fname = f"seat{seat}_retry{retry_count}_{ts_ms}.png"
+                                out_path = os.path.join(debug_dir, fname)
+                                cv2.imwrite(out_path, table)
+                                debug_print(f"DEBUG: Saved BB retry frame: {out_path}")
+                                
+                                # Save the ROI being used for BB reading
+                                bb_rois = profile.landmarks.get('bb_text_rois') if isinstance(profile.landmarks, dict) else None
+                                rois_src: Dict[int, Tuple[int, int, int, int]] = {}
+                                if isinstance(bb_rois, dict):
+                                    for k, v in bb_rois.items():
+                                        try:
+                                            sk = int(k)
+                                        except Exception:
+                                            continue
+                                        if isinstance(v, (list, tuple)) and len(v) == 4:
+                                            rois_src[sk] = (int(v[0]), int(v[1]), int(v[2]), int(v[3]))
+                                if not rois_src:
+                                    rois_src = dict(DEFAULT_SEAT_BB_ROIS)
+                                
+                                if seat in rois_src:
+                                    x, y, w, h = rois_src[seat]
+                                    # Expand ROI to the left by left-pad (same as in _read_player_bb_for_seat)
+                                    rx = max(0, int(x) - max(0, int(args.bb_left_pad)))
+                                    rw = max(0, int(x) + int(w) - rx)
+                                    roi_bgr = table[y:y+h, rx:rx+rw]
+                                    if roi_bgr.size > 0:
+                                        roi_fname = f"seat{seat}_retry{retry_count}_{ts_ms}_ROI.png"
+                                        roi_out_path = os.path.join(debug_dir, roi_fname)
+                                        cv2.imwrite(roi_out_path, roi_bgr)
+                                        debug_print(f"DEBUG: Saved BB retry ROI: {roi_out_path}")
+                            except Exception as e:
+                                debug_print(f"DEBUG: Failed to save frame/ROI: {e}")
+                            
+                            txt_now = _read_player_bb_for_seat(table, seat, use_relaxed=True)
+                            if txt_now:
+                                bb_vals_retry: Dict[int, Optional[str]] = {seat: txt_now}
+                                _log({"event": "player_bb_change", "values": {str(seat): txt_now}})
+                                # Update bet amount
+                                try:
+                                    new_bb_val = float(txt_now)
+                                    seat_to_bet_bb[seat] = new_bb_val
+                                    # If this seat made a bet/raise, also update street_to_call_bb
+                                    last_act = seat_last_action.get(seat)
+                                    if last_act in ('bet', 'raise'):
+                                        street_to_call_bb = new_bb_val
+                                        debug_print(f"DEBUG: Updated street_to_call_bb to {new_bb_val} after reading BB for {last_act} from seat {seat}")
+                                except Exception:
+                                    pass
+                                bb_retry_changed = True
+                                debug_print(f"DEBUG: Successfully read BB for seat {seat}: {txt_now}")
+                                # Stop retrying for this seat - we got the BB!
+                                seat_bb_retry_count[seat] = 0
+                                seat_bb_retry_delay[seat] = 0
+                                debug_print(f"DEBUG: Stopped retrying for seat {seat} (BB successfully read)")
+                                
+                                # Immediately advance to next player after reading BB
+                                if street_next_idx is not None and seat in seat_to_idx:
+                                    try:
+                                        idx = seat_to_idx.get(seat, street_next_idx)
+                                        street_next_idx = (idx + 1) % max(1, len(seat_order))
+                                        safety2 = 0
+                                        while seat_order and seat_folded.get(seat_order[street_next_idx], False) and safety2 < len(seat_order):
+                                            street_next_idx = (street_next_idx + 1) % max(1, len(seat_order))
+                                            safety2 += 1
+                                        new_waiting_seat = seat_order[street_next_idx] if street_next_idx is not None else None
+                                        debug_print(f"DEBUG: Advanced to next player after BB read: seat {new_waiting_seat}")
+                                    except Exception as e:
+                                        debug_print(f"DEBUG: Exception advancing to next player: {e}")
+                            else:
+                                debug_print(f"DEBUG: Failed to read BB for seat {seat}")
+                                # Decrement retry counter only if we failed
+                                seat_bb_retry_count[seat] = retry_count - 1
+                                debug_print(f"DEBUG: Decremented retry counter for seat {seat}: {retry_count} -> {retry_count - 1}")
+                        except Exception as e:
+                            debug_print(f"DEBUG: Exception in BB retry: {e}")
+                            # Decrement retry counter on exception too
+                            seat_bb_retry_count[seat] = retry_count - 1
+                            debug_print(f"DEBUG: Decremented retry counter for seat {seat} (exception): {retry_count} -> {retry_count - 1}")
+            changed = changed or bb_retry_changed
 
             # Render dashboard view when any change occurs
             if changed:
@@ -1668,10 +2163,18 @@ def main():
                 except Exception:
                     pass
 
-            if not changed and not actor_thinking_now:
-                time.sleep(interval)
+            # Sleep policy:
+            # - forced seat: throttle when no change to reduce CPU
+            # - normal mode: only sleep when no change and no actor pending
+            if not changed:
+                if args.seat is not None:
+                    time.sleep(interval)
+                elif not actor_thinking_now and current_actor_seat is None:
+                    time.sleep(interval)
+            frame_count += 1
     finally:
         cap.stop()
+        debug_log.close()
 
 
 if __name__ == '__main__':

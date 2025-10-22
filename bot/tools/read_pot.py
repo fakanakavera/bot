@@ -67,7 +67,7 @@ def main():
     parser.add_argument('--pot-h', type=int, default=8)
     parser.add_argument('--pot-threshold', type=float, default=0.99)
     parser.add_argument('--digit-threshold', type=float, default=0.98)
-    parser.add_argument('--fps', type=float, default=1.0)
+    parser.add_argument('--fps', type=float, default=60.0)
     args = parser.parse_args()
 
     # Load table profile
